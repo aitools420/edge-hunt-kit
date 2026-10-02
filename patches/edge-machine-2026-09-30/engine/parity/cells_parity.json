@@ -1,0 +1,205 @@
+{
+ "note": "PARITY batch: stat_seed = each source batch's own seed (20260927 + 100 x its cell index) so the bootstrap ranges can reproduce exactly",
+ "cells": [
+  {
+   "id": "D25H72T40X12",
+   "params": {
+    "dip": 0.25,
+    "th": 72,
+    "tp": 1.4,
+    "hold": 43200,
+    "band": "LOW"
+   },
+   "stat_seed": 20263627,
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+40%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 27"
+   }
+  },
+  {
+   "id": "D27.5H72T40X12",
+   "params": {
+    "dip": 0.275,
+    "th": 72,
+    "tp": 1.4,
+    "hold": 43200,
+    "band": "LOW"
+   },
+   "stat_seed": 20267627,
+   "labels": {
+    "Dip depth": "27.5%",
+    "Trading history": "Every hour",
+    "Take profit": "+40%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 67"
+   }
+  },
+  {
+   "id": "D30H72T50X12",
+   "params": {
+    "dip": 0.3,
+    "th": 72,
+    "tp": 1.5,
+    "hold": 43200,
+    "band": "LOW"
+   },
+   "stat_seed": 20272027,
+   "labels": {
+    "Dip depth": "30%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 111"
+   }
+  },
+  {
+   "id": "D25H72T50X12QW",
+   "params": {
+    "dip": 0.25,
+    "th": 72,
+    "tp": 1.5,
+    "hold": 43200,
+    "band": "LOW",
+    "lat": 60,
+    "quote": "WETH"
+   },
+   "stat_seed": 20261227,
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "Entry delay": "60 s",
+    "Main pool quote": "WETH only",
+    "Capital cap": "none",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 3"
+   }
+  },
+  {
+   "id": "D25H72T30X12L300",
+   "params": {
+    "dip": 0.25,
+    "th": 72,
+    "tp": 1.3,
+    "hold": 43200,
+    "band": "LOW",
+    "lat": 300
+   },
+   "stat_seed": 20261727,
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+30%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "Entry delay": "5 min",
+    "Main pool quote": "any",
+    "Capital cap": "none",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 8"
+   }
+  },
+  {
+   "id": "D30H72T50X12C20",
+   "params": {
+    "dip": 0.3,
+    "th": 72,
+    "tp": 1.5,
+    "hold": 43200,
+    "band": "LOW",
+    "lat": 60,
+    "cap": 20
+   },
+   "stat_seed": 20264427,
+   "labels": {
+    "Dip depth": "30%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (≤1% a side)",
+    "Entry delay": "60 s",
+    "Main pool quote": "any",
+    "Capital cap": "20 positions",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 35"
+   }
+  },
+  {
+   "id": "D25H72T40X12_F1",
+   "base": "D25H72T40X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "stat_seed": 20263627,
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D25H72T40X12"
+   }
+  },
+  {
+   "id": "D25H72T40X12_F2",
+   "base": "D25H72T40X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "stat_seed": 20263627,
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D25H72T40X12"
+   }
+  },
+  {
+   "id": "D27.5H72T40X12_F1",
+   "base": "D27.5H72T40X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "stat_seed": 20267627,
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D27.5H72T40X12"
+   }
+  },
+  {
+   "id": "D27.5H72T40X12_F2",
+   "base": "D27.5H72T40X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "stat_seed": 20267627,
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D27.5H72T40X12"
+   }
+  },
+  {
+   "id": "D30H72T50X12_F1",
+   "base": "D30H72T50X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "stat_seed": 20272027,
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D30H72T50X12"
+   }
+  },
+  {
+   "id": "D30H72T50X12_F2",
+   "base": "D30H72T50X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "stat_seed": 20272027,
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D30H72T50X12"
+   }
+  }
+ ]
+}

@@ -1,0 +1,463 @@
+{
+ "version": "v1-kit",
+ "created": "2026-10-02T15:37Z",
+ "engine": "engine_v1.js",
+ "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+ "cost_version": "v1-real60h-bc18611a45a4",
+ "cost_model": "real60h: realism per-pool costs (R-0111) + ETH booking + TP sold 60 s after the trigger + ETH<->quote-token hop on both legs (R-0115)",
+ "data_window": {
+  "days": [
+   "2026-09-08",
+   "2026-09-26"
+  ],
+  "fit": [
+   "2026-09-11T00:00Z",
+   "2026-09-17T00:00Z"
+  ],
+  "judge": [
+   "2026-09-17T00:00Z",
+   "2026-09-25T20:00Z (last assessment hour)"
+  ],
+  "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+  "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+ },
+ "origin_manifest_sha256": "2f45130ff8a6c8be1896aa9aa6634baaca09283146ddb179eae0f526662cb261",
+ "note": "kit layout of the frozen engine v1: paths resolved under $KIT_ROOT (kit/kitpath.js for node, kit/PATCHES.json for the path lines); manifest_lib.py / verify_manifest.py rewritten for the layout; make_manifest.py not shipped. engine_v1.js is byte-identical (code == code_original).",
+ "code": {
+  "engine_v1.js": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+  "guard.js": "6cdd676bd2c9166725c0c77a1b0b0bd3105656424bb8af696b23e5b11779e3ea",
+  "guard_test.js": "087d0ccbe7e246a6deaf72feff4dddfd652a3c1e6ee767454780649e41069c0c",
+  "hop.py": "e11a9d17ee6ec44c49c9325e7cbba9e2588c2040eca5906fec41fd078dad905c",
+  "qpools.js": "26294f04b9c5b7158c1469bc0e9eb824bc5ba5ce15dce1b4f98402608f7205d1",
+  "build_hop_v1.py": "49495ad64fad236901af9a8b9b3fc3d391805c00062cb776515eb643b57c4f10",
+  "pool_costs_v1.py": "1f43be50f35b26912828bdd7e91ff6e70feb718d5231480b2fa681ee85fdb56e",
+  "reduce_v1.py": "b3e979ac6cbba6d8ba8e800a83124029a9f87a42f9a00d25c8eb09b798327200",
+  "analyze_v1.py": "567d9cc1cba26a49bd470bbb0c0798dd66d940b9e124ab4d39e03708ce42f5d7",
+  "prepare_v1.py": "c41b6eca6925d3f346149d69a6d55aa98a90e699e064d0f527996d0db676577a",
+  "a4.sh": "1b8222913c0c47fde1d2fd3dc70204223ce0f4794323540ecbb3206dc8899f14",
+  "run_pass_v1.sh": "47a940c199eaa563eb32d8a299b93f68fdeca6b77a96f76e8d7cf58cdaca7e4a",
+  "run_batch.sh": "012eeff0bc9cecbb4215588de50224d72b87c2dc932f1e7e124e45411db4fe92",
+  "manifest_lib.py": "94efd4e2208c0f5745a44c5d72c6513de66841009bfa5571a9dc961e08a4bc40",
+  "verify_manifest.py": "895b08eb336fbd8f912ce97f218174148385658892c89a9af4c236e671932cfd",
+  "test_seal.sh": "a6cf77143c469b22a3e65166c3d344d8da3fc80fd3575aaa0d9366016b395f74"
+ },
+ "code_original": {
+  "engine_v1.js": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+  "guard.js": "6cdd676bd2c9166725c0c77a1b0b0bd3105656424bb8af696b23e5b11779e3ea",
+  "guard_test.js": "087d0ccbe7e246a6deaf72feff4dddfd652a3c1e6ee767454780649e41069c0c",
+  "hop.py": "f98abd737906b84d8a50bd9f9462edeee15de0ae5b985b09f15f3397dd92e1c3",
+  "qpools.js": "26294f04b9c5b7158c1469bc0e9eb824bc5ba5ce15dce1b4f98402608f7205d1",
+  "build_hop_v1.py": "af36bc37d7cc02eef2b9e86baea16ce39e464e72691c03d202d98f9f6219c5fe",
+  "pool_costs_v1.py": "e7dea5bfc86c004c57a57aa630d240f9811e7e1e1acbed81583343662b248cec",
+  "reduce_v1.py": "588118a74dcab66e2a5d5961f88bd67b91a9e2a0b89bf92559b517762dd823e6",
+  "analyze_v1.py": "ff0518fd4231506c0bf076dc3e4ab36dd5c23009644a158ab442d8d4e4184dc9",
+  "prepare_v1.py": "c41b6eca6925d3f346149d69a6d55aa98a90e699e064d0f527996d0db676577a",
+  "a4.sh": "7a9953c5b113cb589dc4984d9cd573cec789aaac9e5ed6656ae7f4aaf03a384d",
+  "run_pass_v1.sh": "47a940c199eaa563eb32d8a299b93f68fdeca6b77a96f76e8d7cf58cdaca7e4a",
+  "run_batch.sh": "3d0447373dcdc3c44f53924294a54b4ef76ce9f5bab0246b88769c23847907f3",
+  "manifest_lib.py": "c7a4b5967cc78c90b85e6022408b4b68edaab83db4dbe52ad0887a2b549653a4",
+  "verify_manifest.py": "5264162606d043c3db81bbbac5f370ace176542ebda4b2a6c7a4fb93c4bbb32f",
+  "test_seal.sh": "4d01084e2c8e25f6105524e16195f333552fdcad8cc6cd715b36d1af8f41b21f"
+ },
+ "inputs": {
+  "inputs/meta.tsv.gz": "1d5fc25dbd5d3334f7df109dc91662ed7eab4f1925cec3dcbc4e0dbaa1bddacb",
+  "inputs/scam.tsv.gz": "4945bb97b3ba9648ab89109797630a13e39748b1fae6686334d3621626b6e9f2",
+  "inputs/poolfee_lf.tsv.gz": "d136b916c1c6cd620deb6f1d5ece714c96ec591d0ce29a9cbbe7e5d085f27eda",
+  "inputs/creators.tsv.gz": "9a1dc92aaddc69c785feb6dc603dedbb18c9a453ffddbed5551038c5c1e420a9",
+  "inputs/poolquote.tsv.gz": "38e0df24e2485fe345eab7708c888e221c055da94c392350cd9951622c40df75",
+  "pool_costs_v1.json": "1552e7563d5c063e4dd557c2350d9463033812202487fa0841228f75cfa6856d"
+ },
+ "inputs_plain": {
+  "inputs/meta.tsv": "45af2cf8f9113f1709e439f939c39eda1b92ebc8ff49a9c8a8354018ad38c25a",
+  "inputs/scam.tsv": "9988ebfa78efc678409d99f15e77465718506ed64a5d1e21c1a29c1e9cb8d1cb",
+  "inputs/poolfee_lf.tsv": "b42628b47079964a603786b2ec0487ba8bb585369ea1942890aa5f7f0733f233",
+  "inputs/creators.tsv": "5dd306d69c251a97b404d3cd8a7a4fdbaa560ed48f678219bcaa8a68665163b6",
+  "inputs/poolquote.tsv": "d06b2707c13386ba4c7f06766f7a94b4c0f64039177610b53d9f352e9da4c760"
+ },
+ "external": {
+  "patches/v4-join-2026-09-27/v4tape.js": "e9eb8331ee01f250f3b2efeea8ca1f74544aa18e1c5a3c7badf042beb0d5327e",
+  "patches/v4-join-2026-09-27/pools.js": "99f1b254ed3bf6b13fdf463315446a2b35598c5464534031de802e354aae5e05",
+  "patches/v4-join-2026-09-27/meta.json": "2ca6b6ce52ccbad38e79af7ebc8c2f5f8ecef9165427acd2440da85b13d1a146",
+  "patches/v4-join-2026-09-27/unknown_keys.json": "4ec8b6f18c693d24c903c0225b6a8403836ee5aa5fe89aa97ee14714f9d27c2f",
+  "patches/pons-feeterms-2026-09-27/pons_fee_terms.json": "df15f4e00f3134f13432852144b84a3b2b11f5e28048d3615b9ed794a40931e4",
+  "patches/realism-2026-09-27/realism.py": "ed54ca1f16cba1a8069aa15276bcf935cca33f849787a4732a956ccf2cf8d1a0",
+  "patches/realism-2026-09-27/pool_costs.json": "0268d542d2639e599ea994c487f356522ea73071b5e00ae8644e002efe0c03b6",
+  "patches/realism-2026-09-27/pool_fees.json": "351cc4a55a2e8b62c6220116de7174cfe7daf26da6b53b8c727685ba12c9ec41",
+  "patches/realism-2026-09-27/v23_costs.json": "4029d3d41adc44c277472e25a0a54d9861a7c6d4fa08b15091dffded6e939af4",
+  "patches/realism-2026-09-27/tax_table.json": "4249e4db7914276033a0b53ff56c73d567cda03e1993e1232765d63a643a2784",
+  "patches/realism-2026-09-27/ethusd.json": "721c3c0eeeb25bd160ccdc520b65974a4ad134b8f3c030b4bb28377e6c8c113d",
+  "patches/realism-2026-09-27/latency.json": "cea539f2b88cd072dd52567be14ed921aca8c0925e2fa26b834d9ef91a5d63ad",
+  "patches/blood-realcost-2026-09-27/recost.py": "5f22004e924df0508231d72adebb98d8063d3a267a9ee9a54b8b787272b68092",
+  "patches/blood-exitgrid-2026-09-27/analyze_xg.py": "48e2ac9416c43cfa8c1044a69ad3bac62880553ef4c11011a7c634d859c4929d",
+  "patches/v4-real-cost-2026-09-27/pons_launches.json": "98f445ace435fd6ee7a5e367d06b3d9ee943abf4948c0e7f5f8d5ef496a38e0a",
+  "patches/v4-real-cost-2026-09-27/m2b_rows.json": "6536bc4ce8739fde44ac5a683816f283a288c4d247e134b516cd601f8d34efb3",
+  "patches/blood-realcost-2026-09-27/pons_launches_extra.json": "e2c5aad7ee23ec6308b2e9c9ffe04235f2c2000b7dc43256e23f1fa0370e0b0e",
+  "patches/blood-skeleton1-2026-09-27/pons_launches_sk.json": "c1a68e95b560cebb8f9c7761b53d6340404f2ab167853e99616fcddc4c9b1da2",
+  "kit/kitpath.js": "653bb2c94ca18600c2b1a5dfa83f57a14742167bcd0799de5c561549b676a158"
+ },
+ "external_original": {
+  "patches/v4-join-2026-09-27/v4tape.js": "e9eb8331ee01f250f3b2efeea8ca1f74544aa18e1c5a3c7badf042beb0d5327e",
+  "patches/v4-join-2026-09-27/pools.js": "99f1b254ed3bf6b13fdf463315446a2b35598c5464534031de802e354aae5e05",
+  "patches/v4-join-2026-09-27/meta.json": "2ca6b6ce52ccbad38e79af7ebc8c2f5f8ecef9165427acd2440da85b13d1a146",
+  "patches/v4-join-2026-09-27/unknown_keys.json": "4ec8b6f18c693d24c903c0225b6a8403836ee5aa5fe89aa97ee14714f9d27c2f",
+  "patches/pons-feeterms-2026-09-27/pons_fee_terms.json": "df15f4e00f3134f13432852144b84a3b2b11f5e28048d3615b9ed794a40931e4",
+  "patches/realism-2026-09-27/realism.py": "eeda98824b5b806818b1cb75e896ca74636a69f9d44f118a3e7add91d40bbb84",
+  "patches/realism-2026-09-27/pool_costs.json": "0268d542d2639e599ea994c487f356522ea73071b5e00ae8644e002efe0c03b6",
+  "patches/realism-2026-09-27/pool_fees.json": "351cc4a55a2e8b62c6220116de7174cfe7daf26da6b53b8c727685ba12c9ec41",
+  "patches/realism-2026-09-27/v23_costs.json": "4029d3d41adc44c277472e25a0a54d9861a7c6d4fa08b15091dffded6e939af4",
+  "patches/realism-2026-09-27/tax_table.json": "4249e4db7914276033a0b53ff56c73d567cda03e1993e1232765d63a643a2784",
+  "patches/realism-2026-09-27/ethusd.json": "721c3c0eeeb25bd160ccdc520b65974a4ad134b8f3c030b4bb28377e6c8c113d",
+  "patches/realism-2026-09-27/latency.json": "cea539f2b88cd072dd52567be14ed921aca8c0925e2fa26b834d9ef91a5d63ad",
+  "patches/blood-realcost-2026-09-27/recost.py": "54ef1bfb5cac9f1fe8efc75c9b6ad0978b2562acbce3b163d3f63d4314748f73",
+  "patches/blood-exitgrid-2026-09-27/analyze_xg.py": "48e2ac9416c43cfa8c1044a69ad3bac62880553ef4c11011a7c634d859c4929d",
+  "patches/v4-real-cost-2026-09-27/pons_launches.json": "98f445ace435fd6ee7a5e367d06b3d9ee943abf4948c0e7f5f8d5ef496a38e0a",
+  "patches/v4-real-cost-2026-09-27/m2b_rows.json": "6536bc4ce8739fde44ac5a683816f283a288c4d247e134b516cd601f8d34efb3",
+  "patches/blood-realcost-2026-09-27/pons_launches_extra.json": "e2c5aad7ee23ec6308b2e9c9ffe04235f2c2000b7dc43256e23f1fa0370e0b0e",
+  "patches/blood-skeleton1-2026-09-27/pons_launches_sk.json": "c1a68e95b560cebb8f9c7761b53d6340404f2ab167853e99616fcddc4c9b1da2"
+ },
+ "data": {
+  "2026-09-08": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-08.ndjson.gz",
+     "size": 6292353,
+     "sha256": "ea2247c71118d344102f60451cc1af19bda5aac1e67fde00264503ec16c105a6"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-08.ndjson.gz",
+     "size": 102505359,
+     "sha256": "284c4f41c6bcf271efdb664a3f061701171ac848f7177637c5526e88bc34fe2f"
+    }
+   ],
+   "content": {
+    "v4": "5815a4808951170e01360a7ddc30d8d4fd4a8df5320e01469cb6d493f239db06",
+    "v23": "0465ecef2fa64a0f2eb8dce9b922bb930f11f9dfd2cecd38cd2db06b14317e60"
+   }
+  },
+  "2026-09-09": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-09.ndjson.gz",
+     "size": 5332218,
+     "sha256": "8a440ae9573fd77ee7ed88be7546f8fffce7ebdfbdb377758483ecbf9561ec42"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-09.ndjson.gz",
+     "size": 102609783,
+     "sha256": "297a00bc5afd6bf9008111d2cabd2fb774a3c7893257ffd943e69b1fa8401355"
+    }
+   ],
+   "content": {
+    "v4": "d3a795792aafaba690b5a6b5f2cfb003114d76660bf1453e931246691aaf0dc9",
+    "v23": "63441fbe77bf6f79a12cf87de354257a74eb2ce53ccd44a8df458c915ce89124"
+   }
+  },
+  "2026-09-10": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-10.ndjson.gz",
+     "size": 11619787,
+     "sha256": "e6fe1f46b03396fcdf9d557600498f80a3697f83fc972349a5bf2258dd2fd78b"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-10.ndjson.gz",
+     "size": 108169860,
+     "sha256": "2b7c79df331cb6ba3c9cf1be68fbb321750a0d1be5d8c2e0166885ded7b511a6"
+    }
+   ],
+   "content": {
+    "v4": "99dcab1f3c7677867603effa50486ca4cc69c5585cc02e075e8b4aabc45dd14b",
+    "v23": "7552aab74e584dbc8fc5764457790b91e465ce2b2e44b3355137da60ed2ee1e1"
+   }
+  },
+  "2026-09-11": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-11.ndjson.gz",
+     "size": 7348465,
+     "sha256": "50a88eebf153114f80b62793ca8f8bdfeb72db6b1dcec5d6923eaf15a8466ec6"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-11.ndjson.gz",
+     "size": 123781363,
+     "sha256": "566dd2cd7dfe9f60945e9781c5eb99f0eee96ab289f2c2f5704cbe60c34904d8"
+    }
+   ],
+   "content": {
+    "v4": "46e533bbf78c5935bca0cff3909e0859e2e72c3285e93a7a5e44ba4f987aa719",
+    "v23": "5a402ce62603f2ce24b9ee09a2474aca982a85608662ee98ae3ee48f0872b73b"
+   }
+  },
+  "2026-09-12": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-12.ndjson.gz",
+     "size": 4342467,
+     "sha256": "e73c6e6e736e5bf14237554cd5a70652c6ec0bfb5e890ea46c1afe1bb4f264b4"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-12.ndjson.gz",
+     "size": 103353922,
+     "sha256": "d76b85b6e2b51c9a616c5e0365e43ece8af0ec8a66d847fad0977b39bb2e81c6"
+    }
+   ],
+   "content": {
+    "v4": "6fbe11e8e8910adf3822ad1ed0fbf8c0a6b062a402c83b1d782e8d90adc687e9",
+    "v23": "10821531b8df809ce25ec4e7d9f1eaa9ec8ba9b220bea5dbd0811f30cb8e8f24"
+   }
+  },
+  "2026-09-13": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-13.ndjson.gz",
+     "size": 7587017,
+     "sha256": "f156824bcf536602a5d890766a87bfad55cdc11dfd3cf1bc2db2e22fb194d694"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-13.ndjson.gz",
+     "size": 101089601,
+     "sha256": "f54718204e33a54ee31236628ad7f8c5c47de2271745872e7fd961ed7cf8a9eb"
+    }
+   ],
+   "content": {
+    "v4": "4b9f5e7ce3c4432d275a619d8f56fbc428b518061d3a9b4cd27fcf1dff125714",
+    "v23": "56dd99b1ba9a959a3fbd1c83f87dcdb892bca78adf7bf9af2719e5956556ef71"
+   }
+  },
+  "2026-09-14": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-14.ndjson.gz",
+     "size": 11870336,
+     "sha256": "f067b427f2cebc9e72c4a4611feb38e2cfb66f3ae773a9f186ee964484957f4f"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-14.ndjson.gz",
+     "size": 113655198,
+     "sha256": "f4f2cb46b6ca3b238e0c0c04061aa72896c9f1b6cc4665b3e50799e98bc7a52d"
+    }
+   ],
+   "content": {
+    "v4": "7bcfa576ddf2e02cf0070596cd0ac1cd73b5c8a459d46f8a350a17e82558820d",
+    "v23": "f3ed8bd1737a62da136d6f526eb02ad06fd64bb98421a43a7e4383e3dd4a8d5a"
+   }
+  },
+  "2026-09-15": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-15.ndjson.gz",
+     "size": 20027599,
+     "sha256": "75d1d79eb69e719ce621ce588e68dfef899e664d202a35db8ec0c19c31139f12"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-15.ndjson.gz",
+     "size": 92482370,
+     "sha256": "3d710fc642c0e602d2e4e3194787114cb4cef11df5fbd3256615dd3afc0fd3ac"
+    }
+   ],
+   "content": {
+    "v4": "eac0bbd088ce3bb60942d757931809287f6979928a1a9be517686be412021060",
+    "v23": "febf00ca7f18451acbba60bed686f6ed7df38168f1ec7232c8e84ea003c9167a"
+   }
+  },
+  "2026-09-16": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-16.ndjson.gz",
+     "size": 27028825,
+     "sha256": "4b4b2555fc6b4bcfee78514f69b1a4bdd65dd8142ee0947047becb7afb277b88"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-16.ndjson.gz",
+     "size": 65236371,
+     "sha256": "36139cfaad70e5182de1db21fa59284fa5c5afabdd52d8b367c7e436d54dd6f5"
+    }
+   ],
+   "content": {
+    "v4": "5fb53fb1548db36d85654407b0ee0c6630ef57103099d3ea0c4c64138acd9dc8",
+    "v23": "d4bbc7def2eed61097b6fd36fbffd3c1724ebdfffedf4a10fa35f512490bb811"
+   }
+  },
+  "2026-09-17": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-17.ndjson.gz",
+     "size": 26747140,
+     "sha256": "5074e751db0a30c5d40735b3145a6792334eaf6438b1ac696b2fbc1ff7460009"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-17.ndjson.gz",
+     "size": 75439390,
+     "sha256": "bedae891a01c10e57954cbb39da0f3cd731f55561fa4a35b6803ee7551244c53"
+    }
+   ],
+   "content": {
+    "v4": "2ec62fb97c159a8a2b392251c1ca795d18e6734bfd0bb2286d2994d48e6e8398",
+    "v23": "01e0655c6ef98197ba9dce7aec245d67f164c9e55744199b92526032eba8d3da"
+   }
+  },
+  "2026-09-18": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-18.ndjson.gz",
+     "size": 34857317,
+     "sha256": "4aa66415ba77dc4f33b2fb2428fae6de28c08f59c9f3bd4b465d0db0ec655917"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-18.ndjson.gz",
+     "size": 73419523,
+     "sha256": "dfccaa8afeb8ab7fad726c2e48d72ce4619dcbdaa1da81c75d1d8beb7fe6255a"
+    }
+   ],
+   "content": {
+    "v4": "8f6d6e05d2822943a9a8d4acd865fb5a1be14b16eb44e10223111ecb55ec125d",
+    "v23": "9d131eb2b2709f6f75ede89e49e4319d5526aab0e357ff1b3bee6a6205e8d1ff"
+   }
+  },
+  "2026-09-19": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-19.ndjson.gz",
+     "size": 298214299,
+     "sha256": "8b133243d8f16d41c560d8ca03b7d11e824e34c00d0276267ff5674b0ced2046"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-19.ndjson.gz",
+     "size": 68816510,
+     "sha256": "4d180a6a64a7898e911832d16656f06dc336b083acbff2241dd85852c2195977"
+    }
+   ],
+   "content": {
+    "v4": "479c3091e9d1fa3efdab361ff4d0a93dd4897f048cb2bdc668c0b2bd458fee11",
+    "v23": "37389f32b244b5f33238bcf133aa1b827afe907e86eab2cf2184195b3d56d5e7"
+   }
+  },
+  "2026-09-20": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-20.ndjson.gz",
+     "size": 243771424,
+     "sha256": "cfaab59e77cf76eae0488bce3a7c0f2eec3ec171a911dd89b5cb987911ed07a1"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-20.ndjson.gz",
+     "size": 53740877,
+     "sha256": "181ac818b7931091ac148a9e7850416b57d32f0c31975df8fd90a9bc3bed1b3a"
+    }
+   ],
+   "content": {
+    "v4": "021a5f7d002b01deeaf66e93798f79aa2c057c94fdeed9f732dc11f17e5b140e",
+    "v23": "798e569de1dec2b26300ba17778be456e4aa2b1579029e79edbfca7e3ee15b49"
+   }
+  },
+  "2026-09-21": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-21.ndjson.gz",
+     "size": 359900188,
+     "sha256": "beefaa69e3e970761180dfb3143a5220ab451fbc47e0503edf32279a8068e15f"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-21.ndjson.gz",
+     "size": 72839565,
+     "sha256": "f318e739daa1f39185d1dcd46705dc5a4d1bdb41070708d2f7a93e207f6bf0a7"
+    }
+   ],
+   "content": {
+    "v4": "27c17ca85a9bd93629f8d59bd6aff524247c1cf06c69b5e18ad88890edc6f3d1",
+    "v23": "64d034f49c4f506ed81df2aee57878f2c89875a5a9dc98f7599054d88a815370"
+   }
+  },
+  "2026-09-22": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-22.ndjson.gz",
+     "size": 317525278,
+     "sha256": "bae7de1844356549aa1a5eb746b39fab49163f46a2109b350d7853a8ffe9ad80"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-22.ndjson.gz",
+     "size": 67549044,
+     "sha256": "edb9533b106042ef3e52ab306e480d1d7ebe35f9bf0082ca8a04fe987179c19d"
+    }
+   ],
+   "content": {
+    "v4": "970d8119ad9f91da02699727f2444633dbb243d52f80a54f43f372906c22e997",
+    "v23": "6c017e282e7892767f05bb30482ce13af875a1c4d7dcf812cd40c1119a96e562"
+   }
+  },
+  "2026-09-23": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-23.ndjson.gz",
+     "size": 285041705,
+     "sha256": "a629b98a470848d93578437111dac7def704babb68ed166a1197a91d20a9bc66"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-23.ndjson.gz",
+     "size": 65930523,
+     "sha256": "8039b544f7832cfe86d273b8a0dc3ce5fc698f48af2cab3991de94c34193c8bb"
+    }
+   ],
+   "content": {
+    "v4": "10932a46f343368d9acac0433033692d2106cc98b9f09d8c5862907124a831b8",
+    "v23": "81177be3a17c3c21d806aaf2e042dffcc49b997d550da9925bcd6c9e0ebf4ab8"
+   }
+  },
+  "2026-09-24": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-24.ndjson.gz",
+     "size": 245606755,
+     "sha256": "bd90ce36643ff7c12f6a91ace82d57f7ff6f5b192d97c36f7079c79f49f96f83"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-24.ndjson.gz",
+     "size": 59834597,
+     "sha256": "dcf9405d3f92317935a4ef7f7e4a2e6edc5ea45e9f4babb07d1075b13dc4eb2d"
+    }
+   ],
+   "content": {
+    "v4": "d0d1d93b9859d5e1e6bff75fbf998ddd23ddbf17f9e6f10757772a34972acbb8",
+    "v23": "fb53df292996c798823425b68f89a6aa891bc0d822e942cabd3b3c5a71aed48e"
+   }
+  },
+  "2026-09-25": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-25.ndjson.gz",
+     "size": 232276378,
+     "sha256": "484a0ee836b025c5a255f54fb1b91ab6d7669b5b42a4d46dc0f254241b206755"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-25.ndjson.gz",
+     "size": 68972744,
+     "sha256": "6de13357e29a303a8abf2f3c326e5bb4c379032e0a6ac458ed706c0382a42b4d"
+    }
+   ],
+   "content": {
+    "v4": "106a627b54032eee48d72f1dded085422c808d7f45c32c755ec4ffad2a5c66c5",
+    "v23": "af5200c6133cb04353ccf6b4fc29ea4c499675d46f6ed9f24a1be2a31af05676"
+   }
+  },
+  "2026-09-26": {
+   "parts": [
+    {
+     "path": "patches/v4-join-2026-09-27/out/v4-swaps-2026-09-26.ndjson.gz",
+     "size": 209323157,
+     "sha256": "f78d0eec951d5a7d8556acc27239110986d684392545392cbfc854b90bf5054f"
+    },
+    {
+     "path": "tape/v23/archive/2026-09/tape-2026-09-26.ndjson.gz",
+     "size": 60214916,
+     "sha256": "d8ca455658a5941efafd3595e2b0c23149139a45af919ffcbb7abff6bc4f23f1"
+    }
+   ],
+   "content": {
+    "v4": "198db215a7eb163c00c5d6d0225066c2028f068843868b1d8af4685c80288902",
+    "v23": "c7d9d50d49e5c581d1d8b2cfeccfbec91505225a90ee742bea4ce6cf14461c09"
+   }
+  }
+ },
+ "manifest_sha256": "db630afef6eb25c5360562d9e623d66af40a116ca87b819545048394fc33e10b"
+}

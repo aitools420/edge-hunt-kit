@@ -1,0 +1,3981 @@
+{
+ "schema": "edge-machine results v1",
+ "engine": "engine_v1.js",
+ "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+ "cost_version": "v1-real60h-bc18611a45a4",
+ "manifest_sha256": "2f45130ff8a6c8be1896aa9aa6634baaca09283146ddb179eae0f526662cb261",
+ "primary_view": "real60h",
+ "primary_view_meaning": "real per-pool costs (R-0111), ETH booking, TP sold 60 s after the trigger, ETH<->quote-token hop costed on both legs (R-0115); trades with no direct ETH route to their quote token are left out of this view",
+ "nohop_view": "real60",
+ "data_window": {
+  "days": [
+   "2026-09-08",
+   "2026-09-26"
+  ],
+  "fit": [
+   "2026-09-11T00:00Z",
+   "2026-09-17T00:00Z"
+  ],
+  "judge": [
+   "2026-09-17T00:00Z",
+   "2026-09-25T20:00Z (last assessment hour)"
+  ],
+  "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+  "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+ },
+ "cells": {
+  "D25H72T40X12": {
+   "cell": "D25H72T40X12",
+   "engine_cell": "D25H72T40X12",
+   "filter": null,
+   "dials": {
+    "dip": 0.25,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+40%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 27"
+   },
+   "stat_seed": 20263627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 63,
+    "coins": 23,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 63,
+      "coins": 23,
+      "mean": 12.05,
+      "median": 18.05,
+      "ci95": [
+       4.38,
+       19.72
+      ],
+      "se_cons": 3.91,
+      "se_iid": 3.83,
+      "p_one_sided": 0.00103,
+      "mde80": 9.73,
+      "upper95": 18.49,
+      "drop5_trades": 8.25,
+      "days": 9,
+      "drop5_coins": 4.6,
+      "crash_share": 0.02,
+      "win_share": 0.65,
+      "u_raw": 7.67,
+      "lower_explorer": 4.38,
+      "lower": 4.38
+     },
+     "d_vs_A": {
+      "n": 58,
+      "coins": 22,
+      "ci95": [
+       6.56,
+       24.04
+      ],
+      "se_cons": 4.46,
+      "se_iid": 4.13,
+      "p_one_sided": 0.0003,
+      "mde80": 11.09,
+      "upper95": 22.63,
+      "drop5_trades": 10.63,
+      "days": 8,
+      "d_mean": 15.3,
+      "d_median": 21.85,
+      "drop5_coins": 8.39,
+      "twin_mean": -2.25,
+      "twin_tp_share": 0.08
+     },
+     "d_vs_R": {
+      "n": 63,
+      "coins": 23,
+      "ci95": [
+       4.91,
+       19.98
+      ],
+      "se_cons": 3.84,
+      "se_iid": 3.84,
+      "p_one_sided": 0.0006,
+      "mde80": 9.56,
+      "upper95": 18.77,
+      "drop5_trades": 8.32,
+      "days": 9,
+      "d_mean": 12.45,
+      "d_median": 13.41,
+      "drop5_coins": 6.02,
+      "twin_mean": -0.4,
+      "twin_tp_share": 0.15
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 63,
+      "coins": 23,
+      "mean": 13.12,
+      "median": 18.93,
+      "ci95": [
+       5.25,
+       20.99
+      ],
+      "se_cons": 4.01,
+      "se_iid": 3.89,
+      "p_one_sided": 0.000543,
+      "mde80": 9.98,
+      "upper95": 19.72,
+      "drop5_trades": 9.35,
+      "days": 9,
+      "drop5_coins": 5.7,
+      "crash_share": 0.0,
+      "win_share": 0.67,
+      "u_raw": 7.87,
+      "lower_explorer": 5.25,
+      "lower": 5.25
+     },
+     "d_vs_A": {
+      "n": 58,
+      "coins": 22,
+      "ci95": [
+       6.95,
+       25.57
+      ],
+      "se_cons": 4.75,
+      "se_iid": 4.18,
+      "p_one_sided": 0.00031,
+      "mde80": 11.81,
+      "upper95": 24.07,
+      "drop5_trades": 11.68,
+      "days": 8,
+      "d_mean": 16.26,
+      "d_median": 22.72,
+      "drop5_coins": 10.01,
+      "twin_mean": -2.06,
+      "twin_tp_share": 0.08
+     }
+    },
+    "exit_reasons": {
+     "tp": 29,
+     "time": 34
+    },
+    "tp_share": 0.46,
+    "stock_entry_share": 0.3,
+    "quote_class": {
+     "eth": 34,
+     "usdg": 10,
+     "other": 19
+    },
+    "top_coin_share": 0.24,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 63,
+      "booked": 63,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 189,
+      "booked": 189,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 116,
+      "booked": 116,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 3,
+    "coins": 3,
+    "n_days": 2,
+    "days": [
+     "2026-09-11",
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     },
+     "d_vs_R": {
+      "n": 3,
+      "coins": 3,
+      "ci95": [
+       -25.24,
+       5.31
+      ],
+      "se_cons": 7.79,
+      "se_iid": 7.79,
+      "p_one_sided": 0.9,
+      "mde80": 19.38,
+      "upper95": 2.85,
+      "drop5_trades": null,
+      "days": 2,
+      "d_mean": -9.97,
+      "d_median": -17.57,
+      "drop5_coins": null,
+      "twin_mean": 2.56,
+      "twin_tp_share": 0.22
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     }
+    },
+    "exit_reasons": {
+     "time": 3
+    },
+    "tp_share": 0.0,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 3
+    },
+    "top_coin_share": null,
+    "top_coin": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+    "gate": {
+     "S": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 9,
+      "booked": 9,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D27.5H72T40X12": {
+   "cell": "D27.5H72T40X12",
+   "engine_cell": "D27.5H72T40X12",
+   "filter": null,
+   "dials": {
+    "dip": 0.275,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Dip depth": "27.5%",
+    "Trading history": "Every hour",
+    "Take profit": "+40%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 67"
+   },
+   "stat_seed": 20267627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 46,
+    "coins": 21,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 46,
+      "coins": 21,
+      "mean": 13.71,
+      "median": 20.01,
+      "ci95": [
+       4.12,
+       23.3
+      ],
+      "se_cons": 4.89,
+      "se_iid": 4.89,
+      "p_one_sided": 0.00254,
+      "mde80": 12.17,
+      "upper95": 21.76,
+      "drop5_trades": 7.96,
+      "days": 9,
+      "drop5_coins": 5.17,
+      "crash_share": 0.04,
+      "win_share": 0.67,
+      "u_raw": 9.59,
+      "lower_explorer": 4.12,
+      "lower": 4.12
+     },
+     "d_vs_A": {
+      "n": 41,
+      "coins": 20,
+      "ci95": [
+       7.29,
+       26.72
+      ],
+      "se_cons": 4.95,
+      "se_iid": 4.95,
+      "p_one_sided": 0.0003,
+      "mde80": 12.32,
+      "upper95": 25.16,
+      "drop5_trades": 10.22,
+      "days": 8,
+      "d_mean": 17.0,
+      "d_median": 16.08,
+      "drop5_coins": 9.36,
+      "twin_mean": -1.2,
+      "twin_tp_share": 0.1
+     },
+     "d_vs_R": {
+      "n": 46,
+      "coins": 21,
+      "ci95": [
+       5.0,
+       24.19
+      ],
+      "se_cons": 4.9,
+      "se_iid": 4.9,
+      "p_one_sided": 0.00143,
+      "mde80": 12.17,
+      "upper95": 22.65,
+      "drop5_trades": 8.67,
+      "days": 9,
+      "d_mean": 14.6,
+      "d_median": 17.22,
+      "drop5_coins": 6.32,
+      "twin_mean": -0.89,
+      "twin_tp_share": 0.12
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 46,
+      "coins": 21,
+      "mean": 14.94,
+      "median": 23.49,
+      "ci95": [
+       5.19,
+       24.7
+      ],
+      "se_cons": 4.97,
+      "se_iid": 4.97,
+      "p_one_sided": 0.00133,
+      "mde80": 12.37,
+      "upper95": 23.13,
+      "drop5_trades": 9.14,
+      "days": 9,
+      "drop5_coins": 6.7,
+      "crash_share": 0.02,
+      "win_share": 0.7,
+      "u_raw": 9.75,
+      "lower_explorer": 5.19,
+      "lower": 5.19
+     },
+     "d_vs_A": {
+      "n": 41,
+      "coins": 20,
+      "ci95": [
+       8.4,
+       28.13
+      ],
+      "se_cons": 5.03,
+      "se_iid": 5.03,
+      "p_one_sided": 0.000143,
+      "mde80": 12.52,
+      "upper95": 26.55,
+      "drop5_trades": 11.48,
+      "days": 8,
+      "d_mean": 18.26,
+      "d_median": 16.03,
+      "drop5_coins": 10.8,
+      "twin_mean": -1.09,
+      "twin_tp_share": 0.1
+     }
+    },
+    "exit_reasons": {
+     "tp": 24,
+     "time": 22
+    },
+    "tp_share": 0.52,
+    "stock_entry_share": 0.35,
+    "quote_class": {
+     "eth": 23,
+     "usdg": 7,
+     "other": 16
+    },
+    "top_coin_share": 0.27,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 46,
+      "booked": 46,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 138,
+      "booked": 138,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 82,
+      "booked": 82,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D30H72T50X12": {
+   "cell": "D30H72T50X12",
+   "engine_cell": "D30H72T50X12",
+   "filter": null,
+   "dials": {
+    "dip": 0.3,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.5,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Dip depth": "30%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "source": "hunt 2 (blood-hunt2-2026-09-29) cell index 111"
+   },
+   "stat_seed": 20272027,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 36,
+    "coins": 19,
+    "n_days": 6,
+    "days": [
+     "2026-09-17",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 36,
+      "coins": 19,
+      "mean": 17.57,
+      "median": 25.5,
+      "ci95": [
+       1.41,
+       33.73
+      ],
+      "se_cons": 8.25,
+      "se_iid": 6.6,
+      "p_one_sided": 0.0165,
+      "mde80": 20.51,
+      "upper95": 31.14,
+      "drop5_trades": 8.81,
+      "days": 6,
+      "drop5_coins": 2.92,
+      "crash_share": 0.08,
+      "win_share": 0.67,
+      "u_raw": 16.16,
+      "lower_explorer": 1.41,
+      "lower": 1.41
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 17,
+      "ci95": [
+       5.21,
+       34.66
+      ],
+      "se_cons": 7.51,
+      "se_iid": 6.35,
+      "p_one_sided": 0.00398,
+      "mde80": 18.68,
+      "upper95": 32.29,
+      "drop5_trades": 11.57,
+      "days": 6,
+      "d_mean": 19.93,
+      "d_median": 30.07,
+      "drop5_coins": 3.12,
+      "twin_mean": 1.33,
+      "twin_tp_share": 0.07
+     },
+     "d_vs_R": {
+      "n": 36,
+      "coins": 19,
+      "ci95": [
+       -1.76,
+       31.15
+      ],
+      "se_cons": 8.39,
+      "se_iid": 5.62,
+      "p_one_sided": 0.04,
+      "mde80": 20.88,
+      "upper95": 28.5,
+      "drop5_trades": 7.33,
+      "days": 6,
+      "d_mean": 14.7,
+      "d_median": 18.05,
+      "drop5_coins": 1.9,
+      "twin_mean": 2.88,
+      "twin_tp_share": 0.14
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 36,
+      "coins": 19,
+      "mean": 19.09,
+      "median": 25.66,
+      "ci95": [
+       2.03,
+       36.15
+      ],
+      "se_cons": 8.7,
+      "se_iid": 6.71,
+      "p_one_sided": 0.0141,
+      "mde80": 21.65,
+      "upper95": 33.41,
+      "drop5_trades": 10.39,
+      "days": 6,
+      "drop5_coins": 4.27,
+      "crash_share": 0.06,
+      "win_share": 0.67,
+      "u_raw": 17.06,
+      "lower_explorer": 2.03,
+      "lower": 2.03
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 17,
+      "ci95": [
+       5.48,
+       37.32
+      ],
+      "se_cons": 8.12,
+      "se_iid": 6.47,
+      "p_one_sided": 0.0042,
+      "mde80": 20.2,
+      "upper95": 34.77,
+      "drop5_trades": 12.97,
+      "days": 6,
+      "d_mean": 21.4,
+      "d_median": 31.15,
+      "drop5_coins": 4.63,
+      "twin_mean": 1.51,
+      "twin_tp_share": 0.07
+     }
+    },
+    "exit_reasons": {
+     "tp": 17,
+     "time": 19
+    },
+    "tp_share": 0.47,
+    "stock_entry_share": 0.36,
+    "quote_class": {
+     "eth": 19,
+     "other": 13,
+     "usdg": 4
+    },
+    "top_coin_share": 0.42,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 36,
+      "booked": 36,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 108,
+      "booked": 108,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 68,
+      "booked": 68,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D25H72T50X12QW": {
+   "cell": "D25H72T50X12QW",
+   "engine_cell": "D25H72T50X12QW",
+   "filter": null,
+   "dials": {
+    "dip": 0.25,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.5,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW",
+    "quote": "WETH"
+   },
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "Entry delay": "60 s",
+    "Main pool quote": "WETH only",
+    "Capital cap": "none",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 3"
+   },
+   "stat_seed": 20261227,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 34,
+    "coins": 11,
+    "n_days": 7,
+    "days": [
+     "2026-09-17",
+     "2026-09-19",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 34,
+      "coins": 11,
+      "mean": 19.56,
+      "median": 19.04,
+      "ci95": [
+       6.41,
+       32.7
+      ],
+      "se_cons": 6.71,
+      "se_iid": 5.92,
+      "p_one_sided": 0.00177,
+      "mde80": 16.68,
+      "upper95": 30.59,
+      "drop5_trades": 10.26,
+      "days": 7,
+      "drop5_coins": 6.12,
+      "crash_share": 0.0,
+      "win_share": 0.76,
+      "u_raw": 13.15,
+      "lower_explorer": 6.41,
+      "lower": 6.41
+     },
+     "d_vs_A": {
+      "n": 29,
+      "coins": 10,
+      "ci95": [
+       1.47,
+       40.08
+      ],
+      "se_cons": 9.85,
+      "se_iid": 7.16,
+      "p_one_sided": 0.0174,
+      "mde80": 24.49,
+      "upper95": 36.97,
+      "drop5_trades": 9.52,
+      "days": 7,
+      "d_mean": 20.77,
+      "d_median": 26.3,
+      "drop5_coins": -0.21,
+      "twin_mean": 0.59,
+      "twin_tp_share": 0.1
+     },
+     "d_vs_R": {
+      "n": 34,
+      "coins": 11,
+      "ci95": [
+       7.03,
+       28.45
+      ],
+      "se_cons": 5.47,
+      "se_iid": 5.15,
+      "p_one_sided": 0.000586,
+      "mde80": 13.59,
+      "upper95": 26.73,
+      "drop5_trades": 9.49,
+      "days": 7,
+      "d_mean": 17.74,
+      "d_median": 17.05,
+      "drop5_coins": 7.82,
+      "twin_mean": 1.81,
+      "twin_tp_share": 0.08
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 34,
+      "coins": 11,
+      "mean": 19.56,
+      "median": 19.04,
+      "ci95": [
+       6.41,
+       32.7
+      ],
+      "se_cons": 6.71,
+      "se_iid": 5.92,
+      "p_one_sided": 0.00177,
+      "mde80": 16.68,
+      "upper95": 30.59,
+      "drop5_trades": 10.26,
+      "days": 7,
+      "drop5_coins": 6.12,
+      "crash_share": 0.0,
+      "win_share": 0.76,
+      "u_raw": 13.15,
+      "lower_explorer": 6.41,
+      "lower": 6.41
+     },
+     "d_vs_A": {
+      "n": 29,
+      "coins": 10,
+      "ci95": [
+       1.47,
+       40.08
+      ],
+      "se_cons": 9.85,
+      "se_iid": 7.16,
+      "p_one_sided": 0.0174,
+      "mde80": 24.49,
+      "upper95": 36.97,
+      "drop5_trades": 9.52,
+      "days": 7,
+      "d_mean": 20.77,
+      "d_median": 26.3,
+      "drop5_coins": -0.21,
+      "twin_mean": 0.59,
+      "twin_tp_share": 0.1
+     }
+    },
+    "exit_reasons": {
+     "tp": 11,
+     "time": 23
+    },
+    "tp_share": 0.32,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 34
+    },
+    "top_coin_share": 0.46,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 34,
+      "booked": 34,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 102,
+      "booked": 102,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 65,
+      "booked": 65,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 3,
+    "coins": 3,
+    "n_days": 2,
+    "days": [
+     "2026-09-11",
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     },
+     "d_vs_R": {
+      "n": 3,
+      "coins": 3,
+      "ci95": [
+       -28.31,
+       5.59
+      ],
+      "se_cons": 8.65,
+      "se_iid": 8.65,
+      "p_one_sided": 0.906,
+      "mde80": 21.5,
+      "upper95": 2.87,
+      "drop5_trades": null,
+      "days": 2,
+      "d_mean": -11.36,
+      "d_median": -16.99,
+      "drop5_coins": null,
+      "twin_mean": 3.96,
+      "twin_tp_share": 0.11
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     }
+    },
+    "exit_reasons": {
+     "time": 3
+    },
+    "tp_share": 0.0,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 3
+    },
+    "top_coin_share": null,
+    "top_coin": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+    "gate": {
+     "S": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 9,
+      "booked": 9,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D25H72T30X12L300": {
+   "cell": "D25H72T30X12L300",
+   "engine_cell": "D25H72T30X12L300",
+   "filter": null,
+   "dials": {
+    "dip": 0.25,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 300,
+    "tp": 1.3,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Dip depth": "25%",
+    "Trading history": "Every hour",
+    "Take profit": "+30%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "Entry delay": "5 min",
+    "Main pool quote": "any",
+    "Capital cap": "none",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 8"
+   },
+   "stat_seed": 20261727,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 64,
+    "coins": 23,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 64,
+      "coins": 23,
+      "mean": 7.66,
+      "median": 15.37,
+      "ci95": [
+       1.36,
+       13.96
+      ],
+      "se_cons": 3.21,
+      "se_iid": 3.21,
+      "p_one_sided": 0.0086,
+      "mde80": 7.99,
+      "upper95": 12.94,
+      "drop5_trades": 4.61,
+      "days": 9,
+      "drop5_coins": 1.79,
+      "crash_share": 0.0,
+      "win_share": 0.61,
+      "u_raw": 6.3,
+      "lower_explorer": 1.36,
+      "lower": 1.36
+     },
+     "d_vs_A": {
+      "n": 58,
+      "coins": 22,
+      "ci95": [
+       5.04,
+       18.83
+      ],
+      "se_cons": 3.52,
+      "se_iid": 3.52,
+      "p_one_sided": 0.000345,
+      "mde80": 8.75,
+      "upper95": 17.72,
+      "drop5_trades": 7.92,
+      "days": 7,
+      "d_mean": 11.94,
+      "d_median": 13.62,
+      "drop5_coins": 6.09,
+      "twin_mean": -2.92,
+      "twin_tp_share": 0.14
+     },
+     "d_vs_R": {
+      "n": 64,
+      "coins": 23,
+      "ci95": [
+       2.58,
+       16.4
+      ],
+      "se_cons": 3.53,
+      "se_iid": 3.53,
+      "p_one_sided": 0.00354,
+      "mde80": 8.77,
+      "upper95": 15.29,
+      "drop5_trades": 5.94,
+      "days": 9,
+      "d_mean": 9.49,
+      "d_median": 15.74,
+      "drop5_coins": 4.17,
+      "twin_mean": -1.84,
+      "twin_tp_share": 0.17
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 64,
+      "coins": 23,
+      "mean": 8.61,
+      "median": 20.28,
+      "ci95": [
+       2.26,
+       14.96
+      ],
+      "se_cons": 3.24,
+      "se_iid": 3.24,
+      "p_one_sided": 0.00393,
+      "mde80": 8.05,
+      "upper95": 13.94,
+      "drop5_trades": 5.59,
+      "days": 9,
+      "drop5_coins": 3.14,
+      "crash_share": 0.0,
+      "win_share": 0.64,
+      "u_raw": 6.35,
+      "lower_explorer": 2.26,
+      "lower": 2.26
+     },
+     "d_vs_A": {
+      "n": 58,
+      "coins": 22,
+      "ci95": [
+       5.89,
+       19.7
+      ],
+      "se_cons": 3.52,
+      "se_iid": 3.52,
+      "p_one_sided": 0.000141,
+      "mde80": 8.76,
+      "upper95": 18.59,
+      "drop5_trades": 8.86,
+      "days": 7,
+      "d_mean": 12.8,
+      "d_median": 16.63,
+      "drop5_coins": 7.54,
+      "twin_mean": -2.73,
+      "twin_tp_share": 0.14
+     }
+    },
+    "exit_reasons": {
+     "tp": 33,
+     "time": 31
+    },
+    "tp_share": 0.52,
+    "stock_entry_share": 0.3,
+    "quote_class": {
+     "eth": 34,
+     "usdg": 11,
+     "other": 19
+    },
+    "top_coin_share": 0.24,
+    "top_coin": "0xdee52f2ab639b6942b0d0f0565400b93b7a0fbe5",
+    "gate": {
+     "S": {
+      "draws": 64,
+      "booked": 64,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 192,
+      "booked": 192,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 114,
+      "booked": 114,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 3,
+    "coins": 3,
+    "n_days": 2,
+    "days": [
+     "2026-09-11",
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": 2.39,
+      "median": -10.1,
+      "ci95": [
+       -31.7,
+       36.49
+      ],
+      "se_cons": 17.4,
+      "se_iid": 13.05,
+      "p_one_sided": 0.445,
+      "mde80": 43.26,
+      "upper95": 31.01,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.33,
+      "u_raw": 34.09,
+      "lower_explorer": -31.7,
+      "lower": -31.7
+     },
+     "d_vs_A": {
+      "n": 2
+     },
+     "d_vs_R": {
+      "n": 3,
+      "coins": 3,
+      "ci95": [
+       -22.06,
+       26.56
+      ],
+      "se_cons": 12.4,
+      "se_iid": 11.58,
+      "p_one_sided": 0.428,
+      "mde80": 30.84,
+      "upper95": 22.65,
+      "drop5_trades": null,
+      "days": 2,
+      "d_mean": 2.25,
+      "d_median": 4.9,
+      "drop5_coins": null,
+      "twin_mean": 0.15,
+      "twin_tp_share": 0.22
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": 2.39,
+      "median": -10.1,
+      "ci95": [
+       -31.7,
+       36.49
+      ],
+      "se_cons": 17.4,
+      "se_iid": 13.05,
+      "p_one_sided": 0.445,
+      "mde80": 43.26,
+      "upper95": 31.01,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.33,
+      "u_raw": 34.09,
+      "lower_explorer": -31.7,
+      "lower": -31.7
+     },
+     "d_vs_A": {
+      "n": 2
+     }
+    },
+    "exit_reasons": {
+     "tp": 1,
+     "time": 2
+    },
+    "tp_share": 0.33,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 3
+    },
+    "top_coin_share": 3.97,
+    "top_coin": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+    "gate": {
+     "S": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 9,
+      "booked": 9,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D30H72T50X12C20": {
+   "cell": "D30H72T50X12C20",
+   "engine_cell": "D30H72T50X12C20",
+   "filter": null,
+   "dials": {
+    "dip": 0.3,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.5,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW",
+    "cap": 20
+   },
+   "labels": {
+    "Dip depth": "30%",
+    "Trading history": "Every hour",
+    "Take profit": "+50%",
+    "Max hold": "12 h",
+    "Pool fee": "Low take (\u22641% a side)",
+    "Entry delay": "60 s",
+    "Main pool quote": "any",
+    "Capital cap": "20 positions",
+    "source": "hunt 3 (blood-hunt3-2026-09-29) cell index 35"
+   },
+   "stat_seed": 20264427,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 36,
+    "coins": 19,
+    "n_days": 6,
+    "days": [
+     "2026-09-17",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "real60h": {
+     "raw": {
+      "n": 36,
+      "coins": 19,
+      "mean": 17.57,
+      "median": 25.5,
+      "ci95": [
+       1.47,
+       33.68
+      ],
+      "se_cons": 8.22,
+      "se_iid": 6.6,
+      "p_one_sided": 0.0162,
+      "mde80": 20.43,
+      "upper95": 31.09,
+      "drop5_trades": 8.81,
+      "days": 6,
+      "drop5_coins": 2.92,
+      "crash_share": 0.08,
+      "win_share": 0.67,
+      "u_raw": 16.11,
+      "lower_explorer": 1.46,
+      "lower": 1.47
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 17,
+      "ci95": [
+       7.42,
+       34.06
+      ],
+      "se_cons": 6.8,
+      "se_iid": 6.15,
+      "p_one_sided": 0.00114,
+      "mde80": 16.9,
+      "upper95": 31.92,
+      "drop5_trades": 12.52,
+      "days": 6,
+      "d_mean": 20.74,
+      "d_median": 29.07,
+      "drop5_coins": 4.87,
+      "twin_mean": 0.53,
+      "twin_tp_share": 0.09
+     },
+     "d_vs_R": {
+      "n": 36,
+      "coins": 19,
+      "ci95": [
+       0.86,
+       32.05
+      ],
+      "se_cons": 7.96,
+      "se_iid": 6.68,
+      "p_one_sided": 0.0193,
+      "mde80": 19.79,
+      "upper95": 29.54,
+      "drop5_trades": 7.48,
+      "days": 6,
+      "d_mean": 16.45,
+      "d_median": 21.02,
+      "drop5_coins": 2.24,
+      "twin_mean": 1.12,
+      "twin_tp_share": 0.11
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 36,
+      "coins": 19,
+      "mean": 19.09,
+      "median": 25.66,
+      "ci95": [
+       2.08,
+       36.11
+      ],
+      "se_cons": 8.68,
+      "se_iid": 6.71,
+      "p_one_sided": 0.0139,
+      "mde80": 21.59,
+      "upper95": 33.38,
+      "drop5_trades": 10.39,
+      "days": 6,
+      "drop5_coins": 4.27,
+      "crash_share": 0.06,
+      "win_share": 0.67,
+      "u_raw": 17.02,
+      "lower_explorer": 2.07,
+      "lower": 2.08
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 17,
+      "ci95": [
+       7.9,
+       36.53
+      ],
+      "se_cons": 7.3,
+      "se_iid": 6.32,
+      "p_one_sided": 0.00118,
+      "mde80": 18.17,
+      "upper95": 34.23,
+      "drop5_trades": 13.88,
+      "days": 6,
+      "d_mean": 22.21,
+      "d_median": 28.93,
+      "drop5_coins": 6.4,
+      "twin_mean": 0.7,
+      "twin_tp_share": 0.09
+     }
+    },
+    "exit_reasons": {
+     "tp": 17,
+     "time": 19
+    },
+    "tp_share": 0.47,
+    "stock_entry_share": 0.36,
+    "quote_class": {
+     "eth": 19,
+     "other": 13,
+     "usdg": 4
+    },
+    "top_coin_share": 0.42,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 36,
+      "booked": 36,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 108,
+      "booked": 108,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 68,
+      "booked": 68,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": null,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D25H72T40X12_F1": {
+   "cell": "D25H72T40X12_F1",
+   "engine_cell": "D25H72T40X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "dials": {
+    "dip": 0.25,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D25H72T40X12"
+   },
+   "stat_seed": 20263627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 54,
+    "coins": 22,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 63,
+    "real60h": {
+     "raw": {
+      "n": 54,
+      "coins": 22,
+      "mean": 12.97,
+      "median": 18.49,
+      "ci95": [
+       4.87,
+       21.06
+      ],
+      "se_cons": 4.13,
+      "se_iid": 4.04,
+      "p_one_sided": 0.000848,
+      "mde80": 10.27,
+      "upper95": 19.76,
+      "drop5_trades": 8.59,
+      "days": 9,
+      "drop5_coins": 3.25,
+      "crash_share": 0.02,
+      "win_share": 0.65,
+      "u_raw": 8.09,
+      "lower_explorer": 4.88,
+      "lower": 4.87
+     },
+     "d_vs_A": {
+      "n": 50,
+      "coins": 21,
+      "ci95": [
+       6.32,
+       24.75
+      ],
+      "se_cons": 4.7,
+      "se_iid": 4.38,
+      "p_one_sided": 0.000476,
+      "mde80": 11.69,
+      "upper95": 23.27,
+      "drop5_trades": 10.49,
+      "days": 8,
+      "d_mean": 15.54,
+      "d_median": 22.51,
+      "drop5_coins": 6.24,
+      "twin_mean": -0.62,
+      "twin_tp_share": 0.09
+     },
+     "d_vs_R": {
+      "n": 54,
+      "coins": 22,
+      "ci95": [
+       5.27,
+       21.64
+      ],
+      "se_cons": 4.18,
+      "se_iid": 4.18,
+      "p_one_sided": 0.000637,
+      "mde80": 10.39,
+      "upper95": 20.33,
+      "drop5_trades": 8.67,
+      "days": 9,
+      "d_mean": 13.46,
+      "d_median": 13.28,
+      "drop5_coins": 5.51,
+      "twin_mean": -0.49,
+      "twin_tp_share": 0.15
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 54,
+      "coins": 22,
+      "mean": 13.96,
+      "median": 19.04,
+      "ci95": [
+       5.9,
+       22.03
+      ],
+      "se_cons": 4.12,
+      "se_iid": 4.08,
+      "p_one_sided": 0.000346,
+      "mde80": 10.24,
+      "upper95": 20.73,
+      "drop5_trades": 9.59,
+      "days": 9,
+      "drop5_coins": 4.04,
+      "crash_share": 0.0,
+      "win_share": 0.67,
+      "u_raw": 8.07,
+      "lower_explorer": 5.89,
+      "lower": 5.9
+     },
+     "d_vs_A": {
+      "n": 50,
+      "coins": 21,
+      "ci95": [
+       6.96,
+       25.83
+      ],
+      "se_cons": 4.81,
+      "se_iid": 4.41,
+      "p_one_sided": 0.000328,
+      "mde80": 11.97,
+      "upper95": 24.31,
+      "drop5_trades": 11.44,
+      "days": 8,
+      "d_mean": 16.4,
+      "d_median": 22.94,
+      "drop5_coins": 7.31,
+      "twin_mean": -0.4,
+      "twin_tp_share": 0.09
+     }
+    },
+    "exit_reasons": {
+     "tp": 25,
+     "time": 29
+    },
+    "tp_share": 0.46,
+    "stock_entry_share": 0.3,
+    "quote_class": {
+     "eth": 28,
+     "usdg": 10,
+     "other": 16
+    },
+    "top_coin_share": 0.3,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 63,
+      "booked": 63,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 189,
+      "booked": 189,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 116,
+      "booked": 116,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 3,
+    "coins": 3,
+    "n_days": 2,
+    "days": [
+     "2026-09-11",
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 3,
+    "real60h": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     },
+     "d_vs_R": {
+      "n": 3,
+      "coins": 3,
+      "ci95": [
+       -25.24,
+       5.31
+      ],
+      "se_cons": 7.79,
+      "se_iid": 7.79,
+      "p_one_sided": 0.9,
+      "mde80": 19.38,
+      "upper95": 2.85,
+      "drop5_trades": null,
+      "days": 2,
+      "d_mean": -9.97,
+      "d_median": -17.57,
+      "drop5_coins": null,
+      "twin_mean": 2.56,
+      "twin_tp_share": 0.22
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     }
+    },
+    "exit_reasons": {
+     "time": 3
+    },
+    "tp_share": 0.0,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 3
+    },
+    "top_coin_share": null,
+    "top_coin": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+    "gate": {
+     "S": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 9,
+      "booked": 9,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D25H72T40X12_F2": {
+   "cell": "D25H72T40X12_F2",
+   "engine_cell": "D25H72T40X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "dials": {
+    "dip": 0.25,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D25H72T40X12"
+   },
+   "stat_seed": 20263627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 55,
+    "coins": 22,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 63,
+    "real60h": {
+     "raw": {
+      "n": 55,
+      "coins": 22,
+      "mean": 11.63,
+      "median": 11.5,
+      "ci95": [
+       2.48,
+       20.78
+      ],
+      "se_cons": 4.67,
+      "se_iid": 4.24,
+      "p_one_sided": 0.00635,
+      "mde80": 11.61,
+      "upper95": 19.31,
+      "drop5_trades": 7.18,
+      "days": 9,
+      "drop5_coins": 2.78,
+      "crash_share": 0.02,
+      "win_share": 0.65,
+      "u_raw": 9.15,
+      "lower_explorer": 2.48,
+      "lower": 2.48
+     },
+     "d_vs_A": {
+      "n": 50,
+      "coins": 21,
+      "ci95": [
+       5.45,
+       24.59
+      ],
+      "se_cons": 4.88,
+      "se_iid": 4.46,
+      "p_one_sided": 0.00104,
+      "mde80": 12.14,
+      "upper95": 23.05,
+      "drop5_trades": 9.92,
+      "days": 8,
+      "d_mean": 15.02,
+      "d_median": 22.03,
+      "drop5_coins": 6.69,
+      "twin_mean": -2.28,
+      "twin_tp_share": 0.09
+     },
+     "d_vs_R": {
+      "n": 55,
+      "coins": 22,
+      "ci95": [
+       3.1,
+       19.99
+      ],
+      "se_cons": 4.31,
+      "se_iid": 4.21,
+      "p_one_sided": 0.00369,
+      "mde80": 10.72,
+      "upper95": 18.63,
+      "drop5_trades": 6.67,
+      "days": 9,
+      "d_mean": 11.54,
+      "d_median": 13.16,
+      "drop5_coins": 3.67,
+      "twin_mean": 0.08,
+      "twin_tp_share": 0.17
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 55,
+      "coins": 22,
+      "mean": 12.5,
+      "median": 12.27,
+      "ci95": [
+       2.96,
+       22.04
+      ],
+      "se_cons": 4.87,
+      "se_iid": 4.29,
+      "p_one_sided": 0.00511,
+      "mde80": 12.1,
+      "upper95": 20.5,
+      "drop5_trades": 8.06,
+      "days": 9,
+      "drop5_coins": 3.87,
+      "crash_share": 0.0,
+      "win_share": 0.67,
+      "u_raw": 9.54,
+      "lower_explorer": 2.96,
+      "lower": 2.96
+     },
+     "d_vs_A": {
+      "n": 50,
+      "coins": 21,
+      "ci95": [
+       5.58,
+       26.04
+      ],
+      "se_cons": 5.22,
+      "se_iid": 4.5,
+      "p_one_sided": 0.00123,
+      "mde80": 12.98,
+      "upper95": 24.4,
+      "drop5_trades": 10.79,
+      "days": 8,
+      "d_mean": 15.81,
+      "d_median": 21.99,
+      "drop5_coins": 8.13,
+      "twin_mean": -2.12,
+      "twin_tp_share": 0.09
+     }
+    },
+    "exit_reasons": {
+     "tp": 25,
+     "time": 30
+    },
+    "tp_share": 0.45,
+    "stock_entry_share": 0.27,
+    "quote_class": {
+     "eth": 31,
+     "usdg": 9,
+     "other": 15
+    },
+    "top_coin_share": 0.28,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 63,
+      "booked": 63,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 189,
+      "booked": 189,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 116,
+      "booked": 116,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 3,
+    "coins": 3,
+    "n_days": 2,
+    "days": [
+     "2026-09-11",
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 3,
+    "real60h": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     },
+     "d_vs_R": {
+      "n": 3,
+      "coins": 3,
+      "ci95": [
+       -25.24,
+       5.31
+      ],
+      "se_cons": 7.79,
+      "se_iid": 7.79,
+      "p_one_sided": 0.9,
+      "mde80": 19.38,
+      "upper95": 2.85,
+      "drop5_trades": null,
+      "days": 2,
+      "d_mean": -9.97,
+      "d_median": -17.57,
+      "drop5_coins": null,
+      "twin_mean": 2.56,
+      "twin_tp_share": 0.22
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 3,
+      "coins": 3,
+      "mean": -7.4,
+      "median": -9.84,
+      "ci95": [
+       -14.53,
+       -0.27
+      ],
+      "se_cons": 3.64,
+      "se_iid": 2.73,
+      "p_one_sided": 0.979,
+      "mde80": 9.04,
+      "upper95": -1.42,
+      "drop5_trades": null,
+      "days": 2,
+      "drop5_coins": null,
+      "crash_share": 0.0,
+      "win_share": 0.0,
+      "u_raw": 7.13,
+      "lower_explorer": -14.53,
+      "lower": -14.53
+     },
+     "d_vs_A": {
+      "n": 2
+     }
+    },
+    "exit_reasons": {
+     "time": 3
+    },
+    "tp_share": 0.0,
+    "stock_entry_share": 0.0,
+    "quote_class": {
+     "eth": 3
+    },
+    "top_coin_share": null,
+    "top_coin": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+    "gate": {
+     "S": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 9,
+      "booked": 9,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D27.5H72T40X12_F1": {
+   "cell": "D27.5H72T40X12_F1",
+   "engine_cell": "D27.5H72T40X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "dials": {
+    "dip": 0.275,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D27.5H72T40X12"
+   },
+   "stat_seed": 20267627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 37,
+    "coins": 19,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 46,
+    "real60h": {
+     "raw": {
+      "n": 37,
+      "coins": 19,
+      "mean": 15.84,
+      "median": 21.97,
+      "ci95": [
+       5.21,
+       26.47
+      ],
+      "se_cons": 5.42,
+      "se_iid": 5.42,
+      "p_one_sided": 0.00175,
+      "mde80": 13.49,
+      "upper95": 24.76,
+      "drop5_trades": 8.8,
+      "days": 9,
+      "drop5_coins": 3.71,
+      "crash_share": 0.05,
+      "win_share": 0.7,
+      "u_raw": 10.63,
+      "lower_explorer": 5.21,
+      "lower": 5.21
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 18,
+      "ci95": [
+       7.2,
+       28.56
+      ],
+      "se_cons": 5.45,
+      "se_iid": 5.45,
+      "p_one_sided": 0.000518,
+      "mde80": 13.55,
+      "upper95": 26.84,
+      "drop5_trades": 10.13,
+      "days": 8,
+      "d_mean": 17.88,
+      "d_median": 17.97,
+      "drop5_coins": 6.76,
+      "twin_mean": 1.81,
+      "twin_tp_share": 0.12
+     },
+     "d_vs_R": {
+      "n": 37,
+      "coins": 19,
+      "ci95": [
+       5.64,
+       27.28
+      ],
+      "se_cons": 5.52,
+      "se_iid": 5.5,
+      "p_one_sided": 0.00143,
+      "mde80": 13.72,
+      "upper95": 25.54,
+      "drop5_trades": 9.24,
+      "days": 9,
+      "d_mean": 16.46,
+      "d_median": 21.43,
+      "drop5_coins": 4.73,
+      "twin_mean": -0.62,
+      "twin_tp_share": 0.11
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 37,
+      "coins": 19,
+      "mean": 17.04,
+      "median": 25.01,
+      "ci95": [
+       6.28,
+       27.81
+      ],
+      "se_cons": 5.49,
+      "se_iid": 5.49,
+      "p_one_sided": 0.000959,
+      "mde80": 13.66,
+      "upper95": 26.08,
+      "drop5_trades": 9.93,
+      "days": 9,
+      "drop5_coins": 5.18,
+      "crash_share": 0.03,
+      "win_share": 0.73,
+      "u_raw": 10.76,
+      "lower_explorer": 6.28,
+      "lower": 6.28
+     },
+     "d_vs_A": {
+      "n": 33,
+      "coins": 18,
+      "ci95": [
+       8.3,
+       29.87
+      ],
+      "se_cons": 5.5,
+      "se_iid": 5.5,
+      "p_one_sided": 0.000262,
+      "mde80": 13.68,
+      "upper95": 28.14,
+      "drop5_trades": 11.54,
+      "days": 8,
+      "d_mean": 19.08,
+      "d_median": 22.9,
+      "drop5_coins": 7.45,
+      "twin_mean": 1.93,
+      "twin_tp_share": 0.12
+     }
+    },
+    "exit_reasons": {
+     "tp": 20,
+     "time": 17
+    },
+    "tp_share": 0.54,
+    "stock_entry_share": 0.32,
+    "quote_class": {
+     "eth": 18,
+     "usdg": 7,
+     "other": 12
+    },
+    "top_coin_share": 0.35,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 46,
+      "booked": 46,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 138,
+      "booked": 138,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 82,
+      "booked": 82,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 1,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D27.5H72T40X12_F2": {
+   "cell": "D27.5H72T40X12_F2",
+   "engine_cell": "D27.5H72T40X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "dials": {
+    "dip": 0.275,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.4,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D27.5H72T40X12"
+   },
+   "stat_seed": 20267627,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 41,
+    "coins": 20,
+    "n_days": 9,
+    "days": [
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19",
+     "2026-09-20",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 46,
+    "real60h": {
+     "raw": {
+      "n": 41,
+      "coins": 20,
+      "mean": 13.54,
+      "median": 21.97,
+      "ci95": [
+       3.09,
+       23.99
+      ],
+      "se_cons": 5.33,
+      "se_iid": 5.33,
+      "p_one_sided": 0.00554,
+      "mde80": 13.26,
+      "upper95": 22.31,
+      "drop5_trades": 6.96,
+      "days": 9,
+      "drop5_coins": 3.33,
+      "crash_share": 0.05,
+      "win_share": 0.68,
+      "u_raw": 10.45,
+      "lower_explorer": 3.09,
+      "lower": 3.09
+     },
+     "d_vs_A": {
+      "n": 36,
+      "coins": 19,
+      "ci95": [
+       5.78,
+       26.7
+      ],
+      "se_cons": 5.34,
+      "se_iid": 5.34,
+      "p_one_sided": 0.00117,
+      "mde80": 13.27,
+      "upper95": 25.02,
+      "drop5_trades": 8.97,
+      "days": 8,
+      "d_mean": 16.24,
+      "d_median": 15.99,
+      "drop5_coins": 6.9,
+      "twin_mean": -0.33,
+      "twin_tp_share": 0.12
+     },
+     "d_vs_R": {
+      "n": 41,
+      "coins": 20,
+      "ci95": [
+       4.62,
+       24.77
+      ],
+      "se_cons": 5.14,
+      "se_iid": 5.14,
+      "p_one_sided": 0.00213,
+      "mde80": 12.78,
+      "upper95": 23.15,
+      "drop5_trades": 8.1,
+      "days": 9,
+      "d_mean": 14.69,
+      "d_median": 13.02,
+      "drop5_coins": 5.32,
+      "twin_mean": -1.15,
+      "twin_tp_share": 0.11
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 41,
+      "coins": 20,
+      "mean": 14.53,
+      "median": 21.97,
+      "ci95": [
+       3.91,
+       25.14
+      ],
+      "se_cons": 5.41,
+      "se_iid": 5.41,
+      "p_one_sided": 0.00365,
+      "mde80": 13.47,
+      "upper95": 23.43,
+      "drop5_trades": 7.85,
+      "days": 9,
+      "drop5_coins": 4.81,
+      "crash_share": 0.02,
+      "win_share": 0.71,
+      "u_raw": 10.62,
+      "lower_explorer": 3.91,
+      "lower": 3.91
+     },
+     "d_vs_A": {
+      "n": 36,
+      "coins": 19,
+      "ci95": [
+       6.62,
+       27.9
+      ],
+      "se_cons": 5.43,
+      "se_iid": 5.43,
+      "p_one_sided": 0.000735,
+      "mde80": 13.5,
+      "upper95": 26.19,
+      "drop5_trades": 9.95,
+      "days": 8,
+      "d_mean": 17.26,
+      "d_median": 15.96,
+      "drop5_coins": 8.51,
+      "twin_mean": -0.25,
+      "twin_tp_share": 0.12
+     }
+    },
+    "exit_reasons": {
+     "tp": 21,
+     "time": 20
+    },
+    "tp_share": 0.51,
+    "stock_entry_share": 0.32,
+    "quote_class": {
+     "eth": 21,
+     "usdg": 7,
+     "other": 13
+    },
+    "top_coin_share": 0.31,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 46,
+      "booked": 46,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 138,
+      "booked": 138,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 82,
+      "booked": 82,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 1,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D30H72T50X12_F1": {
+   "cell": "D30H72T50X12_F1",
+   "engine_cell": "D30H72T50X12",
+   "filter": {
+    "min_dip_sec": 1200
+   },
+   "dials": {
+    "dip": 0.3,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.5,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": "slow dip >= 20 min",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D30H72T50X12"
+   },
+   "stat_seed": 20272027,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 26,
+    "coins": 16,
+    "n_days": 6,
+    "days": [
+     "2026-09-17",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 36,
+    "real60h": {
+     "raw": {
+      "n": 26,
+      "coins": 16,
+      "mean": 26.09,
+      "median": 30.45,
+      "ci95": [
+       9.26,
+       42.93
+      ],
+      "se_cons": 8.59,
+      "se_iid": 7.09,
+      "p_one_sided": 0.00119,
+      "mde80": 21.36,
+      "upper95": 40.22,
+      "drop5_trades": 15.18,
+      "days": 6,
+      "drop5_coins": 9.29,
+      "crash_share": 0.04,
+      "win_share": 0.77,
+      "u_raw": 16.84,
+      "lower_explorer": 9.25,
+      "lower": 9.26
+     },
+     "d_vs_A": {
+      "n": 25,
+      "coins": 16,
+      "ci95": [
+       10.3,
+       42.44
+      ],
+      "se_cons": 8.2,
+      "se_iid": 6.6,
+      "p_one_sided": 0.00065,
+      "mde80": 20.39,
+      "upper95": 39.86,
+      "drop5_trades": 16.95,
+      "days": 6,
+      "d_mean": 26.37,
+      "d_median": 31.75,
+      "drop5_coins": 10.5,
+      "twin_mean": 2.77,
+      "twin_tp_share": 0.07
+     },
+     "d_vs_R": {
+      "n": 26,
+      "coins": 16,
+      "ci95": [
+       6.79,
+       33.52
+      ],
+      "se_cons": 6.82,
+      "se_iid": 5.89,
+      "p_one_sided": 0.00156,
+      "mde80": 16.96,
+      "upper95": 31.38,
+      "drop5_trades": 11.27,
+      "days": 6,
+      "d_mean": 20.16,
+      "d_median": 23.25,
+      "drop5_coins": 7.68,
+      "twin_mean": 5.93,
+      "twin_tp_share": 0.18
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 26,
+      "coins": 16,
+      "mean": 27.33,
+      "median": 30.54,
+      "ci95": [
+       10.43,
+       44.22
+      ],
+      "se_cons": 8.62,
+      "se_iid": 7.2,
+      "p_one_sided": 0.00076,
+      "mde80": 21.43,
+      "upper95": 41.5,
+      "drop5_trades": 16.54,
+      "days": 6,
+      "drop5_coins": 11.07,
+      "crash_share": 0.0,
+      "win_share": 0.77,
+      "u_raw": 16.89,
+      "lower_explorer": 10.43,
+      "lower": 10.43
+     },
+     "d_vs_A": {
+      "n": 25,
+      "coins": 16,
+      "ci95": [
+       10.68,
+       44.27
+      ],
+      "se_cons": 8.57,
+      "se_iid": 6.79,
+      "p_one_sided": 0.000674,
+      "mde80": 21.31,
+      "upper95": 41.57,
+      "drop5_trades": 17.82,
+      "days": 6,
+      "d_mean": 27.47,
+      "d_median": 35.68,
+      "drop5_coins": 11.69,
+      "twin_mean": 2.94,
+      "twin_tp_share": 0.07
+     }
+    },
+    "exit_reasons": {
+     "tp": 14,
+     "time": 12
+    },
+    "tp_share": 0.54,
+    "stock_entry_share": 0.31,
+    "quote_class": {
+     "eth": 14,
+     "other": 8,
+     "usdg": 4
+    },
+    "top_coin_share": 0.4,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 36,
+      "booked": 36,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 108,
+      "booked": 108,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 68,
+      "booked": 68,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 1,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  },
+  "D30H72T50X12_F2": {
+   "cell": "D30H72T50X12_F2",
+   "engine_cell": "D30H72T50X12",
+   "filter": {
+    "min_sells": 10
+   },
+   "dials": {
+    "dip": 0.3,
+    "W": 3600,
+    "L": 0,
+    "age": 86400,
+    "lat": 60,
+    "tp": 1.5,
+    "hold": 43200,
+    "cool": 21600,
+    "mode": "P",
+    "th": 72,
+    "band": "LOW"
+   },
+   "labels": {
+    "Token filter": ">= 10 sell swaps",
+    "source": "token-filter batch (blood-tokenfilter-2026-09-30) split of D30H72T50X12"
+   },
+   "stat_seed": 20272027,
+   "engine_sha256": "d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c",
+   "cost_version": "v1-real60h-bc18611a45a4",
+   "data_window": {
+    "days": [
+     "2026-09-08",
+     "2026-09-26"
+    ],
+    "fit": [
+     "2026-09-11T00:00Z",
+     "2026-09-17T00:00Z"
+    ],
+    "judge": [
+     "2026-09-17T00:00Z",
+     "2026-09-25T20:00Z (last assessment hour)"
+    ],
+    "seal": "2026-09-27T00:00Z (unix 1790467200): never read",
+    "note": "one timestamp-merged V2/V3 tape + V4 join stream (R-0109); JUDGE is primary"
+   },
+   "JUDGE": {
+    "n": 32,
+    "coins": 19,
+    "n_days": 6,
+    "days": [
+     "2026-09-17",
+     "2026-09-21",
+     "2026-09-22",
+     "2026-09-23",
+     "2026-09-24",
+     "2026-09-25"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 36,
+    "real60h": {
+     "raw": {
+      "n": 32,
+      "coins": 19,
+      "mean": 20.66,
+      "median": 27.65,
+      "ci95": [
+       4.98,
+       36.34
+      ],
+      "se_cons": 8.0,
+      "se_iid": 6.92,
+      "p_one_sided": 0.0049,
+      "mde80": 19.9,
+      "upper95": 33.82,
+      "drop5_trades": 11.17,
+      "days": 6,
+      "drop5_coins": 4.62,
+      "crash_share": 0.06,
+      "win_share": 0.72,
+      "u_raw": 15.68,
+      "lower_explorer": 4.98,
+      "lower": 4.98
+     },
+     "d_vs_A": {
+      "n": 29,
+      "coins": 17,
+      "ci95": [
+       8.17,
+       38.15
+      ],
+      "se_cons": 7.65,
+      "se_iid": 6.11,
+      "p_one_sided": 0.00123,
+      "mde80": 19.02,
+      "upper95": 35.74,
+      "drop5_trades": 14.64,
+      "days": 6,
+      "d_mean": 23.16,
+      "d_median": 30.97,
+      "drop5_coins": 7.72,
+      "twin_mean": 2.02,
+      "twin_tp_share": 0.07
+     },
+     "d_vs_R": {
+      "n": 32,
+      "coins": 19,
+      "ci95": [
+       1.75,
+       32.38
+      ],
+      "se_cons": 7.81,
+      "se_iid": 5.83,
+      "p_one_sided": 0.0145,
+      "mde80": 19.43,
+      "upper95": 29.92,
+      "drop5_trades": 9.05,
+      "days": 6,
+      "d_mean": 17.06,
+      "d_median": 19.39,
+      "drop5_coins": 5.18,
+      "twin_mean": 3.6,
+      "twin_tp_share": 0.16
+     }
+    },
+    "real60": {
+     "raw": {
+      "n": 32,
+      "coins": 19,
+      "mean": 22.07,
+      "median": 27.9,
+      "ci95": [
+       6.17,
+       37.96
+      ],
+      "se_cons": 8.11,
+      "se_iid": 7.06,
+      "p_one_sided": 0.00325,
+      "mde80": 20.17,
+      "upper95": 35.41,
+      "drop5_trades": 12.62,
+      "days": 6,
+      "drop5_coins": 5.69,
+      "crash_share": 0.03,
+      "win_share": 0.72,
+      "u_raw": 15.89,
+      "lower_explorer": 6.18,
+      "lower": 6.17
+     },
+     "d_vs_A": {
+      "n": 29,
+      "coins": 17,
+      "ci95": [
+       8.53,
+       40.55
+      ],
+      "se_cons": 8.17,
+      "se_iid": 6.32,
+      "p_one_sided": 0.00133,
+      "mde80": 20.31,
+      "upper95": 37.98,
+      "drop5_trades": 15.88,
+      "days": 6,
+      "d_mean": 24.54,
+      "d_median": 32.86,
+      "drop5_coins": 8.78,
+      "twin_mean": 2.18,
+      "twin_tp_share": 0.07
+     }
+    },
+    "exit_reasons": {
+     "tp": 16,
+     "time": 16
+    },
+    "tp_share": 0.5,
+    "stock_entry_share": 0.34,
+    "quote_class": {
+     "eth": 17,
+     "other": 11,
+     "usdg": 4
+    },
+    "top_coin_share": 0.41,
+    "top_coin": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+    "gate": {
+     "S": {
+      "draws": 36,
+      "booked": 36,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 108,
+      "booked": 108,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 68,
+      "booked": 68,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   },
+   "FIT": {
+    "n": 1,
+    "coins": 1,
+    "n_days": 1,
+    "days": [
+     "2026-09-15"
+    ],
+    "hop_no_route_left_out": 0,
+    "base_rows_before_filter": 1,
+    "gate": {
+     "S": {
+      "draws": 1,
+      "booked": 1,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WR": {
+      "draws": 3,
+      "booked": 3,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "WA": {
+      "draws": 2,
+      "booked": 2,
+      "nofill": 0,
+      "trunc": 0,
+      "skip_depth_floor": 0,
+      "fallback_exit": 0,
+      "priced_share": 1.0,
+      "g4_small_share": 0.0,
+      "g5_fail": 0,
+      "hop_no_route": 0,
+      "hop_exit_fallback": 0
+     },
+     "status": {
+      "G1": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G10": "PASS"
+     },
+     "note": "engine-cell counts (a filtered cell shows its base's)"
+    }
+   }
+  }
+ },
+ "passes": [
+  {
+   "pass_": "p01",
+   "missing_pools": 0,
+   "engine": "v1",
+   "rows": 36039173,
+   "rowsV4": 20007194,
+   "exits": 1692,
+   "trunc": 0,
+   "holes": 0,
+   "sec": 245.338,
+   "peakRssMB": 2915.16416,
+   "endTs": 1790467199,
+   "peakHeld": {
+    "D25H72T40X12": 11,
+    "D25H72T50X12QW": 6,
+    "D25H72T30X12L300": 9,
+    "D27.5H72T40X12": 7,
+    "D30H72T50X12": 7,
+    "D30H72T50X12C20": 7
+   },
+   "capSkip": {},
+   "quoteSkip": {
+    "JUDGE|D25H72T50X12QW|USDG": 418,
+    "JUDGE|D25H72T50X12QW|stock": 2739
+   }
+  }
+ ],
+ "trades_file": "trades.ndjson.gz",
+ "trades": 546
+}

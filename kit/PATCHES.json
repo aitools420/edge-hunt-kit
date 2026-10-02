@@ -1,0 +1,235 @@
+{
+ "patches/blood-realcost-2026-09-27/recost.py": {
+  "original_sha256": "54ef1bfb5cac9f1fe8efc75c9b6ad0978b2562acbce3b163d3f63d4314748f73",
+  "edits": [
+   [
+    "P = __import__('os').environ['KIT_ROOT'] + '/patches'; SP = '<scratchpad of the original 2026-09-27 run: read only below the loaders marker, never by the kit>'",
+    "P = '/home/green/projects/patches'; SP = '/tmp/claude-1000/-home-green-projects/ef9e4043-3277-4629-a762-3e84a29d0059/scratchpad'"
+   ]
+  ],
+  "why": [
+   "path: P locates analyze_xg.py; SP is used only in the part of recost.py after the loaders marker, which the kit never executes"
+  ],
+  "kit_sha256": "5f22004e924df0508231d72adebb98d8063d3a267a9ee9a54b8b787272b68092"
+ },
+ "patches/edge-machine-2026-09-30/engine/analyze_v1.py": {
+  "original_sha256": "ff0518fd4231506c0bf076dc3e4ab36dd5c23009644a158ab442d8d4e4184dc9",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "567d9cc1cba26a49bd470bbb0c0798dd66d940b9e124ab4d39e03708ce42f5d7"
+ },
+ "patches/edge-machine-2026-09-30/engine/reduce_v1.py": {
+  "original_sha256": "588118a74dcab66e2a5d5961f88bd67b91a9e2a0b89bf92559b517762dd823e6",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "b3e979ac6cbba6d8ba8e800a83124029a9f87a42f9a00d25c8eb09b798327200"
+ },
+ "patches/edge-machine-2026-09-30/engine/pool_costs_v1.py": {
+  "original_sha256": "e7dea5bfc86c004c57a57aa630d240f9811e7e1e1acbed81583343662b248cec",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "1f43be50f35b26912828bdd7e91ff6e70feb718d5231480b2fa681ee85fdb56e"
+ },
+ "patches/edge-machine-2026-09-30/engine/hop.py": {
+  "original_sha256": "f98abd737906b84d8a50bd9f9462edeee15de0ae5b985b09f15f3397dd92e1c3",
+  "edits": [
+   [
+    "P = os.environ['KIT_ROOT'] + '/patches'",
+    "P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "e11a9d17ee6ec44c49c9325e7cbba9e2588c2040eca5906fec41fd078dad905c"
+ },
+ "patches/edge-machine-2026-09-30/engine/build_hop_v1.py": {
+  "original_sha256": "af36bc37d7cc02eef2b9e86baea16ce39e464e72691c03d202d98f9f6219c5fe",
+  "edits": [
+   [
+    "J = os.environ['KIT_ROOT'] + '/patches/v4-join-2026-09-27/out'",
+    "J = '/home/green/projects/patches/v4-join-2026-09-27/out'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "49495ad64fad236901af9a8b9b3fc3d391805c00062cb776515eb643b57c4f10"
+ },
+ "patches/realism-2026-09-27/realism.py": {
+  "original_sha256": "eeda98824b5b806818b1cb75e896ca74636a69f9d44f118a3e7add91d40bbb84",
+  "edits": [
+   [
+    "    import sys; sys.path.insert(0, os.environ['KIT_ROOT'] + '/patches/realism-2026-09-27'); import realism as R",
+    "    import sys; sys.path.insert(0, '/home/green/projects/patches/realism-2026-09-27'); import realism as R"
+   ]
+  ],
+  "why": [
+   "docstring usage example only (not executed)"
+  ],
+  "kit_sha256": "ed54ca1f16cba1a8069aa15276bcf935cca33f849787a4732a956ccf2cf8d1a0"
+ },
+ "patches/edge-machine-2026-09-30/engine/parity/parity_table.py": {
+  "original_sha256": "c5f0abc472c112031ca7396bb703d151f729f19fe390f4ef8aed515090192dc2",
+  "edits": [
+   [
+    "P = os.environ['KIT_ROOT'] + '/patches'; HERE = os.path.dirname(os.path.abspath(__file__))",
+    "P = '/home/green/projects/patches'; HERE = os.path.dirname(os.path.abspath(__file__))"
+   ]
+  ],
+  "why": [
+   "path (report helper)"
+  ],
+  "kit_sha256": "67f78c546634d3d1079e69ed26c79ed75bdf7dcecd16f17bff2340bfde0f8320"
+ },
+ "patches/edge-machine-2026-09-30/engine/a4.sh": {
+  "original_sha256": "7a9953c5b113cb589dc4984d9cd573cec789aaac9e5ed6656ae7f4aaf03a384d",
+  "edits": [
+   [
+    "NEED=${2:-0}; LOG=${A4_LOG:-/dev/stderr}; ST=${A4_STATUS_FILE:-/nonexistent}   # KIT: the origin box's live-feed status file; unset = no such feed",
+    "NEED=${2:-0}; LOG=${A4_LOG:-/dev/stderr}; ST=/home/green/projects/dyor-wick-pics/data/blood3/status.json"
+   ]
+  ],
+  "why": [
+   "resource gate only: the status file of a live feed on the origin box; absent = the check passes (as on the origin box when the file is absent)"
+  ],
+  "kit_sha256": "1b8222913c0c47fde1d2fd3dc70204223ce0f4794323540ecbb3206dc8899f14"
+ },
+ "patches/edge-machine-2026-09-30/engine/test_seal.sh": {
+  "original_sha256": "4d01084e2c8e25f6105524e16195f333552fdcad8cc6cd715b36d1af8f41b21f",
+  "edits": [
+   [
+    "node -e \"const V=require(process.env.KIT_ROOT+'/patches/v4-join-2026-09-27/v4tape.js');",
+    "node -e \"const V=require('/home/green/projects/patches/v4-join-2026-09-27/v4tape.js');"
+   ],
+   [
+    "E=$(dirname \"$(readlink -f \"$0\")\"); T=$(mktemp -d); ok=0; bad=0; export PYTHONDONTWRITEBYTECODE=1; : \"${KIT_ROOT:?set KIT_ROOT to the kit folder (README)}\"; export KIT_ROOT NODE_OPTIONS=\"--require $KIT_ROOT/kit/kitpath.js${NODE_OPTIONS:+ $NODE_OPTIONS}\"   # KIT",
+    "E=$(dirname \"$(readlink -f \"$0\")\"); T=$(mktemp -d); ok=0; bad=0; export PYTHONDONTWRITEBYTECODE=1"
+   ]
+  ],
+  "why": [
+   "test harness path (line prefix; rest of line unchanged)",
+   "KIT wiring (test harness)"
+  ],
+  "kit_sha256": "a6cf77143c469b22a3e65166c3d344d8da3fc80fd3575aaa0d9366016b395f74"
+ },
+ "patches/edge-machine-2026-09-30/engine/run_batch.sh": {
+  "original_sha256": "3d0447373dcdc3c44f53924294a54b4ef76ce9f5bab0246b88769c23847907f3",
+  "edits": [
+   [
+    "set -u; : \"${KIT_ROOT:?set KIT_ROOT to the kit folder (README)}\"; export KIT_ROOT NODE_OPTIONS=\"--require $KIT_ROOT/kit/kitpath.js${NODE_OPTIONS:+ $NODE_OPTIONS}\"   # KIT",
+    "set -u"
+   ]
+  ],
+  "why": [
+   "KIT wiring: require KIT_ROOT, preload the path rewrite for every node process of the batch"
+  ],
+  "kit_sha256": "012eeff0bc9cecbb4215588de50224d72b87c2dc932f1e7e124e45411db4fe92"
+ },
+ "patches/edge-machine-2026-09-30/search.py": {
+  "original_sha256": "92abbb6acb8638669845b20d01e19d0f11e18ff05b3b086f9436c27c8ce7345d",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "e3f16a3e184aed5dd62857be07456ddffbd4e4f778e7d63eef068f0d5edd3e88"
+ },
+ "patches/edge-machine-2026-09-30/screen.py": {
+  "original_sha256": "dadb1af2dbd1c61e4bf78ebc2436dde0da7ad029d5fef74668a8ac36a2932542",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ]
+  ],
+  "why": [
+   "path"
+  ],
+  "kit_sha256": "2120d2c3353454e359c2adde21604238bf6a4d42cffcabd07d83fd41872eb5c7"
+ },
+ "patches/edge-machine-2026-09-30/loader_v1.py": {
+  "original_sha256": "28d09fae0ee6515d9769abfbfc94575c21cd793d62bbdd39a04975db8d3d3673",
+  "edits": [
+   [
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = os.environ['KIT_ROOT'] + '/patches'",
+    "HERE = os.path.dirname(os.path.abspath(__file__)); P = '/home/green/projects/patches'"
+   ],
+   [
+    "    try: L = json.load(open(MACHINE + '/v1_ledger.json')); [b.update(dir=os.path.join(HERE, b['dir'])) for b in L['batches'] if not os.path.isabs(b['dir'])]; return L   # KIT: relative batch dirs resolve under this folder",
+    "    try: return json.load(open(MACHINE + '/v1_ledger.json'))"
+   ]
+  ],
+  "why": [
+   "path",
+   "kit ledger stores batch dirs relative to this folder"
+  ],
+  "kit_sha256": "716b5d01b074deec3cbcb1a8d1f3cb9414890d6f1d0ca7f77b238f0a34762f33"
+ },
+ "patches/edge-machine-2026-09-30/machine.sh": {
+  "original_sha256": "615a1c337ca4370d4274805eb0078461aeec63b19ffdca81198748752105966b",
+  "edits": [
+   [
+    "set -u; : \"${KIT_ROOT:?set KIT_ROOT to the kit folder (README)}\"; export KIT_ROOT   # KIT",
+    "set -u"
+   ],
+   [
+    "  local envf=${EM_TG_ENV:-} tok chat code   # KIT: no default; set EM_TG_ENV to YOUR .env (TG_BOT_TOKEN / TG_CHAT_ID) to get a line per changed round",
+    "  local envf=${EM_TG_ENV:-/home/green/.openclaw/workspace/polymarket-realtime/.env} tok chat code"
+   ]
+  ],
+  "why": [
+   "KIT wiring",
+   "no default notification target (the origin pointed at its own config file)"
+  ],
+  "kit_sha256": "f0a68d1089dabbc07c765949b54f8c1364ed68a6f74209b1f0c0e1559faf5289"
+ },
+ "patches/edge-machine-2026-09-30/hunter.sh": {
+  "original_sha256": "2dab5bcf568d29a1553a268639b9301ee58bbc7cdd63e2c794e31fac8b5b5c30",
+  "edits": [
+   [
+    "  if [ \"${ran:-0}\" -gt 0 ] && [ -n \"${EM_EXPLORER_DIR:-}\" ]; then   # KIT: no explorer ships; set EM_EXPLORER_DIR to a folder with your own build.py",
+    "  if [ \"${ran:-0}\" -gt 0 ]; then"
+   ],
+   [
+    "    BP=$EM_EXPLORER_DIR/build.py",
+    "    BP=/home/green/projects/patches/edge-explorer/build.py"
+   ],
+   [
+    "    else ( cd \"$EM_EXPLORER_DIR\" && nice",
+    "    else ( cd /home/green/projects/patches/edge-explorer && nice"
+   ]
+  ],
+  "why": [
+   "explorer rebuild off unless the user points it at their own explorer",
+   "path",
+   "path (substring of the line)"
+  ],
+  "kit_sha256": "77e07e39e8912786fc779f26fea4380bf49267a314ae44221205e0828268b0f4"
+ }
+}

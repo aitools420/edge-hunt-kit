@@ -1,0 +1,1164 @@
+{
+ "summary": {
+  "pools": 62,
+  "measured": 61,
+  "doppler_labelled": 20,
+  "doppler_measured": 20,
+  "doppler_lp": {
+   "0.007": 12,
+   "0.01099": 1,
+   "0.0": 5,
+   "0.025": 1,
+   "0.0005": 1
+  },
+  "doppler_take_buy_median": 0.0175,
+  "doppler_take_buy_all": [
+   0.007,
+   0.0105,
+   0.0132,
+   0.0169,
+   0.017,
+   0.017,
+   0.017,
+   0.0175,
+   0.0175,
+   0.0175,
+   0.0175,
+   0.0175,
+   0.0175,
+   0.025,
+   0.095
+  ],
+  "doppler_take_sell_seen": [
+   0.0,
+   0.008,
+   0.0081,
+   0.0082,
+   0.0086
+  ],
+  "other_take_all": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0001,
+   0.0005,
+   0.0023,
+   0.0029,
+   0.0035,
+   0.0035,
+   0.0035,
+   0.0084,
+   0.0084,
+   0.01,
+   0.01,
+   0.01,
+   0.01,
+   0.011,
+   0.011,
+   0.011,
+   0.013,
+   0.0199,
+   0.0199,
+   0.0199,
+   0.021,
+   0.021,
+   0.021,
+   0.021,
+   0.0224,
+   0.031,
+   0.046,
+   0.046,
+   0.0496,
+   0.051,
+   0.1509,
+   0.1509,
+   0.3507
+  ],
+  "engine_charged": "engine fee + 0.04 % (pool_costs.json \"unknown_pool\" fallback)",
+  "method": "build_pools.py - pool_fees.json: fee terms for the 63 'unknown' V4 pools in pool_costs.json (all 20 'Doppler Airlock' pools\nthat the Blood engine rows name are among them). lp = the LP fee the Swap event says was applied. hook = the hook's take seen\nin the same receipt: coin paid out of the PoolManager to a wallet that is not the trader (buys), the coin kept back on sells,\ntx.value above the event's ETH-in on native-ETH buys, or quote kept back on ERC-20-quoted buys. A value outside 0..10 %\nis treated as a measurement failure (the tx did something else as well) and left out. take_per_side = lp + hook."
+ },
+ "pools": {
+  "0x0fbd1aab9d8af6c6bbffbbc72be2c02e9d45e0833211482ddcdf96f3bb3acb6a": {
+   "status": "measured",
+   "lp": 0.03097,
+   "hook": 0.0,
+   "take_per_side": 0.03097,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xf44702b17d9abd53815f703e772f35e9c71a53af",
+   "tx": "0x2a24a2cc7bd47079fa6447e5f843db89cf73d5268727da3ec465ec1348296ea8"
+  },
+  "0x130caf8b43343e182a79a4046932bd5623a87e9309e7c53e2d1efb4ec6b8e2a0": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00109,
+   "take_per_side": 0.00809,
+   "parts": {
+    "hook_take_tok_side": 0.0010871059761236035
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x80db362eab104ec378e19d0a3dcd5e84bafd4ba3",
+   "tx": "0x5941a5a7194989428b4fcbbf74ee45056b57b3281c9768dfbe909900f891f42e"
+  },
+  "0x15827bd2b94596e1765ce538ef83ad9d32ef0be10ba87136c9ec61f7d2c5e2e5": {
+   "status": "measured",
+   "lp": 0.01099,
+   "hook": 0.08398,
+   "take_per_side": 0.09497,
+   "parts": {
+    "hook_take_tok_side": 0.08398233844523195
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "WETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": true,
+   "tok": "0x2531f3ca1b31086b7fc130ecda6d3253daf83ba3",
+   "tx": "0x811ac5f93a0b6edfe90ff050e10f4de270756b97edd7bbaa037510b8ba15ca13"
+  },
+  "0x166bd64dd169846c1421797905fc2fed637fab5bc554eebe97e8cfb890f5b736": {
+   "status": "measured",
+   "lp": 0.15085,
+   "hook": 0.0,
+   "take_per_side": 0.15085,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xa15cd06dd305269a0f48bebeb30aa3588fba7b32",
+   "tx": "0xb06c582a2fd7e8436a6c1fa8fd9186d62ea34bcc7e295a62b5bd3fdd369f7d2a"
+  },
+  "0x1cbac474c81b584caff0f1aa23eb38fb39beab5c173eb6d8486036f4f29808ca": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.0,
+   "take_per_side": 0.007,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x5dbaca8327b0baa57eb6c872a333bf8d6f642ba3",
+   "tx": "0x7e1cc5b181e972a218b460b00244add19a99992bac9c5fc099641b362ea8fb13"
+  },
+  "0x23a983bb3d0711aae0a5614dd37e9dc9086a44e838c9a331fb9e787bca18dace": {
+   "status": "measured",
+   "lp": 0.012988,
+   "hook": 0.0,
+   "take_per_side": 0.01299,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "tx": "0x2e52284ba852c35c014b6cf03625e5c1e451427d01afcfedad83b1ba3b959b67"
+  },
+  "0x23d12589ebc46f51190ef6621c4e37b2680a54145fa6d2348d9ce804e6c712f5": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x7fc4f8536fb903dc1e3296d5ed4860f3f491d1cc",
+   "tx": "0xc2f6934d4c950a83d909c0b217489bbc8118fca3037c400353ba135d6baaad45"
+  },
+  "0x25e2906f22fe11a03a34b87eb4e1f88e07ca5a128474395984f676afb7258b19": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured (sell on native ETH: the ETH-side take is not visible in a receipt)",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x4c731a8423308f9b7050e436f25a1dcc576541cc",
+   "tx": "0x30346c632e78f87f4f857f37e00c1580ee173512bc00ae895344e56993a6d810"
+  },
+  "0x2af474049dccb09366b70838eeeb91614b7f88dc16f0324617433fdb5532e6a3": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.01,
+   "take_per_side": 0.017,
+   "parts": {
+    "hook_take_tok_side": 0.01
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0xfc98f7c9992d938170f622b8edcfcb025d309ba3",
+   "tx": "0x14a32646e7c344ed59bb6977744cfcaedb831b81d7925289d926fbc27fd7b1c9"
+  },
+  "0x2fef0cf875bfc16a0392e53f5088c793ee558a727f6315fe5c7ec8139f693f6b": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x055b0c5e1a07c2352961b93353ecb634c36b2a14",
+   "tx": "0xe0b3b5dce1c8f019c29a7acc906b50230d45b4d61c213f80997341e379750a6f"
+  },
+  "0x300400fd7ed1c8128a08bcd9cf1056da0dc0764cb3fe23417c3143b7ccc08631": {
+   "status": "measured",
+   "lp": 0.35065,
+   "hook": 0.0,
+   "take_per_side": 0.35065,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured (sell on native ETH: the ETH-side take is not visible in a receipt)",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x851a467a60b917d37dba8547a07cf7a07a17ffe2",
+   "tx": "0x4ada742efe1b1afed1f6415d6c415fb5fd7bf872e9216577482e834429abe257"
+  },
+  "0x31a1b3d256eb634d1d75d43b91d4b7db0110a91a83a54816977b2b7510648586": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0169,
+   "take_per_side": 0.0169,
+   "parts": {
+    "hook_take_tok_side": 0.0169
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x6187fcb95dcc42a8d47c2f3906e523fee5bfd09e",
+   "tx": "0x64197788133c1adece85ee847737d5a0c79cc21f59bba6f4de3a8574378fb1a3"
+  },
+  "0x31b0f07bab73814ba35789f51b2d14a60d57791ca2133cedd55d25f92c3a49bb": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0199,
+   "take_per_side": 0.0199,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_eth_side": 0.01990000000000003
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x6989a8217359ac1c7aa9b651cb67f226c2fd3ca8",
+   "tx": "0xbf89b937e5755d8f5952cb41775d168ae769b3b6ccbd84483213a3dc46e81564"
+  },
+  "0x337b707a2806de0182d7204f437e2cc0d0e9056959da77a5d302e301f8eb83d8": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0199,
+   "take_per_side": 0.0199,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_eth_side": 0.01990000000000003
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x3ae3facc99f43d5a39254a0b9f5cc0291ecd39cc",
+   "tx": "0x68dafcff927d2de839461fd4eecc0b91b2f2f4b1792cde4e7bb46003fffae620"
+  },
+  "0x33833d86c64846f507e8e862cfc6ed33f029f3d0d679b629e51cea9ad0b25a26": {
+   "status": "measured",
+   "lp": 0.002331,
+   "hook": 0.0,
+   "take_per_side": 0.00233,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+   "tx": "0x096931f110acefcdf12e1a9f7225d60efe17c4fee0ad4d1b241a2c0e6a076f92"
+  },
+  "0x3741a614697b96508a61891b2666ba780cae6060f1274dd1e329e425bd9df451": {
+   "status": "measured",
+   "lp": 0.02098,
+   "hook": 0.0,
+   "take_per_side": 0.02098,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x684618c70480a70637692a51a3a9398dfd7ab0f5",
+   "tx": "0x61d300a688430ce48553e2f09300c1374d1f17a775c375b53d61438c16d3523e"
+  },
+  "0x3b054359e248009e797afbcfa975fa4cf5147d503421af53f179be1abf63d46f": {
+   "status": "measured",
+   "lp": 0.025,
+   "hook": 0.0,
+   "take_per_side": 0.025,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "WETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": true,
+   "tok": "0xf444f3c77c77a33f7c8d8fcab8a1e88afb843da5",
+   "tx": "0xbaac3de5a58f9e915ffc7e13a229fe049aacf8365ea5334db8ca2b55f08d1eb8"
+  },
+  "0x3bb34a44f1b2b5f32c034c38a53065a521a47b199700fa9bd19d60985ff24bf1": {
+   "status": "measured",
+   "lp": 0.003499,
+   "hook": 0,
+   "take_per_side": 0.0035,
+   "parts": {},
+   "confidence": "lp-only",
+   "dropped": [
+    "hook_take_tok_side",
+    "hook_take_eth_side"
+   ],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x51377fe2ad6137e323500c9db71bb63b867cecab",
+   "tx": "0x4a34be46861637a156e525e37ad0f52169cb2747bbe09c6a8d0fb633cb9a1988"
+  },
+  "0x4b8b7245a1fef2708efcca1aededaea533c2d29da9925c9e0e1bed143be6692e": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00155,
+   "take_per_side": 0.00855,
+   "parts": {
+    "hook_take_tok_side": 0.0015481440164248905
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x3582c0ed4324cb742266401e56c68d026118eba3",
+   "tx": "0xb8a415e9e6dff300dae403e2456a3626b766e46fde424690ed33600ff455ed93"
+  },
+  "0x51c3da2d4f9b73d29526edd93c75571ad814025246e0bcebf821547def7cfa7e": {
+   "status": "unmeasured",
+   "why": "0 candidate coins, none matches the event",
+   "doppler_labelled": false
+  },
+  "0x541bedd98337d22c46ff8196494f14e7d9922ddedf07b74df44c7020487e5fdf": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.0105,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0105
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x83a49b808f8d5e02cb2931cd2352988f498e5ba3",
+   "tx": "0xbb7fb2a56dda5bc0bfd11e8a2b4526bc9149cce64c2aca7ee68f9ce69382058b"
+  },
+  "0x5483c2a30242b2efd93fa59d665d0be66e20b8791636843e5eea9b29a1bd95c3": {
+   "status": "measured",
+   "lp": 0.009991,
+   "hook": 0.0,
+   "take_per_side": 0.00999,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "tx": "0x9267195f622f4808bef192cadbd048d81d561adad958ba8c91021d1c306fe757"
+  },
+  "0x57296bbb888e68dda1c1fe6cd3b802e121132299b0e97445ad20f2038366f4bc": {
+   "status": "measured",
+   "lp": 0.002899,
+   "hook": 0.0,
+   "take_per_side": 0.0029,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xb358766827d7c704d3c52a57b5cf181d1b0ffc6c",
+   "tx": "0x27683884b339655fbce5d60ae7058f91bafa356a6f10db1abcab18f0157fc43f"
+  },
+  "0x5cebbedc2f2c6ceccf01db6ce71ceb399c940e5d44ee9f2213ffa83dab6809dc": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0175,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0175
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x434d49b8e2c905e133d28060fd38cb8b8e9b4ba3",
+   "tx": "0xaef4fcbd2f3e4d87ab858da82bcd5b58aab955185acba7526ac47baf0c240097"
+  },
+  "0x61caf3446776e9bd7956f6cbae6b3fd94a21bcc8f968e1636dc7c9154b86c1d0": {
+   "status": "measured",
+   "lp": 0.15085,
+   "hook": 0.0,
+   "take_per_side": 0.15085,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x6e7e0db14d23144ef3e78d3294aa408ac38427b8",
+   "tx": "0x980cf39e2f26e5c10c13a543d9a5241cc51745fc131917e8e9d2bcd3c2a023ad"
+  },
+  "0x6444a8e0b267406a15db74ca00c4a24bdfa81ed3180f5b6d0851f8ed6f4f29c5": {
+   "status": "measured",
+   "lp": 0.000125,
+   "hook": 0.0,
+   "take_per_side": 0.00013,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+   "tx": "0x8f9e004273187a776b69cc70c4df780dde6984f7a763513349109c6955895a0b"
+  },
+  "0x64c70bc30685fe4f55a392a2ddad9c22f57fb4d43d0a356d7f5886e7ea3ab57e": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00138,
+   "take_per_side": 0.00838,
+   "parts": {
+    "hook_take_tok_side": 0.0013825935500230147
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": false,
+   "tok": "0x5ef897526d488c220de6038fefcc7f5f2492aba3",
+   "tx": "0x3b957db34d46d37b460fd910716b48e94c31bbe030d862ce262d259a1bc2659e"
+  },
+  "0x687619b370f3da2ae414d7ef84e8ecd02ff4f6b9145fe12690352cb3ee6c932d": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00145,
+   "take_per_side": 0.00845,
+   "parts": {
+    "hook_take_tok_side": 0.0014520736921127542
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "WETH",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": false,
+   "tok": "0x885b049701f71d234e75f7c9f8a0ed577b2f6ba3",
+   "tx": "0xbb70ff779895a36210de2a3944e21b83225a25d142fbca667edc04cc3ec27b16"
+  },
+  "0x72fbd7f072b4c56ad48204ebf4c781a4fcd5ff9081fd2853941934862d2eef6e": {
+   "status": "measured",
+   "lp": 0.045955,
+   "hook": 0.0,
+   "take_per_side": 0.04596,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xedaee44320107caa714baaec486261a87f27022d",
+   "tx": "0xa429eae9a3699c26c25219ff8a2e25dbb6e7a04c53b74224db7ba12ed02a968a"
+  },
+  "0x74739c7ee5dda3695d01575c32371eff16e7b831e37517d1a99b568749143e7a": {
+   "status": "measured",
+   "lp": 0.003499,
+   "hook": 0,
+   "take_per_side": 0.0035,
+   "parts": {},
+   "confidence": "lp-only",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "tx": "0x6f54d8daac4877238a7bd0963176b6f7fa69c1e2faca2a9ccda4b8a565cfee75"
+  },
+  "0x76e48929b10f333746710b06a563fe13f1fe92db218c25b8b9f089beb85b92f1": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x6342e7fb1c98df507a8c846e49962d3e5e197ecc",
+   "tx": "0x9adc573607b11ac912e2ead8bbebd3b583261c4dd11bcb510ae90765dd6b44b1"
+  },
+  "0x7bba397eba6a5031c60df68ab0885f5de37fce30e9607bedf53c90880a5fce26": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0175,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0175
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x24117e8e9312223e8fe02078c1ef8077e9b66ba3",
+   "tx": "0xcd09442faf76fc88134b182bb2bb406ff5c1b9a368e42d4d935f08ecd4858d15"
+  },
+  "0x94679b2b1e160abd8938c30069c8ebf3f0951855d4e978a517f8c47ab4a09dfc": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.0105,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0105
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x4a07e58ec935a0cb7a7e4d96117069de35e7fba3",
+   "tx": "0x6773b961d8b690e7874f56a51c524a10df4845460732ef899bb3dbe3480eb5b8"
+  },
+  "0x94990be3370114ee6831a6098fa903600adda812410fc973ce0825a5c4546de9": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00105,
+   "take_per_side": 0.00805,
+   "parts": {
+    "hook_take_tok_side": 0.0010507199920494203
+   },
+   "confidence": "measured (sell on native ETH: the ETH-side take is not visible in a receipt)",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "ETH",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x6999485f40c9162a8a2cfcb51132fc2675e59ba3",
+   "tx": "0xbc47a3f5757e5597a99c592d1cc82e2f1c0c21947aa2b1af4f18468dbfaf773f"
+  },
+  "0x94d40a947551b06802705277bcedbb7c2ea2d789b1aba763e208fd5141dccab6": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.01,
+   "take_per_side": 0.017,
+   "parts": {
+    "hook_take_tok_side": 0.01
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0xd8ec6474c02e5f913a8fd566648a2df4b18dbba3",
+   "tx": "0x4a93f9f98ed51c0501ebe0b83e1b3d24cc75b4c8841b821196ca45d1028b2a15"
+  },
+  "0x96c9ba31659b69716089721b9f40443fce7f5a8cd893f0228dab5b6ec1814316": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.0105,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0105
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0xafa55843fd89cc3c103e26482e96ed15315a4ba3",
+   "tx": "0xbd879f694c42f139d705bc78288a4303d7481f0bddd79c6696f0ea9b91d22a5d"
+  },
+  "0x9712563efdedc1a39b0baa30135b21167b2277fd9c694f8057f5ab8b5d18d4b0": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0199,
+   "take_per_side": 0.0199,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_eth_side": 0.01990000000000003
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x4f0d7ea112547af5dad59959d98b6a8ee3355bcc",
+   "tx": "0x794360cec39a70374e543b5be8d51337d88129ea58e8189a517f1fd0466b0dfc"
+  },
+  "0x990ed724dd830b95b704427d814b3c168dfbc3947c1fae3de36c7430dda49196": {
+   "status": "measured",
+   "lp": 0.003499,
+   "hook": 0.0,
+   "take_per_side": 0.0035,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "WETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "tx": "0x508d3118f80a1db385057a524d159ce06c7007bbbd39b6726c0d64733a27daa9"
+  },
+  "0x9de61ff13d51835be18a2434275b41e70945b7a82a4fb611ef3fdab522a31024": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0496,
+   "take_per_side": 0.0496,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_eth_side": 0.04959999999999998
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xa3bfbccd4aeec8ac56b17fee3e02dd2c60722ccc",
+   "tx": "0x5eab03a391b463e6a37644e352e46708db8f94cea139c59e90d975e14d53ad1d"
+  },
+  "0xb040f18affd851c6ea02b896b2f846cb77edbb33cc5361f7f8c6d14b87c01573": {
+   "status": "measured",
+   "lp": 0.01,
+   "hook": 0.0,
+   "take_per_side": 0.01,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "WETH",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": false,
+   "tok": "0xdd90bfa4adc7f4401e611abac692d939f9f4cb07",
+   "tx": "0x08038dcfb64e86b275084841a2126678d8df3a4739b0b6316bc860981f382d01"
+  },
+  "0xb5600a49c1a3fe21e8a2fb97e6ca0241d3fb0999915b9443f1c9a9986d75abcc": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0175,
+   "take_per_side": 0.0175,
+   "parts": {
+    "hook_take_tok_side": 0.0175
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0xed97b68ae1be330963eb161a11beb1cf5fe71ba3",
+   "tx": "0x1877b2bd906a9afb20a8560aae7a2ebc2119a4020691dcca557cfd3dce775004"
+  },
+  "0xb88dfb184602b74bee9c325a2b2dabdd6886ec6a995ac2fe8ec351804df00604": {
+   "status": "measured",
+   "lp": 0.02098,
+   "hook": 0.0,
+   "take_per_side": 0.02098,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x45242320dbb855eea8fd36804c6487e10e97fcf9",
+   "tx": "0xf583ca0e1d1050ef15827978dd30ec0cd0e0059dfe6b15cb6c1dad33ab3ceed4"
+  },
+  "0xbd7365563cf1aff595b785bed911680cd5aac946644a88ebbdb14877f00f8f62": {
+   "status": "measured",
+   "lp": 0.045955,
+   "hook": 0.0,
+   "take_per_side": 0.04596,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "tx": "0x2a1c96b7657e8b6de0d9bce801599a928638276907a01a29511696f22f8ba317"
+  },
+  "0xbf0b53d7f6551902c467e686994b2e19e0d55119590c4bec3228604e521e9090": {
+   "status": "measured",
+   "lp": 0.01099,
+   "hook": 0.0,
+   "take_per_side": 0.01099,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x8ff92566f2e81bdd68edfaa8cde73942a723796b",
+   "tx": "0x64ecaf2520736c68e3ea9b47616a2c624778990325867e7f5ba34fe194dce403"
+  },
+  "0xc0e8fcdebc55f4135b4ae5f277c4ea6a9c34f186ad6a211c5599aa933b4e6ce8": {
+   "status": "measured",
+   "lp": 0.02098,
+   "hook": 0.0,
+   "take_per_side": 0.02098,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f",
+   "tx": "0xbc5964eee3fdd2e0fb86c553368b6e14426f632650a8f86b0d32eaed2a691416"
+  },
+  "0xc6c2cd8e0f1e9373e0e2c60da3b6619753f7ff05599d59a66a358cbbaecc5ccf": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0,
+   "take_per_side": 0.0,
+   "parts": {},
+   "confidence": "lp-only",
+   "dropped": [
+    "hook_take_tok_side"
+   ],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x2531f3ca1b31086b7fc130ecda6d3253daf83ba3",
+   "tx": "0x041e847af9f35edd60f4071283a2bdb3328804635a7e46bd8c2b641cc642ee6a"
+  },
+  "0xd4b1d1d31abd1d2cf0c1788c0af4681e8bbda243c10a549a5bd56b8e7feff018": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "WETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x7195e2088f3dfcca56e6a71d129051963ed9657a",
+   "tx": "0xc85ff3bc6d71edb256b50d84b387f76f0ccbad87f88173995c675a6de41517e8"
+  },
+  "0xd52cf330ef68bc25ad30ebbdb2aa170270bf407afb9fa91721428ac15f0225ce": {
+   "status": "measured",
+   "lp": 0.05095,
+   "hook": 0.0,
+   "take_per_side": 0.05095,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xb6d695d5fbcebd837f6b9f214c9beee8ba90762b",
+   "tx": "0x345bb44a7c3bb895c28964ab8f6f79f03fd17c9d19acb553f2d5715d3dd5aff6"
+  },
+  "0xd72242e37e1fcec373bf2ac7349d087d2068e32a138ed9571cc90eeac89e60df": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x68a19da73868204b53feb80db10c896764c5cccc",
+   "tx": "0xe1d34cb0c32e689442865c9f9cf579610f4a05ec216d2fe156aa8d9b545b3d98"
+  },
+  "0xd9ea532d4b342ae5eef42517474a9ceda952d43febbd39c265f3cdd14de75b9d": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00124,
+   "take_per_side": 0.00824,
+   "parts": {
+    "hook_take_tok_side": 0.0012448873854205011
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0xdecf74e4aa6ff30b1612e65665aaf650bedecba3",
+   "tx": "0x27896037cf7fa8576511998409a2da4cc3980aa8e203faf4f9f2c6767bdc2527"
+  },
+  "0xdf5c0bcd967d54774c139a4ef803ec994779736346fb4c21b50ed241b1fd2682": {
+   "status": "measured",
+   "lp": 0.000475,
+   "hook": 0.0,
+   "take_per_side": 0.00047,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x8ac8d7a388f9e3e8ffa81c48847e487e5e105e1c",
+   "tx": "0xd1f8479b1c0ee7d4f2fb9809d55827cb764ae2831fcbca67d28bfe3aab5f88c2"
+  },
+  "0xe499147a14ac7393103be2aeef3d5ebf0f14435054d12a692e56d17c243a8d73": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.00625,
+   "take_per_side": 0.01325,
+   "parts": {
+    "hook_take_tok_side": 0.00625
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x237c79c93c3eb8c61a2a2a7465a851b0381b8ba3",
+   "tx": "0x394fd5b1ecf04b23a83ba5cd519c102cd68b359b64c1dd51d5013b12be86b29a"
+  },
+  "0xe783030b79ba8d16b6fb965ed747b7af1488c6ab647ee674580dc86e69fb87d2": {
+   "status": "measured",
+   "lp": 0.01099,
+   "hook": 0.0,
+   "take_per_side": 0.01099,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x17bb0c898254406b1ea2e8e99b0c263e26c9e4a4",
+   "tx": "0xc29435992294184546344b27bf996ce184956c6fd32f1481cbcc88a79b1837c3"
+  },
+  "0xe85a8f60ad2b0b7e97b745bac661671223100ea6089fe8ff0e93ba7d6894bdea": {
+   "status": "measured",
+   "lp": 0.0005,
+   "hook": 0.01,
+   "take_per_side": 0.0105,
+   "parts": {
+    "hook_take_tok_side": 0.01
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": true,
+   "tok": "0x22eb9f1c5385ed74257da42d8021916c2d837135",
+   "tx": "0x975f91a9045e2ab364071a3a7c0f6067bfbb5d3fc52abcb13b649c853735f838"
+  },
+  "0xe89b807b9d581725345e96fb6392bfc6d0c81c3da857c6c8a40a934b667e25d6": {
+   "status": "measured",
+   "lp": 0.007,
+   "hook": 0.01,
+   "take_per_side": 0.017,
+   "parts": {
+    "hook_take_tok_side": 0.01
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 3,
+   "doppler_labelled": true,
+   "tok": "0x68685e9dc6dcfe17962450399aa2d84a54adcba3",
+   "tx": "0x66103bec02f40f48f2f8a5580c120b2a03964c7dbf48ae3f1ef546eb78967e73"
+  },
+  "0xea420e327fabe378ec21e855a17f69c2c9249c8dfc4321fddb24b3b89e2f2185": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured (sell on native ETH: the ETH-side take is not visible in a receipt)",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xb6f15563a0df68ca81abdcfbb177fb7240a3cccc",
+   "tx": "0x226591b55272a93063f85dc86e7fded9fbae742fa8e2af19a76f51a59d40317b"
+  },
+  "0xec481672a94cfe42e2d8c996b7eaeee8a93093d56bd01c1714341971e3f406c1": {
+   "status": "measured",
+   "lp": 0.01099,
+   "hook": 0.0,
+   "take_per_side": 0.01099,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+   "tx": "0x22bc06ea696821de1ccb54f56aacd33289185dacdd5abe98c317a9b723be4aee"
+  },
+  "0xf05c08bece1cccc38832211c11be6c259206cb83a9b6b434eb7980cd7f53c597": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.0,
+   "take_per_side": 0.0,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured (sell on native ETH: the ETH-side take is not visible in a receipt)",
+   "dropped": [],
+   "side_seen": "sell",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x5186a0ea6574e4a17e00e0640d6df22c743fcccc",
+   "tx": "0x8a7da9c17150bacbe8567152060c2f569f22372172925403d9a5788c4d7061df"
+  },
+  "0xf2e329e631d0fb315a5c563ee3a9120f24822b5ef6c502a91cb56b174d5d8c22": {
+   "status": "measured",
+   "lp": 0.01099,
+   "hook": 0.01138,
+   "take_per_side": 0.02237,
+   "parts": {
+    "hook_take_tok_side": 0.011380650135753121,
+    "hook_take_quote_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "USDG",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+   "tx": "0xf8fe9285a53371a0d1b90e7a2325a4bb9d73f4138ca6415dc92ec335d22b61c2"
+  },
+  "0xf39042d9767c76478b1549fc512df9326d42172b8dde978548faab6455b0b153": {
+   "status": "measured",
+   "lp": 0.01,
+   "hook": 0.0,
+   "take_per_side": 0.01,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "partial",
+   "dropped": [
+    "hook_take_quote_side"
+   ],
+   "side_seen": "buy",
+   "quote": "WETH",
+   "n_swaps_on_pool": 2,
+   "doppler_labelled": false,
+   "tok": "0x35082b06d25c9fdb76284997ed6f11ac44465b07",
+   "tx": "0x531460c8a63f2a647d23d3f4ac6e589caee1e019100588540a72fc57f2af418f"
+  },
+  "0xf7dc0af99fce7169eb76854c0b39beb9915526894d42229946e5cb469cab50b1": {
+   "status": "measured",
+   "lp": 0.02098,
+   "hook": 0.0,
+   "take_per_side": 0.02098,
+   "parts": {
+    "hook_take_tok_side": 0.0
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "tx": "0xa4343846afecc26545da36b0a74e6f1070d4458c6f3aad31af87c3b664f055b1"
+  },
+  "0xfd5df336bdd7ddbb447eee281c25517cd6025b95e85193aeb28c4fd6c38f10ce": {
+   "status": "measured",
+   "lp": 0.0,
+   "hook": 0.01,
+   "take_per_side": 0.01,
+   "parts": {
+    "hook_take_tok_side": 0.0,
+    "hook_take_eth_side": 0.010000000000000009
+   },
+   "confidence": "measured",
+   "dropped": [],
+   "side_seen": "buy",
+   "quote": "ETH",
+   "n_swaps_on_pool": 1,
+   "doppler_labelled": false,
+   "tok": "0xa5c1eab6324512dde60dd03395db68b664310acc",
+   "tx": "0x00c95c00317d16601bd1597f160a22a6faf2293d538228420e257f1064820be1"
+  }
+ }
+}

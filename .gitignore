@@ -1,0 +1,7 @@
+# big files: downloaded from the release assets by kit/setup.sh (sha256-checked), never committed
+/tape/v23/archive/*/*.gz
+/patches/v4-join-2026-09-27/out/*.gz
+/patches/v4-join-2026-09-27/meta.json
+/.kit_verified.json
+/runs/
+__pycache__/
