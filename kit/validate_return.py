@@ -12,7 +12,8 @@ STAGE 1 (cheap, every cell): the returned folder must hold results.json, trades.
     (mean to 1e-6 relative).
 STAGE 2 (the real check, a SAMPLE of cells): K cells are drawn with a fixed seed (a filtered cell brings its base along), written to a fresh
   cells.json with their returned params / filter / base / stat_seed, and re-run here with run_batch.sh. Required: for every sampled cell,
-  results.json cell record IDENTICAL (JSON-equal) and the cell's trade rows IDENTICAL (sorted, byte for byte). Anything else = REJECTED.
+  results.json cell record IDENTICAL (JSON-equal) and the cell's trade rows IDENTICAL (sorted), both without the per-pass pair counter and the twin-relative
+  fields, which depend on which cells share the pass (pond #284). Anything else = REJECTED.
 Exit 0 = ACCEPTED, 1 = REJECTED, 2 = usage. Writes <returned dir>/VALIDATION.json."""
 import sys, os, json, gzip, random, subprocess, collections, math, datetime
 ENGINE_SHA = 'd1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c'
@@ -75,10 +76,18 @@ if '--no-rerun' not in a and not problems:
         r2 = json.load(open(os.path.join(RD, 'out/results.json'))); rows2 = collections.defaultdict(list)
         with gzip.open(os.path.join(RD, 'out/trades.ndjson.gz'), 'rt') as fh:
             for ln in fh: rows2[json.loads(ln)['cell']].append(ln.rstrip('\n'))
+        TWIN_ROW = ('pair', 'twinR', 'twinA')
+        def nopair(lines): return [json.dumps({k: v for k, v in json.loads(x).items() if k not in TWIN_ROW}, sort_keys=True) for x in lines]
+        def own(rec):                                   # drop every twin-relative block (d_vs_A, d_vs_R, ...) at any depth
+            if isinstance(rec, dict): return {k: own(v) for k, v in rec.items() if not k.startswith('d_vs_')}
+            if isinstance(rec, list): return [own(v) for v in rec]
+            return rec
         cmp = {}
         for c in sorted(want):
-            same_rec = json.dumps(r2['cells'][c], sort_keys=True) == json.dumps(res['cells'][c], sort_keys=True)
-            same_rows = sorted(rows2[c]) == sorted(rows[c])
+            # pond #284: 'pair' is one counter per engine pass, and twin draws depend on which cells share the pass, so a re-run of a
+            # SUBSET compares the cell's own result only: rows without pair / twin fields, records without the twin-relative blocks.
+            same_rec = json.dumps(own(r2['cells'][c]), sort_keys=True) == json.dumps(own(res['cells'][c]), sort_keys=True)
+            same_rows = sorted(nopair(rows2[c])) == sorted(nopair(rows[c]))
             cmp[c] = dict(record_identical=same_rec, rows_identical=same_rows, rows=len(rows[c]))
             if not (same_rec and same_rows): problems.append(f'{c}: rerun differs (record {same_rec}, rows {same_rows})')
         rep['stage2'] = dict(seed=SEED, sampled=pick, rerun_cells=sorted(want), compare=cmp)

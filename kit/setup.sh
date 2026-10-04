@@ -22,7 +22,10 @@ done
 rmdir "$DL" 2>/dev/null || true
 if [ ! -f patches/v4-join-2026-09-27/meta.json ]; then zstd -d -q --long=27 patches/v4-join-2026-09-27/meta.json.zst -o patches/v4-join-2026-09-27/meta.json; fi
 sha256sum -c kit/META_JSON.sha256
-[ "$SCAN" = 1 ] && python3 kit/seal_scan.py tape/v23/archive/2026-09/*.gz patches/v4-join-2026-09-27/out/*.gz > seal_scan.ndjson && echo "seal scan: every row < 2026-09-27T00:00Z (seal_scan.ndjson)"
+if [ "$SCAN" = 1 ]; then   # an if-block, so a failing scan stops setup under set -e (pond #284)
+  python3 kit/seal_scan.py tape/v23/archive/2026-09/*.gz patches/v4-join-2026-09-27/out/*.gz > seal_scan.ndjson
+  echo "seal scan: every row < 2026-09-27T00:00Z (seal_scan.ndjson)"
+fi
 python3 kit/unpatch_check.py | tail -1
 python3 patches/edge-machine-2026-09-30/engine/verify_manifest.py
 ( cd patches/edge-machine-2026-09-30/engine && bash test_seal.sh | tail -1 )

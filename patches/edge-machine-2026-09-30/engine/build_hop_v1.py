@@ -31,6 +31,8 @@ with open(rows, 'wb') as fo:
         f = f'{J}/v4-swaps-2026-09-{d:02d}.ndjson.gz'; assert '/sealed/' not in f
         p1 = subprocess.Popen(['zcat', f], stdout=subprocess.PIPE); p2 = subprocess.Popen(['grep', '-F', '-f', pat], stdin=p1.stdout, stdout=subprocess.PIPE)
         p3 = subprocess.Popen(['gzip', '-1'], stdin=p2.stdout, stdout=fo); p3.wait(); p2.wait(); p1.wait()
+        if p1.returncode != 0 or p2.returncode not in (0, 1) or p3.returncode != 0:   # grep exits 1 on no match; anything else is a broken pipe (pond #284)
+            raise SystemExit(f'hop rows: child failed on {f} (zcat {p1.returncode}, grep {p2.returncode}, gzip {p3.returncode})')
 qp = json.load(open(OUT + '/hop_qpools.json')); qp = {k: v for k, v in qp.items() if v['tok'] in need}
 st = hop.build([rows], qp, OUT + '/hop_tables.pkl')
 os.remove(rows)                                                                     # V1: intermediate (rebuildable), 100s of MB
