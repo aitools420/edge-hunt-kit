@@ -143,7 +143,7 @@ See `kit/RETURN_SPEC.md`. In short:
 - Nothing is published before that.
 
 ## What differs from the copy we run
-- `engine_v1.js` (sha256 `d1f23fed…`) is **byte-identical** to ours, and so are all frozen input tables, `guard.js`, `qpools.js`, `prepare_v1.py` and the tape content.
+- `engine_v1.js` (sha256 `d1f23fed…`) is **byte-identical** to the engine every published result was made with, and so are all frozen input tables, `guard.js`, `qpools.js`, `prepare_v1.py` and the tape content. One operational difference since 4 Oct: the copy we run reads its memory-guard limit from `ENGINE_RSS_GUARD` (default 3.2 GB, the same number) instead of a fixed 3.2 GB — one line, no effect on any result; it only decides when a run aborts for memory.
 - Our scripts used absolute paths of our machine. Those are rewritten to `$KIT_ROOT`:
   - for Node, by a preload (`kit/kitpath.js`) that rewrites the two path prefixes before any file is opened;
   - for Python and shell, by single-line edits.

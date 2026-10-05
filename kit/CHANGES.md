@@ -12,6 +12,7 @@ Two checks prove this:
 - The parity run must reproduce our 12 published cells: identical `results.json` records and 546 identical trade rows.
 
 ## Byte-identical to ours (no change at all)
+> Operational differences in the copy we RUN today, neither of which changes any result: since 4 Oct our `engine_v1.js` reads its memory-guard limit from `ENGINE_RSS_GUARD` (default 3.2 GB, the same number; one line), and since 5 Oct our `run_batch.sh` can run two engine passes at once (smoke-tested: identical results to one at a time). Every published result and every kit file below is the version listed here.
 - **Engine:** `engine_v1.js` (sha256 `d1f23fed4ba60bc02eb27d5b2114a63b04015cb9c0ce252ee3efd9005de9db1c`), `guard.js`, `guard_test.js`, `qpools.js`, `prepare_v1.py`, `run_pass_v1.sh`.
 - **Readers:** `patches/v4-join-2026-09-27/v4tape.js` and `pools.js`.
 - **Every input table:**
