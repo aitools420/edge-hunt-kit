@@ -50,10 +50,10 @@ def lab(r):
 best = sorted([r for r in R if X(r)["n"] >= 30], key=lambda r: -X(r)["mean"])[:3]
 bestlb = sorted([r for r in R if X(r)["n"] >= 30 and X(r)["ci95"]], key=lambda r: -X(r)["ci95"][0])[:3]
 if BATCH == "1":
-    L.append("CALLERS FAST ENTRIES — batch 1 (2026-10-02, owner request). 48 cells: delay 5 s/15 s/30 s/1 min × hold 15 min/1 h/24 h × TP +50/+25 × tier All/Good. "
+    L.append("CALLERS FAST ENTRIES — batch 1 (2026-10-02, Chef TG 15728). 48 cells: delay 5 s/15 s/30 s/1 min × hold 15 min/1 h/24 h × TP +50/+25 × tier All/Good. "
              "Pass B's data and engine; REAL per-pool costs (no noxa fee). 5th read of these days: LEADS at most. % per trade, ex-G5, [95 % range, conservative], d = vs 3 random coins.")
 else:
-    L.append("CALLERS BATCH 2 — no-dot lines (2026-10-02, owner request). 151 cells: B2.1 first caller × short holds × 15 s/30 s/1 min × tier/mcap; "
+    L.append("CALLERS BATCH 2 — no-dot lines (2026-10-02, Chef TG 15735). 151 cells: B2.1 first caller × short holds × 15 s/30 s/1 min × tier/mcap; "
              "B2.2 long holds 5–11 d × TP; B2.3 least-covered pairs. Same engine, data, REAL costs and statistics as batch 1. 5th read: LEADS at most.")
 L.append("VERDICT: %d of %d cells (n ≥ 30) have a mean above 0; %d have a 95 %% lower bar above 0 (expected by chance %.1f); Holm passes: mean %d, d %d. "
          "Lower bar > 0 on d: %d." % (len(pos), F["canTell"], len(lb), F["expectedByChance_each"], F["holmPassMean"], F["holmPassD"], F["lowerBarAbove0_d"]))

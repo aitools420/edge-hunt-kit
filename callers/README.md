@@ -18,7 +18,7 @@
   - `source_type: "group"` / `public_source: false`: a direct post in a group, read by our bot. Lane `direct` in the engine's tables.
 
 ## Data window and the seal
-- **Calls:** 2026-07-08 08:26Z → 2026-09-26 23:29Z. The engine's data end is **2026-09-26 21:40:49Z** (`DATA_END`). A position whose hold runs past it is booked `"oow"` (out of window), never guessed.
+- **Calls:** 2026-07-08 08:26Z → 2026-09-26 23:29Z. The engine's data end is **2026-09-26 23:00:49Z** (`DATA_END` = 1790463649, the last row of `tape-2026-09-26`). Earlier versions of this README, the comment in `engine/engine_fast.py`, `docs/callers-fast/PREREG.md` and `docs/callers-fill1/PREREG.md` label it "21:40:49Z": that label is wrong, the number the code uses is right (see `CHANGES.md`, Corrections). A position whose hold runs past it is booked `"oow"` (out of window), never guessed.
 - ⛔ **Nothing at or after 2026-09-27T00:00:00Z (unix 1790467200) is in this kit or may be read by it.**
   - Every row of `calls.ndjson.gz` and `engine/calls_snapshot.json` is before the seal (the build asserts it).
   - Pools and birth records at or after the seal were dropped from the input tables (see `CHANGES.md`).
@@ -49,7 +49,7 @@
 | `engine/levels.json`, `engine/bands.json` | per study row: the dial levels (first caller / follower, age band, market-cap band, lane …) and the market-cap band edges |
 | `results/callers-fast-2026-10-02/` | `results.json` (batch 1: fast entries), `results2.json` (batch 2), the two text reports, engine metas, and the smoke run's `dials_fast_smoke_r1.ndjson` |
 | `results/callers-fill1-2026-09-30-passB/` | pass B `results.json` and `cells.json`, plus `ref_rows_d60_tp50.ndjson.gz`: the call and twin positions at the 1-min entry and TP +50 %, row by row, for parity |
-| `docs/` | pre-registrations and feasibility notes of both studies, and the call-history spec and report, unedited |
+| `docs/` | pre-registrations and feasibility notes of both studies, and the call-history spec and report. Every file registered by hash is unedited; three unregistered notes carry edited attribution lines (`CHANGES.md`, Corrections). `docs/callers-fast/FEASIBILITY.registered.md` is the FEASIBILITY.md text as first registered (sha256 `567dd65b…`); `FEASIBILITY.md` is the later version the FINAL block hashes |
 | `run_kit.sh` | sets the paths and runs `engine_fast.py` |
 | `CHANGES.md` | every line that differs from what we ran, and how each derived table was built |
 | `MANIFEST.sha256` | sha256 of every file in the kit |
@@ -83,6 +83,7 @@
 
 ### Requirements
 - Python ≥ 3.10 with `orjson` and `numpy`, plus `pigz` and `gzip`.
+- What our runs used (the runs did not log it; read from the machine's installs, all dated before the runs): CPython 3.12.3, orjson 3.11.7, numpy 2.4.4. `PYTHONHASHSEED` was not set.
 - RAM: **about 1.5 GB** for a full pass of our complete data (41 min here). On the public tape alone, a 6-day pass took 0.4 GB and 42 s here.
 
 ### Steps

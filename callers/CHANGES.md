@@ -4,6 +4,26 @@ All edits are **path-only**: no constant, rule, seed or formula changed. Each ed
 that the old text occurs exactly once, and then reverses every edit and checks that the result is byte-identical to our file
 (sha256 below). `_build/` is our internal build folder and is not part of the kit.
 
+## Corrections (after pond-reviewer's review, edge-hunt #305)
+1. **`engine/report.py`, `results/callers-fast-2026-10-02/report.txt` and `report2.txt`.** Commits 7199d74 to 862d623 shipped
+   these three with an attribution edited by hand: an internal message reference replaced by "owner request" (two header strings
+   in `report.py`, line 1 of each text file). Nothing else differed, but this file called them byte-identical, and all three are
+   registered in `engine/PREREG.sha256` (FINAL block). They are now restored to the registered bytes: `report.py` `3cec71b7…`,
+   `report.txt` `31078adb…`, `report2.txt` `06498b40…`. Our `report.py` (`3cec71b7…`) made both text files.
+2. **Three unregistered notes** carry the same kind of edit (attribution lines only; no number, rule or method text):
+   `docs/callers-fill1/README.md` (ours `3be806cb625f…`, kit `1c8885378ae4…`), `docs/callhist/REPORT.md` (ours `dd652a2090d4…`,
+   kit `45f890419626…`) and `docs/callhist/SPEC.md` (ours `82f469febe55…`, kit `88a64569b291…`). None of them is registered by hash.
+3. **`DATA_END`.** The code uses 1790463649 = 2026-09-26T23:00:49Z, the last row of `tape-2026-09-26`. The label "21:40:49Z" in
+   `engine/engine_fast.py` (comment, line 10), `docs/callers-fast/PREREG.md` (line 18) and `docs/callers-fill1/PREREG.md`
+   (lines 42 and 157) is wrong. Those files stay byte-identical to their registered hashes; `README.md` is corrected.
+4. **`FEASIBILITY.md` is registered twice** in `engine/PREREG.sha256`: `567dd65b…` in the first block (2026-10-02T12:57:48Z) and
+   `f0e99d86…` in the FINAL block (14:55:10Z), with no amendment line between. What happened: the registered text left section 5
+   ("Coverage at each delay") as a one-line placeholder. At 13:36:58Z the study's agent replaced that line with the coverage table
+   that `cov_only.py` computed from the engine run's fill, timing and booked-or-not fields (no return field), and added a "Verdict"
+   section. Nothing else changed. The registered text is now in the kit as `docs/callers-fast/FEASIBILITY.registered.md`
+   (sha256 `567dd65b…`), recovered byte for byte from the log of the session that wrote it at 12:56:53Z. `diff` it against
+   `FEASIBILITY.md` to see the whole change.
+
 ## Code files edited
 
 ### `engine/engine_fast.py` (from `callers-fast-2026-10-02/engine_fast.py`)
@@ -113,7 +133,8 @@ directly (without `engine_fast.py`) will therefore NOT work in the kit, and is n
 - `engine/cells2.json` `0a3c87dd07b22e1ff28bb02e4453d1af49c6b1c394f21761fdf5a7e080c04b88`
 - `engine/hop_static.json` `8143b44d271b7c385f0cf649cf7a867399126209251151e2554d18ef7e464821`
 - `engine/PREREG.sha256` `5cad2a24bc4d988e1abfbfab13bd066d592c7a785ae74d8753d6f01df5c099ea`
-- everything under `results/` except `ref_rows_d60_tp50.ndjson.gz`, and everything under `docs/`
+- everything under `results/` except `ref_rows_d60_tp50.ndjson.gz`, and everything under `docs/` except the three notes in
+  Corrections item 2 (`docs/callers-fast/FEASIBILITY.registered.md` is the registered text of Corrections item 4)
 - `engine/hop_static.json` still names the three hop-table files it was built from by our absolute paths (field `tables`). Only
   `tokens`, `fallback_other` and `usdg` are read by `costs.py`; the tables themselves are not in the kit (see README, *not included*).
 
