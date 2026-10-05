@@ -1,0 +1,25 @@
+{
+ "rule": "PREREG \u00a73 dial 1: 20/40/60/80th percentiles of mcap over all study rows with an mcap, rounded in log space to the 1-2-2.5-5 x 10^k series",
+ "mcapCutsUsd": [
+  50000.0,
+  100000.0,
+  250000.0,
+  1000000.0
+ ],
+ "rawQuantilesUsd": [
+  35707.7190484,
+  98659.7336241,
+  252903.06572999997,
+  941530.3907259998
+ ],
+ "nWithMcap": 3539,
+ "levels": [
+  "<$50k",
+  "$50k\u2013$100k",
+  "$100k\u2013$250k",
+  "$250k\u2013$1M",
+  ">$1M"
+ ],
+ "computedAt": "2026-09-30T02:03:32Z",
+ "note": "computed from dials.ndjson only; rows.ndjson (returns) not opened"
+}

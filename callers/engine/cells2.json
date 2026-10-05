@@ -1,0 +1,1832 @@
+{
+ "batch": 2,
+ "cells": [
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1001
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1002
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1003
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1004
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1005
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1006
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1007
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1008
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1009
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1010
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1011
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1012
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1013
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1014
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1015
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1016
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1017
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1018
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1019
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1020
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1021
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1022
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1023
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1024
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1025
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1026
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1027
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1028
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1029
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1030
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1031
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1032
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "rereadOf": 520,
+   "cell": 1033
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1034
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1035
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1036
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1037
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1038
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1039
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1040
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1041
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1042
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1043
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1044
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "rereadOf": 521,
+   "cell": 1045
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1046
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1047
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1048
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1049
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1050
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1051
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1052
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1053
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1054
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1055
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1056
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first"
+   },
+   "rereadOf": 522,
+   "cell": 1057
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "elite"
+   },
+   "cell": 1058
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "tier": "good"
+   },
+   "cell": 1059
+  },
+  {
+   "group": "B2.1 short stacked",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "first": "first",
+    "mcap": [
+     "<$50k",
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1060
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "none",
+   "filters": {},
+   "rereadOf": 112,
+   "cell": 1061
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "none",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1062
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+100%",
+   "filters": {},
+   "rereadOf": 111,
+   "cell": 1063
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+100%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1064
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1065
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+150%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1066
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1067
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "5 d",
+   "holdSec": 432000,
+   "tp": "+200%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1068
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "none",
+   "filters": {},
+   "rereadOf": 115,
+   "cell": 1069
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "none",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1070
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+100%",
+   "filters": {},
+   "rereadOf": 114,
+   "cell": 1071
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+100%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1072
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1073
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+150%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1074
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1075
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+200%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1076
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "none",
+   "filters": {},
+   "cell": 1077
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "none",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1078
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+100%",
+   "filters": {},
+   "cell": 1079
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+100%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1080
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1081
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+150%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1082
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1083
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+200%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1084
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "none",
+   "filters": {},
+   "cell": 1085
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "none",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1086
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+100%",
+   "filters": {},
+   "cell": 1087
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+100%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1088
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1089
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+150%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1090
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1091
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+200%",
+   "filters": {
+    "first": "first"
+   },
+   "cell": 1092
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "none",
+   "filters": {
+    "mcap": [
+     "<$50k"
+    ]
+   },
+   "cell": 1093
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "none",
+   "filters": {
+    "mcap": [
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1094
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "none",
+   "filters": {
+    "mcap": [
+     "<$50k"
+    ]
+   },
+   "cell": 1095
+  },
+  {
+   "group": "B2.2 long",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "none",
+   "filters": {
+    "mcap": [
+     "$50k–$100k"
+    ]
+   },
+   "cell": 1096
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1097
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1098
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1099
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1100
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1101
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "12 h",
+   "holdSec": 43200,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1102
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "72 h",
+   "holdSec": 259200,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1103
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1104
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1105
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1106
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "5 min",
+   "holdSec": 300,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1107
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7.5 min",
+   "holdSec": 450,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1108
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1109
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "12 h",
+   "holdSec": 43200,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1110
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "72 h",
+   "holdSec": 259200,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1111
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1112
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1.25 min",
+   "holdSec": 75,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1113
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "2.5 min",
+   "holdSec": 150,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1114
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "9 d",
+   "holdSec": 777600,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1115
+  },
+  {
+   "group": "B2.3 delay×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "11 d",
+   "holdSec": 950400,
+   "tp": "+50%",
+   "filters": {},
+   "cell": 1116
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+100%",
+   "filters": {},
+   "cell": 1117
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "none",
+   "filters": {},
+   "cell": 1118
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1119
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1120
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+100%",
+   "filters": {},
+   "cell": 1121
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "none",
+   "filters": {},
+   "cell": 1122
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1123
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1124
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+150%",
+   "filters": {},
+   "cell": 1125
+  },
+  {
+   "group": "B2.3 delay×tp",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+200%",
+   "filters": {},
+   "cell": 1126
+  },
+  {
+   "group": "B2.3 tier×delay",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+50%",
+   "filters": {
+    "tier": "elite"
+   },
+   "cell": 1127
+  },
+  {
+   "group": "B2.3 tier×delay",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+50%",
+   "filters": {
+    "tier": "elite"
+   },
+   "cell": 1128
+  },
+  {
+   "group": "B2.3 tier×delay",
+   "delay": "15 s",
+   "delaySec": 15,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+50%",
+   "filters": {
+    "tier": "other"
+   },
+   "cell": 1129
+  },
+  {
+   "group": "B2.3 tier×delay",
+   "delay": "30 s",
+   "delaySec": 30,
+   "hold": "1 h",
+   "holdSec": 3600,
+   "tp": "+50%",
+   "filters": {
+    "tier": "other"
+   },
+   "cell": 1130
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "tier": "elite"
+   },
+   "cell": 1131
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "tier": "elite"
+   },
+   "cell": 1132
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "tier": "elite"
+   },
+   "cell": 1133
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "tier": "good"
+   },
+   "cell": 1134
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "tier": "good"
+   },
+   "cell": 1135
+  },
+  {
+   "group": "B2.3 tier×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "tier": "good"
+   },
+   "cell": 1136
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "age": "<1 h"
+   },
+   "cell": 1137
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "age": "<1 h"
+   },
+   "cell": 1138
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "age": "<1 h"
+   },
+   "cell": 1139
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–6 h"
+   },
+   "cell": 1140
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–6 h"
+   },
+   "cell": 1141
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–6 h"
+   },
+   "cell": 1142
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "age": "6–24 h"
+   },
+   "cell": 1143
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "age": "6–24 h"
+   },
+   "cell": 1144
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "age": "6–24 h"
+   },
+   "cell": 1145
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–7 d"
+   },
+   "cell": 1146
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–7 d"
+   },
+   "cell": 1147
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "age": "1–7 d"
+   },
+   "cell": 1148
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "15 min",
+   "holdSec": 900,
+   "tp": "+50%",
+   "filters": {
+    "age": ">7 d"
+   },
+   "rereadOf": 642,
+   "cell": 1149
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "4 h",
+   "holdSec": 14400,
+   "tp": "+50%",
+   "filters": {
+    "age": ">7 d"
+   },
+   "cell": 1150
+  },
+  {
+   "group": "B2.3 age×hold",
+   "delay": "1 min",
+   "delaySec": 60,
+   "hold": "7 d",
+   "holdSec": 604800,
+   "tp": "+50%",
+   "filters": {
+    "age": ">7 d"
+   },
+   "cell": 1151
+  }
+ ],
+ "K": 143
+}

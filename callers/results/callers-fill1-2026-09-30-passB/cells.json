@@ -1,0 +1,12108 @@
+{
+"K_dialtest": 144,
+"K_new": 652,
+"K_running": 796,
+"dup_with_dialtest_skipped": 79,
+"holds": [
+"5 min",
+"7.5 min",
+"15 min",
+"1 h",
+"4 h",
+"12 h",
+"24 h",
+"72 h",
+"5 d",
+"7 d"
+],
+"levels": {
+"hold": [
+"5 min",
+"7.5 min",
+"15 min",
+"1 h",
+"4 h",
+"12 h",
+"24 h",
+"72 h",
+"5 d",
+"7 d"
+],
+"tp": [
+"+25%",
+"+50%",
+"+100%",
+"none"
+],
+"delay": [
+"1 min",
+"5 min",
+"15 min",
+"60 min"
+],
+"mcap": [
+"<$50k",
+"$50k–$100k",
+"$100k–$250k",
+"$250k–$1M",
+">$1M"
+],
+"runup": [
+"<0",
+"0–50%",
+"50–200%",
+">200%",
+"no print in the hour"
+],
+"first": [
+"first",
+"follower ≤5 min",
+"follower 5–30 min",
+"follower 30–180 min",
+"follower 3–24 h",
+"follower >24 h"
+],
+"ncallers": [
+"1",
+"2",
+"3+"
+],
+"age": [
+"<1 h",
+"1–6 h",
+"6–24 h",
+"1–7 d",
+">7 d"
+],
+"tier": [
+"elite",
+"good",
+"other"
+],
+"src": [
+"direct",
+"CallAnalyser"
+]
+},
+"held": {
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min"
+},
+"slices": [
+"mcap×age",
+"hold×tp",
+"mcap×first",
+"first×age",
+"mcap×ncallers",
+"first×ncallers",
+"ncallers×age",
+"mcap×runup",
+"runup×first",
+"runup×ncallers",
+"runup×age",
+"mcap×tp",
+"runup×tp",
+"first×tp",
+"ncallers×tp",
+"age×tp",
+"ncallers×hold",
+"delay×hold",
+"delay×tp",
+"delay×mcap",
+"delay×runup",
+"delay×first",
+"delay×ncallers",
+"delay×age",
+"first×hold",
+"tier×age",
+"tier×mcap",
+"src×tp",
+"tier×tp",
+"tier×first",
+"tier×ncallers"
+],
+"cells": [
+{
+"group": "1-D",
+"dial": "hold",
+"level": "5 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {},
+"cell": 1
+},
+{
+"group": "1-D",
+"dial": "hold",
+"level": "7.5 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {},
+"cell": 2
+},
+{
+"group": "1-D",
+"dial": "hold",
+"level": "5 d",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {},
+"cell": 3
+},
+{
+"group": "1-D",
+"dial": "hold",
+"level": "7 d",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {},
+"cell": 4
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"cell": 5
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"cell": 6
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"cell": 7
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "5 min",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"cell": 8
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "15 min",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"cell": 9
+},
+{
+"group": "1-D",
+"dial": "delay",
+"level": "60 min",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"cell": 10
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"cell": 11
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"cell": 12
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "none",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"cell": 13
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "+25%",
+"hold": "24 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"cell": 14
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "+100%",
+"hold": "24 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"cell": 15
+},
+{
+"group": "1-D",
+"dial": "tp",
+"level": "none",
+"hold": "24 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"cell": 16
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite"
+},
+"cell": 17
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good"
+},
+"cell": 18
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"cell": 19
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "elite",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite"
+},
+"cell": 20
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "good",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good"
+},
+"cell": 21
+},
+{
+"group": "1-D",
+"dial": "tier",
+"level": "other",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"cell": 22
+},
+{
+"group": "1-D",
+"dial": "src",
+"level": "direct",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"src": "direct"
+},
+"cell": 23
+},
+{
+"group": "1-D",
+"dial": "src",
+"level": "CallAnalyser",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"cell": 24
+},
+{
+"group": "1-D",
+"dial": "src",
+"level": "direct",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"src": "direct"
+},
+"cell": 25
+},
+{
+"group": "1-D",
+"dial": "src",
+"level": "CallAnalyser",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"cell": 26
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "<$50k",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"cell": 27
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$50k–$100k",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"cell": 28
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$100k–$250k",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"cell": 29
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$250k–$1M",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"cell": 30
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": ">$1M",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"cell": 31
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "<$50k",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"cell": 32
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$50k–$100k",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"cell": 33
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$100k–$250k",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"cell": 34
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$250k–$1M",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"cell": 35
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": ">$1M",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"cell": 36
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "<$50k",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"cell": 37
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$50k–$100k",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"cell": 38
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$100k–$250k",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"cell": 39
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$250k–$1M",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"cell": 40
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": ">$1M",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"cell": 41
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "<$50k",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"cell": 42
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$50k–$100k",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"cell": 43
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$100k–$250k",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"cell": 44
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": "$250k–$1M",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"cell": 45
+},
+{
+"group": "cross-ext",
+"dial": "hold×mcap",
+"level": ">$1M",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"cell": 46
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "<0",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"cell": 47
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "0–50%",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"cell": 48
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "50–200%",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"cell": 49
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": ">200%",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"cell": 50
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "no print in the hour",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"cell": 51
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "<0",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"cell": 52
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "0–50%",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"cell": 53
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "50–200%",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"cell": 54
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": ">200%",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"cell": 55
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "no print in the hour",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"cell": 56
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "<0",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"cell": 57
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "0–50%",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"cell": 58
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "50–200%",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"cell": 59
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": ">200%",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"cell": 60
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "no print in the hour",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"cell": 61
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "<0",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"cell": 62
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "0–50%",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"cell": 63
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "50–200%",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"cell": 64
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": ">200%",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"cell": 65
+},
+{
+"group": "cross-ext",
+"dial": "hold×runup",
+"level": "no print in the hour",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"cell": 66
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 67
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 68
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 69
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 70
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 71
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 72
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 73
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 74
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 75
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 76
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 77
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 78
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 79
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 80
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 81
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 82
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 83
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 84
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 85
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 86
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 87
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 88
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 89
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 90
+},
+{
+"group": "slice",
+"dial": "mcap×age",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 91
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 min",
+"hold": "5 min",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 92
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 min",
+"hold": "5 min",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 93
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 min",
+"hold": "5 min",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 94
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7.5 min",
+"hold": "7.5 min",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 95
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7.5 min",
+"hold": "7.5 min",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 96
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7.5 min",
+"hold": "7.5 min",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 97
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "15 min",
+"hold": "15 min",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 98
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "15 min",
+"hold": "15 min",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 99
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "15 min",
+"hold": "15 min",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 100
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "4 h",
+"hold": "4 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 101
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "4 h",
+"hold": "4 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 102
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "4 h",
+"hold": "4 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 103
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "12 h",
+"hold": "12 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 104
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "12 h",
+"hold": "12 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 105
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "12 h",
+"hold": "12 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 106
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "72 h",
+"hold": "72 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 107
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "72 h",
+"hold": "72 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 108
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "72 h",
+"hold": "72 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 109
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 d",
+"hold": "5 d",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 110
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 d",
+"hold": "5 d",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 111
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 d",
+"hold": "5 d",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 112
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7 d",
+"hold": "7 d",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {},
+"level2": "+25%",
+"cell": 113
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7 d",
+"hold": "7 d",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {},
+"level2": "+100%",
+"cell": 114
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7 d",
+"hold": "7 d",
+"tp": "none",
+"delay": "1 min",
+"filters": {},
+"level2": "none",
+"cell": 115
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "first"
+},
+"level2": "first",
+"cell": 116
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 117
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 118
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 119
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 120
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 121
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "first"
+},
+"level2": "first",
+"cell": 122
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 123
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 124
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 125
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 126
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 127
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "first"
+},
+"level2": "first",
+"cell": 128
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 129
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 130
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 131
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 132
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 133
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "first"
+},
+"level2": "first",
+"cell": 134
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 135
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 136
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 137
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 138
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 139
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "first"
+},
+"level2": "first",
+"cell": 140
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 141
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 142
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 143
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 144
+},
+{
+"group": "slice",
+"dial": "mcap×first",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 145
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 146
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 147
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 148
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 149
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 150
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 151
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 152
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 153
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 154
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 155
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 156
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 157
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 158
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 159
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 160
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 161
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 162
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 163
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 164
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 165
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 166
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 167
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 168
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 169
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 170
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 171
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 172
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 173
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 174
+},
+{
+"group": "slice",
+"dial": "first×age",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 175
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 176
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 177
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 178
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 179
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 180
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 181
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 182
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 183
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 184
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 185
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 186
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 187
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 188
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 189
+},
+{
+"group": "slice",
+"dial": "mcap×ncallers",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 190
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 191
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 192
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 193
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 194
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 195
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 196
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 197
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 198
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 199
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 200
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 201
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 202
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 203
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 204
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 205
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 206
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 207
+},
+{
+"group": "slice",
+"dial": "first×ncallers",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 208
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 209
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 210
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 211
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 212
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 213
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 214
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 215
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 216
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 217
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 218
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 219
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 220
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 221
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 222
+},
+{
+"group": "slice",
+"dial": "ncallers×age",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 223
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 224
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 225
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 226
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 227
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 228
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 229
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 230
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 231
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 232
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 233
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 234
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 235
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 236
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 237
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 238
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 239
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 240
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 241
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 242
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 243
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 244
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 245
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 246
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 247
+},
+{
+"group": "slice",
+"dial": "mcap×runup",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 248
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "first"
+},
+"level2": "first",
+"cell": 249
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 250
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 251
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 252
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 253
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 254
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "first"
+},
+"level2": "first",
+"cell": 255
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 256
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 257
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 258
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 259
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 260
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "first"
+},
+"level2": "first",
+"cell": 261
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 262
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 263
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 264
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 265
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 266
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "first"
+},
+"level2": "first",
+"cell": 267
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 268
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 269
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 270
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 271
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 272
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "first"
+},
+"level2": "first",
+"cell": 273
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 274
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 275
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 276
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 277
+},
+{
+"group": "slice",
+"dial": "runup×first",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 278
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 279
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 280
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 281
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 282
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 283
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 284
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 285
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 286
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 287
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 288
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 289
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 290
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 291
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 292
+},
+{
+"group": "slice",
+"dial": "runup×ncallers",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 293
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 294
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 295
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 296
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 297
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "<0",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 298
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 299
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 300
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 301
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 302
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 303
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 304
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 305
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 306
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 307
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 308
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 309
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 310
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 311
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 312
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 313
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 314
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 315
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 316
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 317
+},
+{
+"group": "slice",
+"dial": "runup×age",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 318
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "+25%",
+"cell": 319
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "+100%",
+"cell": 320
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "<$50k",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "none",
+"cell": 321
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "+25%",
+"cell": 322
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "+100%",
+"cell": 323
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$50k–$100k",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "none",
+"cell": 324
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "+25%",
+"cell": 325
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "+100%",
+"cell": 326
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$100k–$250k",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "none",
+"cell": 327
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "+25%",
+"cell": 328
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "+100%",
+"cell": 329
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$250k–$1M",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "none",
+"cell": 330
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": "+25%",
+"cell": 331
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": "+100%",
+"cell": 332
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": "none",
+"cell": 333
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "<0",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "+25%",
+"cell": 334
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "<0",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "+100%",
+"cell": 335
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "<0",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "none",
+"cell": 336
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "+25%",
+"cell": 337
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "+100%",
+"cell": 338
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "0–50%",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "none",
+"cell": 339
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "+25%",
+"cell": 340
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "+100%",
+"cell": 341
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "50–200%",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "none",
+"cell": 342
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": "+25%",
+"cell": 343
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": ">200%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": "+100%",
+"cell": 344
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": ">200%",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": "none",
+"cell": 345
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "+25%",
+"cell": 346
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "+100%",
+"cell": 347
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "none",
+"cell": 348
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "first",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "+25%",
+"cell": 349
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "first",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "+100%",
+"cell": 350
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "first",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "none",
+"cell": 351
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "+25%",
+"cell": 352
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "+100%",
+"cell": 353
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower ≤5 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "none",
+"cell": 354
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "+25%",
+"cell": 355
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "+100%",
+"cell": 356
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 5–30 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "none",
+"cell": 357
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "+25%",
+"cell": 358
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "+100%",
+"cell": 359
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 30–180 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "none",
+"cell": 360
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "+25%",
+"cell": 361
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "+100%",
+"cell": 362
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 3–24 h",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "none",
+"cell": 363
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "+25%",
+"cell": 364
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "+100%",
+"cell": 365
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "none",
+"cell": 366
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "1",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "+25%",
+"cell": 367
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "1",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "+100%",
+"cell": 368
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "1",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "none",
+"cell": 369
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "2",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "+25%",
+"cell": 370
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "2",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "+100%",
+"cell": 371
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "2",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "none",
+"cell": 372
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "3+",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "+25%",
+"cell": 373
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "3+",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "+100%",
+"cell": 374
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "3+",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "none",
+"cell": 375
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "<1 h",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "+25%",
+"cell": 376
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "<1 h",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "+100%",
+"cell": 377
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "<1 h",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "none",
+"cell": 378
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–6 h",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "+25%",
+"cell": 379
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–6 h",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "+100%",
+"cell": 380
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–6 h",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "none",
+"cell": 381
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "6–24 h",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "+25%",
+"cell": 382
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "6–24 h",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "+100%",
+"cell": 383
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "6–24 h",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "none",
+"cell": 384
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–7 d",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "+25%",
+"cell": 385
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–7 d",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "+100%",
+"cell": 386
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–7 d",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "none",
+"cell": 387
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": ">7 d",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": "+25%",
+"cell": 388
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": ">7 d",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": "+100%",
+"cell": 389
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": ">7 d",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": "none",
+"cell": 390
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "5 min",
+"cell": 391
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "7.5 min",
+"cell": 392
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "15 min",
+"cell": 393
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "4 h",
+"cell": 394
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "12 h",
+"cell": 395
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "72 h",
+"cell": 396
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "5 d",
+"cell": 397
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "7 d",
+"cell": 398
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "5 min",
+"cell": 399
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "7.5 min",
+"cell": 400
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "15 min",
+"cell": 401
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "4 h",
+"cell": 402
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "12 h",
+"cell": 403
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "72 h",
+"cell": 404
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "5 d",
+"cell": 405
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "7 d",
+"cell": 406
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "5 min",
+"cell": 407
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "7.5 min",
+"cell": 408
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "15 min",
+"cell": 409
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "4 h",
+"cell": 410
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "12 h",
+"cell": 411
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "72 h",
+"cell": 412
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "5 d",
+"cell": 413
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "7 d",
+"cell": 414
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "5 min",
+"cell": 415
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "7.5 min",
+"cell": 416
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "15 min",
+"cell": 417
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "4 h",
+"cell": 418
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "12 h",
+"cell": 419
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "72 h",
+"cell": 420
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "5 d",
+"cell": 421
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {},
+"level2": "7 d",
+"cell": 422
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "5 min",
+"cell": 423
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "7.5 min",
+"cell": 424
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "15 min",
+"cell": 425
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "4 h",
+"cell": 426
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "12 h",
+"cell": 427
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "72 h",
+"cell": 428
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "5 d",
+"cell": 429
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {},
+"level2": "7 d",
+"cell": 430
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "5 min",
+"cell": 431
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "7.5 min",
+"cell": 432
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "15 min",
+"cell": 433
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "4 h",
+"cell": 434
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "12 h",
+"cell": 435
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "72 h",
+"cell": 436
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "5 d",
+"cell": 437
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {},
+"level2": "7 d",
+"cell": 438
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "5 min",
+"filters": {},
+"level2": "+25%",
+"cell": 439
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "5 min",
+"filters": {},
+"level2": "+100%",
+"cell": 440
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "5 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "5 min",
+"filters": {},
+"level2": "none",
+"cell": 441
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "15 min",
+"filters": {},
+"level2": "+25%",
+"cell": 442
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "15 min",
+"filters": {},
+"level2": "+100%",
+"cell": 443
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "15 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "15 min",
+"filters": {},
+"level2": "none",
+"cell": 444
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "60 min",
+"filters": {},
+"level2": "+25%",
+"cell": 445
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "60 min",
+"filters": {},
+"level2": "+100%",
+"cell": 446
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "60 min",
+"hold": "1 h",
+"tp": "none",
+"delay": "60 min",
+"filters": {},
+"level2": "none",
+"cell": 447
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 448
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 449
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 450
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 451
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 452
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 453
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 454
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 455
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 456
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 457
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 458
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 459
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 460
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 461
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 462
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 463
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 464
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 465
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 466
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 467
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 468
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 469
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 470
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 471
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 472
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"runup": "<0"
+},
+"level2": "<0",
+"cell": 473
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"runup": "0–50%"
+},
+"level2": "0–50%",
+"cell": 474
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"runup": "50–200%"
+},
+"level2": "50–200%",
+"cell": 475
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"runup": ">200%"
+},
+"level2": ">200%",
+"cell": 476
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 477
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "first"
+},
+"level2": "first",
+"cell": 478
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 479
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 480
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 481
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 482
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 483
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "first"
+},
+"level2": "first",
+"cell": 484
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 485
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 486
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 487
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 488
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 489
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "first"
+},
+"level2": "first",
+"cell": 490
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 491
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 492
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 493
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 494
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 495
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 496
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 497
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 498
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 499
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 500
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 501
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 502
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 503
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 504
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 505
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 506
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 507
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 508
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 509
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 510
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 511
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 512
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 513
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "15 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 514
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 515
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 516
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 517
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 518
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 519
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "5 min",
+"cell": 520
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "7.5 min",
+"cell": 521
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "15 min",
+"cell": 522
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "4 h",
+"cell": 523
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "12 h",
+"cell": 524
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "72 h",
+"cell": 525
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "5 d",
+"cell": 526
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "first"
+},
+"level2": "7 d",
+"cell": 527
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "5 min",
+"cell": 528
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "7.5 min",
+"cell": 529
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "15 min",
+"cell": 530
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "4 h",
+"cell": 531
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "12 h",
+"cell": 532
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "72 h",
+"cell": 533
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "5 d",
+"cell": 534
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower ≤5 min"
+},
+"level2": "7 d",
+"cell": 535
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "5 min",
+"cell": 536
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "7.5 min",
+"cell": 537
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "15 min",
+"cell": 538
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "4 h",
+"cell": 539
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "12 h",
+"cell": 540
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "72 h",
+"cell": 541
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "5 d",
+"cell": 542
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 5–30 min"
+},
+"level2": "7 d",
+"cell": 543
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "5 min",
+"cell": 544
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "7.5 min",
+"cell": 545
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "15 min",
+"cell": 546
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "4 h",
+"cell": 547
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "12 h",
+"cell": 548
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "72 h",
+"cell": 549
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "5 d",
+"cell": 550
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 30–180 min"
+},
+"level2": "7 d",
+"cell": 551
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "5 min",
+"cell": 552
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "7.5 min",
+"cell": 553
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "15 min",
+"cell": 554
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "4 h",
+"cell": 555
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "12 h",
+"cell": 556
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "72 h",
+"cell": 557
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "5 d",
+"cell": 558
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower 3–24 h"
+},
+"level2": "7 d",
+"cell": 559
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "5 min",
+"cell": 560
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "7.5 min",
+"cell": 561
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "15 min",
+"cell": 562
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "4 h",
+"cell": 563
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "12 h",
+"cell": 564
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "72 h",
+"cell": 565
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "5 d",
+"cell": 566
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h"
+},
+"level2": "7 d",
+"cell": 567
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 568
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 569
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 570
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 571
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 572
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 573
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 574
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 575
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 576
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 577
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"age": "<1 h"
+},
+"level2": "<1 h",
+"cell": 578
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"age": "1–6 h"
+},
+"level2": "1–6 h",
+"cell": 579
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"age": "6–24 h"
+},
+"level2": "6–24 h",
+"cell": 580
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"age": "1–7 d"
+},
+"level2": "1–7 d",
+"cell": 581
+},
+{
+"group": "slice",
+"dial": "tier×age",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"age": ">7 d"
+},
+"level2": ">7 d",
+"cell": 582
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 583
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 584
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 585
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 586
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 587
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 588
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 589
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 590
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 591
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 592
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"mcap": "<$50k"
+},
+"level2": "<$50k",
+"cell": 593
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"mcap": "$50k–$100k"
+},
+"level2": "$50k–$100k",
+"cell": 594
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"mcap": "$100k–$250k"
+},
+"level2": "$100k–$250k",
+"cell": 595
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"mcap": "$250k–$1M"
+},
+"level2": "$250k–$1M",
+"cell": 596
+},
+{
+"group": "slice",
+"dial": "tier×mcap",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"mcap": ">$1M"
+},
+"level2": ">$1M",
+"cell": 597
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "direct",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"src": "direct"
+},
+"level2": "+25%",
+"cell": 598
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "direct",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"src": "direct"
+},
+"level2": "+100%",
+"cell": 599
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "direct",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"src": "direct"
+},
+"level2": "none",
+"cell": 600
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"level2": "+25%",
+"cell": 601
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"level2": "+100%",
+"cell": 602
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"level2": "none",
+"cell": 603
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "elite",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"tier": "elite"
+},
+"level2": "+25%",
+"cell": 604
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "elite",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"tier": "elite"
+},
+"level2": "+100%",
+"cell": 605
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "elite",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"tier": "elite"
+},
+"level2": "none",
+"cell": 606
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "good",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"tier": "good"
+},
+"level2": "+25%",
+"cell": 607
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "good",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"tier": "good"
+},
+"level2": "+100%",
+"cell": 608
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "good",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"tier": "good"
+},
+"level2": "none",
+"cell": 609
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "other",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"level2": "+25%",
+"cell": 610
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "other",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"level2": "+100%",
+"cell": 611
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "other",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"level2": "none",
+"cell": 612
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "first"
+},
+"level2": "first",
+"cell": 613
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 614
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 615
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 616
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 617
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 618
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "first"
+},
+"level2": "first",
+"cell": 619
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 620
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 621
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 622
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 623
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 624
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "first"
+},
+"level2": "first",
+"cell": 625
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "follower ≤5 min"
+},
+"level2": "follower ≤5 min",
+"cell": 626
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "follower 5–30 min"
+},
+"level2": "follower 5–30 min",
+"cell": 627
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "follower 30–180 min"
+},
+"level2": "follower 30–180 min",
+"cell": 628
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "follower 3–24 h"
+},
+"level2": "follower 3–24 h",
+"cell": 629
+},
+{
+"group": "slice",
+"dial": "tier×first",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"first": "follower >24 h"
+},
+"level2": "follower >24 h",
+"cell": 630
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 631
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 632
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "elite",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "elite",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 633
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 634
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 635
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "good",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "good",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 636
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"ncallers": "1"
+},
+"level2": "1",
+"cell": 637
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"ncallers": "2"
+},
+"level2": "2",
+"cell": 638
+},
+{
+"group": "slice",
+"dial": "tier×ncallers",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"ncallers": "3+"
+},
+"level2": "3+",
+"cell": 639
+},
+{
+"group": "corner",
+"dial": "tier×hold",
+"level": "other",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"level2": "15 min",
+"cell": 640
+},
+{
+"group": "corner",
+"dial": "tier×hold",
+"level": "other",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other"
+},
+"level2": "72 h",
+"cell": 641
+},
+{
+"group": "corner",
+"dial": "age×hold",
+"level": ">7 d",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": "15 min",
+"cell": 642
+},
+{
+"group": "corner",
+"dial": "age×hold",
+"level": ">7 d",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"age": ">7 d"
+},
+"level2": "72 h",
+"cell": 643
+},
+{
+"group": "corner",
+"dial": "tier×delay",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"tier": "other"
+},
+"level2": "60 min",
+"cell": 644
+},
+{
+"group": "corner",
+"dial": "delay×src",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"filters": {
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 645
+},
+{
+"group": "corner",
+"dial": "tier×runup",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"runup": "no print in the hour"
+},
+"level2": "no print in the hour",
+"cell": 646
+},
+{
+"group": "corner",
+"dial": "tier×src",
+"level": "other",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"tier": "other",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 647
+},
+{
+"group": "corner",
+"dial": "mcap×src",
+"level": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"mcap": ">$1M",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 648
+},
+{
+"group": "corner",
+"dial": "runup×src",
+"level": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"runup": "no print in the hour",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 649
+},
+{
+"group": "corner",
+"dial": "first×src",
+"level": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"first": "follower >24 h",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 650
+},
+{
+"group": "corner",
+"dial": "ncallers×src",
+"level": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"ncallers": "3+",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 651
+},
+{
+"group": "corner",
+"dial": "age×src",
+"level": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"filters": {
+"age": ">7 d",
+"src": "CallAnalyser"
+},
+"level2": "CallAnalyser",
+"cell": 652
+}
+],
+"aliases": [
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 min",
+"level2": "+50%",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"5 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7.5 min",
+"level2": "+50%",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"7.5 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "15 min",
+"level2": "+50%",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "1 h",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "1 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "1 h",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "1 h",
+"level2": "none",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"key": [
+"1 h",
+"none",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "4 h",
+"level2": "+50%",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"4 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "12 h",
+"level2": "+50%",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"12 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "24 h",
+"level2": "+25%",
+"hold": "24 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "24 h",
+"level2": "+50%",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "24 h",
+"level2": "+100%",
+"hold": "24 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "24 h",
+"level2": "none",
+"hold": "24 h",
+"tp": "none",
+"delay": "1 min",
+"key": [
+"24 h",
+"none",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "72 h",
+"level2": "+50%",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "5 d",
+"level2": "+50%",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"5 d",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "hold×tp",
+"level": "7 d",
+"level2": "+50%",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"7 d",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "<$50k",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"<$50k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$50k–$100k",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$50k–$100k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$100k–$250k",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$100k–$250k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": "$250k–$1M",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$250k–$1M"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "mcap×tp",
+"level": ">$1M",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "<0",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"<0"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "0–50%",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"0–50%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "50–200%",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"50–200%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": ">200%",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+">200%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "first",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"first"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower ≤5 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower ≤5 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 5–30 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 5–30 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 30–180 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 30–180 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower 3–24 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 3–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×tp",
+"level": "follower >24 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "1",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"1"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "2",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"2"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×tp",
+"level": "3+",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "<1 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"<1 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–6 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"1–6 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "6–24 h",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"6–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": "1–7 d",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"1–7 d"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "age×tp",
+"level": ">7 d",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"1"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "1",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"1"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"2"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "2",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"2"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "ncallers×hold",
+"level": "3+",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "5 min",
+"hold": "5 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"5 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "7.5 min",
+"hold": "7.5 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"7.5 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "15 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "4 h",
+"hold": "4 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"4 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "12 h",
+"hold": "12 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"12 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "72 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "5 d",
+"hold": "5 d",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"5 d",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "1 min",
+"level2": "7 d",
+"hold": "7 d",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"7 d",
+"+50%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"key": [
+"1 h",
+"+50%",
+"5 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "5 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "5 min",
+"key": [
+"24 h",
+"+50%",
+"5 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"key": [
+"1 h",
+"+50%",
+"15 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "15 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "15 min",
+"key": [
+"24 h",
+"+50%",
+"15 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×hold",
+"level": "60 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"24 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "none",
+"hold": "1 h",
+"tp": "none",
+"delay": "1 min",
+"key": [
+"1 h",
+"none",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "5 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "5 min",
+"key": [
+"1 h",
+"+50%",
+"5 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "15 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "15 min",
+"key": [
+"1 h",
+"+50%",
+"15 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×tp",
+"level": "60 min",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "1 min",
+"level2": "<$50k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"<$50k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "1 min",
+"level2": "$50k–$100k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$50k–$100k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "1 min",
+"level2": "$100k–$250k",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$100k–$250k"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "1 min",
+"level2": "$250k–$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+"$250k–$1M"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×mcap",
+"level": "1 min",
+"level2": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "1 min",
+"level2": "<0",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"<0"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "1 min",
+"level2": "0–50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"0–50%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "1 min",
+"level2": "50–200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"50–200%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "1 min",
+"level2": ">200%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+">200%"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×runup",
+"level": "1 min",
+"level2": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "first",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"first"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "follower ≤5 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower ≤5 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "follower 5–30 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 5–30 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "follower 30–180 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 30–180 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "follower 3–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 3–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×first",
+"level": "1 min",
+"level2": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "1 min",
+"level2": "1",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"1"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "1 min",
+"level2": "2",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"2"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×ncallers",
+"level": "1 min",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "1 min",
+"level2": "<1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"<1 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "1 min",
+"level2": "1–6 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"1–6 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "1 min",
+"level2": "6–24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"6–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "1 min",
+"level2": "1–7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+"1–7 d"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "delay×age",
+"level": "1 min",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"first"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "first",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"first"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower ≤5 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower ≤5 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower ≤5 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 5–30 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 5–30 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 5–30 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 30–180 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 30–180 min",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 30–180 min"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 3–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower 3–24 h",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower 3–24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"level2": "1 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "first×hold",
+"level": "follower >24 h",
+"level2": "24 h",
+"hold": "24 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"24 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "dialtest"
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "direct",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"src",
+"direct"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"src",
+"CallAnalyser"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "elite",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"tier",
+"elite"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "good",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"tier",
+"good"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "slice",
+"dial": "tier×tp",
+"level": "other",
+"level2": "+50%",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "hold×tp",
+"level": "15 min",
+"level2": "+25%",
+"hold": "15 min",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "hold×tp",
+"level": "15 min",
+"level2": "+100%",
+"hold": "15 min",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "hold×tp",
+"level": "72 h",
+"level2": "+25%",
+"hold": "72 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "hold×tp",
+"level": "72 h",
+"level2": "+100%",
+"hold": "72 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×tp",
+"level": "follower >24 h",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×tp",
+"level": "follower >24 h",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×hold",
+"level": "follower >24 h",
+"level2": "15 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×hold",
+"level": "follower >24 h",
+"level2": "72 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×tp",
+"level": "other",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×tp",
+"level": "other",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×tp",
+"level": "1 min",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×tp",
+"level": "60 min",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+25%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×tp",
+"level": "60 min",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+100%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×tp",
+"level": ">$1M",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×tp",
+"level": ">$1M",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "runup×tp",
+"level": "no print in the hour",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "ncallers×tp",
+"level": "3+",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "ncallers×tp",
+"level": "3+",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "age×tp",
+"level": ">7 d",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"age",
+">7 d"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "age×tp",
+"level": ">7 d",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"age",
+">7 d"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tp",
+"level": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"level2": "+25%",
+"hold": "1 h",
+"tp": "+25%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+25%",
+"1 min",
+[
+[
+"src",
+"CallAnalyser"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "src×tp",
+"level": "CallAnalyser",
+"level2": "+100%",
+"hold": "1 h",
+"tp": "+100%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+100%",
+"1 min",
+[
+[
+"src",
+"CallAnalyser"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×first",
+"level": ">$1M",
+"level2": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+],
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "ncallers×hold",
+"level": "3+",
+"level2": "15 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"15 min",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "ncallers×hold",
+"level": "3+",
+"level2": "72 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"72 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×first",
+"level": "other",
+"level2": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+],
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×age",
+"level": "follower >24 h",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+],
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×mcap",
+"level": "other",
+"level2": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+],
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×age",
+"level": ">$1M",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+],
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "first×ncallers",
+"level": "follower >24 h",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+],
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×ncallers",
+"level": ">$1M",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+],
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×age",
+"level": "other",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+],
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "tier×ncallers",
+"level": "other",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+],
+[
+"tier",
+"other"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "ncallers×age",
+"level": "3+",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+],
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×hold",
+"level": "60 min",
+"level2": "15 min",
+"hold": "15 min",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"15 min",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×hold",
+"level": "60 min",
+"level2": "72 h",
+"hold": "72 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"72 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×first",
+"level": "60 min",
+"level2": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[
+[
+"first",
+"follower >24 h"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×mcap",
+"level": "60 min",
+"level2": ">$1M",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[
+[
+"mcap",
+">$1M"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×runup",
+"level": "60 min",
+"level2": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×ncallers",
+"level": "60 min",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[
+[
+"ncallers",
+"3+"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay×age",
+"level": "60 min",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[
+[
+"age",
+">7 d"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "delay",
+"level": "60 min",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "60 min",
+"key": [
+"1 h",
+"+50%",
+"60 min",
+[]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "runup×first",
+"level": "no print in the hour",
+"level2": "follower >24 h",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"first",
+"follower >24 h"
+],
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "mcap×runup",
+"level": ">$1M",
+"level2": "no print in the hour",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"mcap",
+">$1M"
+],
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "runup×age",
+"level": "no print in the hour",
+"level2": ">7 d",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"age",
+">7 d"
+],
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+},
+{
+"group": "corner",
+"dial": "runup×ncallers",
+"level": "no print in the hour",
+"level2": "3+",
+"hold": "1 h",
+"tp": "+50%",
+"delay": "1 min",
+"key": [
+"1 h",
+"+50%",
+"1 min",
+[
+[
+"ncallers",
+"3+"
+],
+[
+"runup",
+"no print in the hour"
+]
+]
+],
+"source": "here"
+}
+]
+}

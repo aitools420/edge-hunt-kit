@@ -1,0 +1,44 @@
+# PREREG hashes — written 2026-10-02T12:57:48Z, BEFORE any return of batch 1 or batch 2 was computed (engine r1 running since 12:53Z, output unopened)
+3ddf15476774a91f3070df70a3bdc851c28ed27a6b2e929839b91d8b255a80d9  PREREG.md
+16be7bdbc2a1fdcb864c5c9e1aa8a60b26d3c772fdcfff6676ed97674b3c6167  PREREG2.md
+567dd65b7830110eb8149dfc87e4d3915256c85757d16957872b83b10bc69163  FEASIBILITY.md
+82245a433f665ce3804594b7aa10f7aca4294357e9e7d8eeb0ff2a372a66b5d8  cells.py
+f6fb1382fce7ba8771b00f263dfd173e281bf1281392f8825d45c239532336e8  cells1.json
+0a3c87dd07b22e1ff28bb02e4453d1af49c6b1c394f21761fdf5a7e080c04b88  cells2.json
+311370c9fbaf3fc4c5b3f0be5f628d98cc76d94ec670f46f425d94c11b91b950  engine.py
+4bc21eac5d997d0a5011c41d3dfb9a377a6e98a7dad19679a6919f0f366b99f7  engine_fast.py
+9f136a7d68f738816eb51723718c96f089fba64fbc2600ca20ef62ea30d69024  analyze.py
+e1f3d35ff1b4230e2906802a901db171789bc0c34db35366b66a658c61fb8ab4  analyze_fast.py
+f5b320b9b3def317b14528a6908567022773cdf122c47da522744a8fa82aa5f2  costs.py
+8143b44d271b7c385f0cf649cf7a867399126209251151e2554d18ef7e464821  hop_static.json
+3ef3e2f95e7be12625878b6468b51e473ccc507c6848314dc73b8938d06e32ff  hopstatic.py
+14e055c8727a0d43ee4b8abcc856145b5372f90ad34613a0af2999ac8c39053b  check_delay.py
+7a872f70410cd5952055fde106950217dae24937e0d0ca59bec608b8931c24e9  check_old.py
+e8be72b8b449328f67829df96013e286467846a8cb503f9627a830c97fb288e3  bridge_rows.py
+b4a7de4c4b0db638ab4acbc12241ebb414b219d54e6829a48f164e8674332dd5  guard.py
+bb23c1b1bd07bcca291881cbc4a19cebb4e340a4ae32da0c95dc358a2ad87f40  calls_snapshot.json
+d680df8b0a548afc078a58868765843d1bcf696ba542390833c4a9e737c8a615  calledmeta.json
+0a8811729500a87192619e31f3dc30e7f453949acb20276fdcdd173ebc3fe0a7  levels.json
+9ac4bfb244a3a4130130d2bbb49fc2d9f8f23ba26c3642b3a3affe809a0b50bc  bands.json
+8727f0b4d78b12beebd9953132de7ac3910ec38d06c91476a8058478c8a46de2  poolfee.tsv
+# mutation tests on the smoke run (07-08..07-21), done before this hash: check_delay unmutated GREEN; mutant A RED (C2 696, C1 201); mutant B RED (C2 984, C1 260); check_old GREEN (153,840 marks, worst 5e-5); check_old MUTATE=1 RED (6,987 mismatches)
+# AMENDMENT 1, 2026-10-02T12:59:36Z — before any FULL-run result was read: costs.py bounds realism's linear V2/V3 impact as u/(1+u) (one coin's single receipt implied 11,400 % impact per side and booked +2.3M % in the smoke). DISCLOSURE: while testing report.py on the SMOKE run (07-08..07-21 only, ~215 direct-lane calls) its outcome lines were printed and seen. No cell, rule, view or cost changed because of them other than this outcome-independent bound.
+8aa2ae495467a27e678e60ea5d6fc596eb2313fa78f1927fa9a9c0917053801d  costs.py
+# AMENDMENT 2, 2026-10-02T13:36:33Z — before any full-run return was read: bridge_rows.py compares pass B's keys inside each booked mark (this run adds mDx) and accepts differences ONLY in the whole-life flags rug/drained/hiIgn/hiOk (positions now live to 11 d, pass B's to 7 d); every booked mark and take-profit flag must be identical. Result r1 vs pass B tp50/25/100: 49,407 positions, 0 booking differences, 476 lifetime-flag-only. check_delay r1 GREEN (C1 19,552 · C2 56,476 · C3 19,624 · C4 68,076 checks).
+f69650da2e407d0a3a42408aeea323540819d45fdd29a20eda3c869c495a20d3  bridge_rows.py
+# r2 checks 2026-10-02T14:44:55Z: check_delay r2 GREEN; bridge_rows r2 none vs pass B tpnone: 16,469 positions, 0 booking differences, 463 lifetime-flag-only.
+# FINAL 2026-10-02T14:55:10Z: deliverables (results written after both PREREGs were hashed)
+69a3e49efde9d06842c4a1d4efdaa5f6a3e9181290886a530443ee2cd67c2cf4  results.json
+33e5d637c2742bf65a9fc961d2a3d1553714f68d8e4d4413dcc6ad9ce2a466ad  results2.json
+31078adb6d0c2a9315fac87528373fd8b4dd43032f399dfce39083c05e394178  report.txt
+06498b4031f9cfeca0d69fd42fcedf3817a476a6293b8a71b8c09483ba627471  report2.txt
+f0e99d861daf2b4ffc0c103f9503eb6e1477d488bae64a8973e2f9bde295ffa4  FEASIBILITY.md
+71b815063a13a1ffece6f664f3340babe0a5927117e4cb26c665a3a2ef8217a3  analysis1.json
+e545a763bc42f3162734b91bbebc04e640c2bf4dced259ec399fbb03df02f1cb  analysis2.json
+4fec1a1e3e5f448b52bca222083f4620ca007e068a1e80816a649e2402aed854  squares_b1.json
+8b3b6fc0c1023ba3a90a8c549c242667d4946262e3a4ac91acd0db2814a92f2b  squares_b2.json
+e69d072df307fa173f169e6456161257132ca9691b52b80d8615a93c7ab8327d  squares.json
+3cec71b7be87b602bd641cca3c505d05a7548631afef74b936187b8bd9d5f4cd  report.py
+8ffcf802b69cdd59e184db5e0240a5031ee02fd0a7e0c4334f685e8c66da6abd  squares.py
+06a0a6abdc4514e95ddba859cbe9eebdc93da4dc99f235e5910c874fa939259f  cov_only.py
+# big intermediates deleted (rows_fast_r1/r2.ndjson 0.4–0.5 GB each; smoke + mutant rows). Rebuild: ./run_full.sh (≈ 41 + 69 min under load), then check_delay.py / bridge_rows.py / analyze_fast.py 1|2 / report.py 1|2 / squares.py.

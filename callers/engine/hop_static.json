@@ -1,0 +1,2427 @@
+{
+ "size_eth": 0.02,
+ "step_sec": 10800,
+ "tables": [
+  "/home/green/projects/patches/blood-oldweeks-2026-09-30/work/OW/hop/hop_tables.pkl",
+  "/home/green/projects/patches/spot-skeleton-2026-09-30/out/hop/hop_tables.pkl",
+  "/home/green/projects/patches/blood-next-2026-10-02/work/J/hop/hop_tables.pkl"
+ ],
+ "tokens": {
+  "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc": {
+   "buy": 0.011068,
+   "sell": 0.011055,
+   "n": 761,
+   "tried": 809,
+   "p90buy": 0.011199,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x117cc2133c37b721f49de2a7a74833232b3b4c0c": {
+   "buy": 0.001483,
+   "sell": 0.001482,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004013,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a": {
+   "buy": 0.011048,
+   "sell": 0.011035,
+   "n": 696,
+   "tried": 744,
+   "p90buy": 0.011114,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xff080c8ce2e5feadaca0da81314ae59d232d4afd": {
+   "buy": 0.010766,
+   "sell": 0.010758,
+   "n": 698,
+   "tried": 746,
+   "p90buy": 0.011033,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x5fc5360d0400a0fd4f2af552add042d716f1d168": {
+   "buy": 0.000582,
+   "sell": 0.000582,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.000621,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
+   "buy": 0.001073,
+   "sell": 0.001072,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.001689,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x322f0929c4625ed5bad873c95208d54e1c003b2d": {
+   "buy": 0.004005,
+   "sell": 0.004001,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004114,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea": {
+   "buy": 0.003415,
+   "sell": 0.003413,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004154,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3": {
+   "buy": 0.004004,
+   "sell": 0.004,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004069,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x6330d8c3178a418788df01a47479c0ce7ccf450b": {
+   "buy": 0.011044,
+   "sell": 0.01103,
+   "n": 753,
+   "tried": 801,
+   "p90buy": 0.011544,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x05a3d1cd21d0c88145e82600e62e7e496e0f222b": {
+   "buy": 0.004205,
+   "sell": 0.004197,
+   "n": 566,
+   "tried": 618,
+   "p90buy": 0.053376,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xd5f3879160bc7c32ebb4dc785f8a4f505888de68": {
+   "buy": 0.017864,
+   "sell": 0.017657,
+   "n": 752,
+   "tried": 809,
+   "p90buy": 0.0481,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x12f190a9f9d7d37a250758b26824b97ce941bf54": {
+   "buy": 0.004144,
+   "sell": 0.004139,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004648,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8": {
+   "buy": 0.011649,
+   "sell": 0.011622,
+   "n": 725,
+   "tried": 774,
+   "p90buy": 0.0372,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xb90a19ff0af67f7779aff50a882a9cff42446400": {
+   "buy": 0.011029,
+   "sell": 0.011016,
+   "n": 697,
+   "tried": 745,
+   "p90buy": 0.01111,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
+   "buy": 0.003985,
+   "sell": 0.003981,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004035,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c": {
+   "buy": 0.008232,
+   "sell": 0.008219,
+   "n": 674,
+   "tried": 722,
+   "p90buy": 0.01153,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xc0d6457c16cc70d6790dd43521c899c87ce02f35": {
+   "buy": 0.004037,
+   "sell": 0.004033,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.00415,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x5e81213613b6b86eab4c6c50d718d34359459786": {
+   "buy": 0.007765,
+   "sell": 0.007753,
+   "n": 700,
+   "tried": 750,
+   "p90buy": 0.058916,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x1d11f0496982706c5e14a514d4e79f2e6bde4516": {
+   "buy": 0.00299,
+   "sell": 0.002987,
+   "n": 506,
+   "tried": 554,
+   "p90buy": 0.007195,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x1b0e319c6a659f002271b69db8a7df2f911c153e": {
+   "buy": 0.007266,
+   "sell": 0.00722,
+   "n": 761,
+   "tried": 809,
+   "p90buy": 0.011062,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8": {
+   "buy": 0.007403,
+   "sell": 0.007378,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.011099,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xec262a75e413fafd0df80480274532c79d42da09": {
+   "buy": 0.003624,
+   "sell": 0.00362,
+   "n": 706,
+   "tried": 786,
+   "p90buy": 0.033703,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5": {
+   "buy": 0.004275,
+   "sell": 0.004269,
+   "n": 689,
+   "tried": 737,
+   "p90buy": 0.010214,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619": {
+   "buy": 0.014335,
+   "sell": 0.014219,
+   "n": 425,
+   "tried": 550,
+   "p90buy": 0.06493,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xe93237c50d904957cf27e7b1133b510c669c2e74": {
+   "buy": 0.00401,
+   "sell": 0.004005,
+   "n": 762,
+   "tried": 810,
+   "p90buy": 0.004071,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xf53f66751b1eff985311b693531e3290f600c410": {
+   "buy": 0.052479,
+   "sell": 0.052276,
+   "n": 492,
+   "tried": 687,
+   "p90buy": 0.058686,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2": {
+   "buy": 0.050612,
+   "sell": 0.049858,
+   "n": 712,
+   "tried": 786,
+   "p90buy": 0.056171,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344": {
+   "buy": 0.003805,
+   "sell": 0.003799,
+   "n": 696,
+   "tried": 745,
+   "p90buy": 0.022843,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x92fd66527192e3e61d4ddd13322aa222de86f9b5": {
+   "buy": 0.001204,
+   "sell": 0.001204,
+   "n": 261,
+   "tried": 407,
+   "p90buy": 0.04932,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x58ffe4a942d3885baa22d7520691f611ef09e7aa": {
+   "buy": 0.008436,
+   "sell": 0.008427,
+   "n": 476,
+   "tried": 737,
+   "p90buy": 0.195778,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xcef9027c7d6985b85f0ba431125073529a947a68": {
+   "buy": 0.050453,
+   "sell": 0.050431,
+   "n": 449,
+   "tried": 549,
+   "p90buy": 0.05747,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x84cab63bc87912e71ad199ff14a0ba45de68fef8": {
+   "buy": 0.014957,
+   "sell": 0.014844,
+   "n": 569,
+   "tried": 624,
+   "p90buy": 0.048662,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4": {
+   "buy": 0.047563,
+   "sell": 0.046286,
+   "n": 511,
+   "tried": 720,
+   "p90buy": 0.071643,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x8005d266423c7ea827372c9c864491e5786600ea": {
+   "buy": 0.001733,
+   "sell": 0.001731,
+   "n": 336,
+   "tried": 744,
+   "p90buy": 1.375563,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x822cc93ffd030293e9842c30bbd678f530701867": {
+   "buy": 0.078995,
+   "sell": 0.075557,
+   "n": 654,
+   "tried": 710,
+   "p90buy": 0.110381,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e": {
+   "buy": 0.003105,
+   "sell": 0.003101,
+   "n": 556,
+   "tried": 609,
+   "p90buy": 0.053229,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xb1bf26c1d20ff267a4f93550d1e0d06ac40a114b": {
+   "buy": 0.05349,
+   "sell": 0.053181,
+   "n": 440,
+   "tried": 544,
+   "p90buy": 0.073846,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd": {
+   "buy": 0.0517,
+   "sell": 0.051574,
+   "n": 581,
+   "tried": 725,
+   "p90buy": 0.080759,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xccee82fe024c36fa15e1005ede3e9e4787e23d09": {
+   "buy": 0.008704,
+   "sell": 0.008691,
+   "n": 485,
+   "tried": 547,
+   "p90buy": 0.062109,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x48e39e56acdba37b09020c0b734a613c9a2f100a": {
+   "buy": 0.008213,
+   "sell": 0.008203,
+   "n": 458,
+   "tried": 541,
+   "p90buy": 0.060427,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x62fd0668e10d8b72339be2dcf7643001688ff13b": {
+   "buy": 0.051665,
+   "sell": 0.051481,
+   "n": 370,
+   "tried": 680,
+   "p90buy": 0.079855,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xf6589f11bc40b669e584073f428b05562f568733": {
+   "buy": 0.00395,
+   "sell": 0.003947,
+   "n": 394,
+   "tried": 535,
+   "p90buy": 0.09854,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80": {
+   "buy": 0.028369,
+   "sell": 0.027587,
+   "n": 370,
+   "tried": 483,
+   "p90buy": 0.072247,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x41f4267525a8aff329540ef24fd83d9044758b33": {
+   "buy": 0.00882,
+   "sell": 0.008749,
+   "n": 391,
+   "tried": 529,
+   "p90buy": 0.07588,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xe24cabdf76dd1c2576049167eb1755c84b985c36": {
+   "buy": 0.029332,
+   "sell": 0.028497,
+   "n": 399,
+   "tried": 570,
+   "p90buy": 0.058327,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x25c288e6d899b9bc30160965ad9644c67e73be0c": {
+   "buy": 0.033262,
+   "sell": 0.033207,
+   "n": 389,
+   "tried": 662,
+   "p90buy": 0.444381,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x408c14038a04f7bd235329e26d2bf569ee20e250": {
+   "buy": 0.008967,
+   "sell": 0.008957,
+   "n": 309,
+   "tried": 424,
+   "p90buy": 0.318082,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xf23250dac154d05bb671cb0d0ebef3c635c79ce2": {
+   "buy": 0.003418,
+   "sell": 0.003414,
+   "n": 272,
+   "tried": 336,
+   "p90buy": 1.747529,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x4e62068525ab11fe768e29dfd00ef909b9803016": {
+   "buy": 0.003417,
+   "sell": 0.003413,
+   "n": 320,
+   "tried": 370,
+   "p90buy": 0.085881,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xcec185eb182c47d1ba1efc84e6959e18cd620be4": {
+   "buy": 0.001478,
+   "sell": 0.001477,
+   "n": 372,
+   "tried": 422,
+   "p90buy": 0.002544,
+   "tables": [
+    "OW/hop",
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e": {
+   "buy": 0.002881,
+   "sell": 0.002876,
+   "n": 258,
+   "tried": 318,
+   "p90buy": 0.079752,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0xacef2e09adb47ad6abebad9ff06689e60615c2b6": {
+   "buy": 0.002904,
+   "sell": 0.002901,
+   "n": 223,
+   "tried": 272,
+   "p90buy": 0.051762,
+   "tables": [
+    "OW/hop",
+    "out/hop"
+   ]
+  },
+  "0x39dbed3a2bd333467115de45665cc57f813c4571": {
+   "buy": 0.004048,
+   "sell": 0.004043,
+   "n": 499,
+   "tried": 547,
+   "p90buy": 0.004159,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x020bfc650a365f8bb26819deaabf3e21291018b4": {
+   "buy": 0.003617,
+   "sell": 0.003614,
+   "n": 499,
+   "tried": 547,
+   "p90buy": 0.003754,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xe934e36a439c94017b64a3fece66af12099abf50": {
+   "buy": 0.010424,
+   "sell": 0.010424,
+   "n": 499,
+   "tried": 547,
+   "p90buy": 0.010438,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf444f3c77c77a33f7c8d8fcab8a1e88afb843da5": {
+   "buy": 0.833174,
+   "sell": 0.454725,
+   "n": 305,
+   "tried": 547,
+   "p90buy": 18.861847,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x56910d4409f3a0c78c64dd8d0545ff0705389870": {
+   "buy": 0.010709,
+   "sell": 0.010693,
+   "n": 563,
+   "tried": 611,
+   "p90buy": 0.011013,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x45242320dbb855eea8fd36804c6487e10e97fcf9": {
+   "buy": 0.010779,
+   "sell": 0.010771,
+   "n": 499,
+   "tried": 547,
+   "p90buy": 0.017338,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xc72c01aab5f5678dc1d6f5c6d2b417d91d402ba3": {
+   "buy": 41.077521,
+   "sell": 0.976292,
+   "n": 150,
+   "tried": 547,
+   "p90buy": 69.661297,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb0992820e760d836549ba69bc7598b4af75dee03": {
+   "buy": 0.059387,
+   "sell": 0.058456,
+   "n": 497,
+   "tried": 547,
+   "p90buy": 0.067801,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f": {
+   "buy": 0.047699,
+   "sell": 0.045528,
+   "n": 465,
+   "tried": 546,
+   "p90buy": 0.16063,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681": {
+   "buy": 0.011024,
+   "sell": 0.011011,
+   "n": 498,
+   "tried": 546,
+   "p90buy": 0.011348,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x62c71cd34a52c30d894419cbcc55db2afa8032ea": {
+   "buy": 0.01196,
+   "sell": 0.011926,
+   "n": 497,
+   "tried": 546,
+   "p90buy": 14.732926,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x57c0e45cb534413d1c20a4240955d6bb250bb4f1": {
+   "buy": 0.01071,
+   "sell": 0.010704,
+   "n": 488,
+   "tried": 546,
+   "p90buy": 16.161203,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2": {
+   "buy": 0.059601,
+   "sell": 0.058646,
+   "n": 393,
+   "tried": 546,
+   "p90buy": 0.083332,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x36046893810a7e7fce501229d57dc3fc8c8716d0": {
+   "buy": 0.057242,
+   "sell": 0.056523,
+   "n": 377,
+   "tried": 542,
+   "p90buy": 1.013412,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xd9db30bb0d2b8d2eae3826a1372117e058791e18": {
+   "buy": 0.040737,
+   "sell": 0.040501,
+   "n": 312,
+   "tried": 532,
+   "p90buy": 1.720344,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
+   "buy": 0.011058,
+   "sell": 0.011044,
+   "n": 482,
+   "tried": 530,
+   "p90buy": 0.022559,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3": {
+   "buy": 0.051028,
+   "sell": 0.050967,
+   "n": 477,
+   "tried": 530,
+   "p90buy": 0.07082,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x0f17206447090e464c277571124dd2688e48aea9": {
+   "buy": 0.062747,
+   "sell": 0.061433,
+   "n": 420,
+   "tried": 523,
+   "p90buy": 0.075208,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5": {
+   "buy": 0.06652,
+   "sell": 0.064753,
+   "n": 434,
+   "tried": 519,
+   "p90buy": 0.080303,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x4a6eec8a30b49d289b9fc865fd374b4d61eab8fb": {
+   "buy": 0.004391,
+   "sell": 0.004383,
+   "n": 520,
+   "tried": 520,
+   "p90buy": 0.007697,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x1af6446f07eb1d97c546afc8c9544cbdf3ad5137": {
+   "buy": 0.061687,
+   "sell": 0.060495,
+   "n": 341,
+   "tried": 514,
+   "p90buy": 0.070615,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9d9c6684f596f66a64c030b93a886d51fd4d7931": {
+   "buy": 0.0848,
+   "sell": 0.080512,
+   "n": 361,
+   "tried": 507,
+   "p90buy": 0.091561,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x44c4f142009036cf477ed2d09932051843137cf1": {
+   "buy": 0.050685,
+   "sell": 0.050657,
+   "n": 283,
+   "tried": 505,
+   "p90buy": 0.075328,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x8f86a15ec17cb3369d8b3e666dadbc11daa82b79": {
+   "buy": 0.006332,
+   "sell": 0.006304,
+   "n": 454,
+   "tried": 503,
+   "p90buy": 0.006473,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xcbb95bbf36099d34da091dc6fa6f49efa257cee3": {
+   "buy": 0.059337,
+   "sell": 0.058411,
+   "n": 310,
+   "tried": 503,
+   "p90buy": 0.08579,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x47f93d52cbec7c6d2cfc080e154002370a60daea": {
+   "buy": 0.012431,
+   "sell": 0.012333,
+   "n": 253,
+   "tried": 506,
+   "p90buy": 10712.614279,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb8dbf92f9741c9ac1c32115e78581f23509916fd": {
+   "buy": 0.059586,
+   "sell": 0.058633,
+   "n": 354,
+   "tried": 485,
+   "p90buy": 0.072744,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x156e175dd063a8ce274c50654ef40e0032b3fbcf": {
+   "buy": 0.066769,
+   "sell": 0.064971,
+   "n": 392,
+   "tried": 495,
+   "p90buy": 0.105074,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9b23573b156b52565012f5ce02cdf60afbaa70be": {
+   "buy": 0.055111,
+   "sell": 0.05464,
+   "n": 376,
+   "tried": 484,
+   "p90buy": 0.075575,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xd917b029c761d264c6a312bbbcda868658ef86a6": {
+   "buy": 0.032725,
+   "sell": 0.031774,
+   "n": 435,
+   "tried": 483,
+   "p90buy": 0.04746,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xa5d4968421ba94814be3b136b15cf422101ac1a3": {
+   "buy": 0.054496,
+   "sell": 0.054094,
+   "n": 149,
+   "tried": 480,
+   "p90buy": 0.154899,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x59818904ab4ce163b3ce4ffb64f2d6ca02c434b4": {
+   "buy": 0.05876,
+   "sell": 0.057711,
+   "n": 271,
+   "tried": 482,
+   "p90buy": 0.178364,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x8cf07c5a878945185d327aaa6e33faa95f95e7bf": {
+   "buy": 0.064548,
+   "sell": 0.06302,
+   "n": 283,
+   "tried": 479,
+   "p90buy": 0.07632,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x98e75885157c80992a8d41b696d8c9c6fb30a926": {
+   "buy": 0.056854,
+   "sell": 0.056199,
+   "n": 315,
+   "tried": 474,
+   "p90buy": 0.071549,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf0ab0c93be6f41369d302e55db1a96b3c430212d": {
+   "buy": 0.017427,
+   "sell": 0.017216,
+   "n": 397,
+   "tried": 471,
+   "p90buy": 0.019945,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfb5b5778d45ae47f15323fb59b666c655174a79c": {
+   "buy": 0.069868,
+   "sell": 0.067679,
+   "n": 197,
+   "tried": 404,
+   "p90buy": 0.133603,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x32ac8c1d7672667d5ebdea22935f7b06fc8d496f": {
+   "buy": 0.002941,
+   "sell": 0.002939,
+   "n": 234,
+   "tried": 426,
+   "p90buy": 0.719304,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e": {
+   "buy": 0.040522,
+   "sell": 0.040149,
+   "n": 306,
+   "tried": 406,
+   "p90buy": 2.062363,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x92ef19e82bd8ff36661de838d5eae7e5cef0effe": {
+   "buy": 0.054915,
+   "sell": 0.054464,
+   "n": 134,
+   "tried": 400,
+   "p90buy": 0.154871,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xc72f232a6869e6cf34dc06129affd07f8a2a246a": {
+   "buy": 0.011079,
+   "sell": 0.011065,
+   "n": 359,
+   "tried": 408,
+   "p90buy": 0.045377,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x4472c69d299382f8847ebce4fc6ed8e295510e3e": {
+   "buy": 0.017447,
+   "sell": 0.017254,
+   "n": 282,
+   "tried": 402,
+   "p90buy": 0.230576,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x451b42a15100c340ca12f7c66de06fac5ea2d751": {
+   "buy": 0.021813,
+   "sell": 0.021434,
+   "n": 344,
+   "tried": 393,
+   "p90buy": 0.060075,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9e722ee888bcc282a20f16b85ec1a48be15d32cf": {
+   "buy": 3.465988,
+   "sell": 0.840487,
+   "n": 147,
+   "tried": 365,
+   "p90buy": 6.242574,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x0c3260af4b8f13a69c4c2dfb84fd667890cdfa14": {
+   "buy": 0.021683,
+   "sell": 0.021592,
+   "n": 157,
+   "tried": 404,
+   "p90buy": 2.016296,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xe8fb470e0685437d7739bd2aacba60b228800335": {
+   "buy": 0.19608,
+   "sell": 0.163936,
+   "n": 223,
+   "tried": 350,
+   "p90buy": 48.212854,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x282e87451e10fa6679bc7d76c69be44cd3fc777c": {
+   "buy": 0.058066,
+   "sell": 0.057158,
+   "n": 175,
+   "tried": 449,
+   "p90buy": 0.586898,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x348be1a8663f15edde5cdf8a96bb69078f7ab6fd": {
+   "buy": 0.028644,
+   "sell": 0.027915,
+   "n": 225,
+   "tried": 347,
+   "p90buy": 0.073786,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x0b5fb4031cae9163db10b169ee72685f0edc8545": {
+   "buy": 0.057582,
+   "sell": 0.056635,
+   "n": 197,
+   "tried": 342,
+   "p90buy": 0.096262,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x2d427692e928fa156ec22acfabafa0447c5805b7": {
+   "buy": 0.0311,
+   "sell": 0.031059,
+   "n": 265,
+   "tried": 354,
+   "p90buy": 0.062004,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xa249baf1063af884807c1e1400aef7784836917e": {
+   "buy": 0.038329,
+   "sell": 0.037976,
+   "n": 215,
+   "tried": 340,
+   "p90buy": 0.074997,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x62200915e7deab1ec7f79fb246dadbb80eacddd0": {
+   "buy": 0.020931,
+   "sell": 0.020588,
+   "n": 174,
+   "tried": 348,
+   "p90buy": 0.068948,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf543967eebb6f1917992ef0e68de63ab07a5a0da": {
+   "buy": 0.021799,
+   "sell": 0.021666,
+   "n": 214,
+   "tried": 350,
+   "p90buy": 0.070184,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x43b07d15ce533bec5476d70c22a78a1b2b662155": {
+   "buy": 0.010912,
+   "sell": 0.010861,
+   "n": 272,
+   "tried": 350,
+   "p90buy": 0.05123,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x116f00968269b7bfbad4109ce591d6e74c0601d4": {
+   "buy": 0.010755,
+   "sell": 0.010738,
+   "n": 271,
+   "tried": 353,
+   "p90buy": 0.07382,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xc02f12b9fe9e707079ec0d546f3050d3f6c1f8bd": {
+   "buy": 0.056865,
+   "sell": 0.056123,
+   "n": 203,
+   "tried": 343,
+   "p90buy": 0.097261,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbbd09f72b025360fee5c928053dca6248d35be54": {
+   "buy": 0.056597,
+   "sell": 0.055974,
+   "n": 214,
+   "tried": 342,
+   "p90buy": 0.069222,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x232b8ed6377be97813853b0ac104c4cda8378d1b": {
+   "buy": 0.021799,
+   "sell": 0.021437,
+   "n": 232,
+   "tried": 340,
+   "p90buy": 0.06442,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x59dd09d4900c2e4b5f75b7c0d4e6796fcc234cb1": {
+   "buy": 0.033315,
+   "sell": 0.033136,
+   "n": 234,
+   "tried": 350,
+   "p90buy": 0.061109,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e": {
+   "buy": 0.010965,
+   "sell": 0.010954,
+   "n": 252,
+   "tried": 350,
+   "p90buy": 0.065263,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9e7abd3c9139d14e4c86dce0e455aab7a0c2fb3e": {
+   "buy": 0.012785,
+   "sell": 0.012754,
+   "n": 250,
+   "tried": 349,
+   "p90buy": 0.06417,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x82da4646242e1d962e96e932269dc644c94a9caa": {
+   "buy": 0.021656,
+   "sell": 0.021605,
+   "n": 209,
+   "tried": 401,
+   "p90buy": 4.072554,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x7dc013eb55e436f30d7ed1afe4e36d6e45e3c3f7": {
+   "buy": 0.05514,
+   "sell": 0.054666,
+   "n": 138,
+   "tried": 348,
+   "p90buy": 0.218765,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xddf2266b79abf0b48898959b0ed6e6adf512be74": {
+   "buy": 0.045452,
+   "sell": 0.044419,
+   "n": 144,
+   "tried": 390,
+   "p90buy": 4.262597,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x39ec44bee4f6a116c6f9b8de566848a985c53c60": {
+   "buy": 0.021282,
+   "sell": 0.02125,
+   "n": 170,
+   "tried": 428,
+   "p90buy": 1.918629,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9651342cea770ae9a2969ba2a52611523146aef9": {
+   "buy": 0.055686,
+   "sell": 0.055155,
+   "n": 136,
+   "tried": 344,
+   "p90buy": 0.089613,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfde6b5d9bb419b10c23268c74e369abff39c0460": {
+   "buy": 0.00997,
+   "sell": 0.009959,
+   "n": 277,
+   "tried": 354,
+   "p90buy": 0.08549,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x44f6d488021f8233b9416294d1fe9b1fee28382d": {
+   "buy": 0.065252,
+   "sell": 0.063454,
+   "n": 122,
+   "tried": 294,
+   "p90buy": 0.138417,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xd95b44124e475743a7589e68f3d74008a5536d44": {
+   "buy": 0.030391,
+   "sell": 0.030146,
+   "n": 210,
+   "tried": 304,
+   "p90buy": 0.069826,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x6e3dfd9f7e1649baa14d25cac18c94d62db10a54": {
+   "buy": 0.004888,
+   "sell": 0.004874,
+   "n": 201,
+   "tried": 301,
+   "p90buy": 0.068783,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9ece29a4a2397c0a35fb5fa8ee2b9509130a98cc": {
+   "buy": 0.055505,
+   "sell": 0.054993,
+   "n": 147,
+   "tried": 297,
+   "p90buy": 1.295416,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d": {
+   "buy": 0.041304,
+   "sell": 0.041082,
+   "n": 151,
+   "tried": 300,
+   "p90buy": 0.067924,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x1eebee7f74517e0279dfb09d25b0407beec3fdd6": {
+   "buy": 0.011747,
+   "sell": 0.011699,
+   "n": 160,
+   "tried": 297,
+   "p90buy": 0.077063,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb039597ed45cba7b6e2fb9e8be51802969cee5be": {
+   "buy": 0.054341,
+   "sell": 0.053949,
+   "n": 166,
+   "tried": 298,
+   "p90buy": 0.133387,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x98096d17e191b3da1d5f99a6d7b3584351b11e18": {
+   "buy": 0.009994,
+   "sell": 0.009983,
+   "n": 248,
+   "tried": 296,
+   "p90buy": 0.070399,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x237c16d66590f67b886d978acd362eaead8b18c7": {
+   "buy": 0.055572,
+   "sell": 0.055043,
+   "n": 152,
+   "tried": 283,
+   "p90buy": 0.098057,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xdd356aa38f40a7b7076755ac854b6fbb1f0d305b": {
+   "buy": 0.064268,
+   "sell": 0.062774,
+   "n": 137,
+   "tried": 257,
+   "p90buy": 1.139957,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xea72ecca2d0f6bfa1394dbbcff85b52cd4233931": {
+   "buy": 0.035076,
+   "sell": 0.034692,
+   "n": 195,
+   "tried": 324,
+   "p90buy": 0.205748,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf51fb54de60f6e16252e852a5ed0e60b8307606a": {
+   "buy": 0.003758,
+   "sell": 0.003753,
+   "n": 205,
+   "tried": 257,
+   "p90buy": 0.040562,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x56d23bee5f41a7120170b0c603dae30128e460e9": {
+   "buy": 0.03777,
+   "sell": 0.037286,
+   "n": 150,
+   "tried": 264,
+   "p90buy": 0.063944,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xc93f4d80e268ab922e871bd169156c3cc41894e6": {
+   "buy": 0.056023,
+   "sell": 0.055362,
+   "n": 131,
+   "tried": 260,
+   "p90buy": 0.108797,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x748c32c3ca24edf31ea597db1f3d330a7a6da3dc": {
+   "buy": 0.053497,
+   "sell": 0.053119,
+   "n": 160,
+   "tried": 316,
+   "p90buy": 0.097626,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xac55570c2476bf13ce1517ab20f6d7b660d8400d": {
+   "buy": 0.102765,
+   "sell": 0.0932,
+   "n": 41,
+   "tried": 50,
+   "p90buy": 0.481137,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x1cdad396db64bda184d5182a97dd9b3c62100b7d": {
+   "buy": 0.031904,
+   "sell": 0.031646,
+   "n": 204,
+   "tried": 255,
+   "p90buy": 0.089147,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x3fb8976980d486084b2eb4a404bd12e72823958f": {
+   "buy": 0.034883,
+   "sell": 0.034601,
+   "n": 151,
+   "tried": 277,
+   "p90buy": 0.099085,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725": {
+   "buy": 0.009028,
+   "sell": 0.009014,
+   "n": 196,
+   "tried": 244,
+   "p90buy": 0.010555,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x74be72affafbc8de30f0c11247814036314d625f": {
+   "buy": 0.010564,
+   "sell": 0.01056,
+   "n": 194,
+   "tried": 242,
+   "p90buy": 0.010585,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x5317c0d077d2eeb639448939b930d49c4984b63b": {
+   "buy": 0.036982,
+   "sell": 0.036827,
+   "n": 179,
+   "tried": 228,
+   "p90buy": 0.040774,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x9c05cbec6c6f8ce87926fec6a491314030d4215c": {
+   "buy": 9.949678,
+   "sell": 0.908683,
+   "n": 143,
+   "tried": 222,
+   "p90buy": 21.355667,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x3139d77ace0cbaa5bdfd38bd1f1911a794af0b0e": {
+   "buy": 0.054027,
+   "sell": 0.053668,
+   "n": 159,
+   "tried": 236,
+   "p90buy": 1.490341,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x28babd556b60e53663b8615036479a29c2cdd1bf": {
+   "buy": 0.057883,
+   "sell": 0.057023,
+   "n": 123,
+   "tried": 199,
+   "p90buy": 0.100586,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x3c3bfd57cc0e3d0b20c3cf4c3d5ad1e861666019": {
+   "buy": 0.622205,
+   "sell": 0.389769,
+   "n": 115,
+   "tried": 199,
+   "p90buy": 7.039092,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x27c99fbde9d0d2aa4f4bfb4943f237843ddf6958": {
+   "buy": 0.011002,
+   "sell": 0.01099,
+   "n": 170,
+   "tried": 513,
+   "p90buy": 0.084056,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x99d9d8663545151603863c5acbd6fc3218899009": {
+   "buy": 0.052071,
+   "sell": 0.051908,
+   "n": 142,
+   "tried": 200,
+   "p90buy": 0.080498,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x82fe7e669c0ce263436cf74b8ec7335654aa902d": {
+   "buy": 0.026651,
+   "sell": 0.026057,
+   "n": 157,
+   "tried": 207,
+   "p90buy": 0.030227,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x561e2a49212b7ccf47f2744ccb83e200722fadbc": {
+   "buy": 0.053826,
+   "sell": 0.053487,
+   "n": 123,
+   "tried": 242,
+   "p90buy": 0.079141,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xeaf2512dfc1beac608f8794b3793cd4e02894aa6": {
+   "buy": 0.060385,
+   "sell": 0.059342,
+   "n": 135,
+   "tried": 193,
+   "p90buy": 0.103263,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xaea445c5f3db1a462998ccc422a875a361ee5d99": {
+   "buy": 0.031678,
+   "sell": 0.031613,
+   "n": 120,
+   "tried": 198,
+   "p90buy": 0.08573,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x93dbb1d2dc5d63f4abacff30485273f538df68ac": {
+   "buy": 0.013093,
+   "sell": 0.013031,
+   "n": 145,
+   "tried": 206,
+   "p90buy": 0.05744,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfaf9cb261b5fcc1f404bb10cd39c5c6c1974e612": {
+   "buy": 0.026601,
+   "sell": 0.026541,
+   "n": 101,
+   "tried": 195,
+   "p90buy": 0.087122,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x4d67253bc223e6b0e104f1084c1fb2b669ddc41b": {
+   "buy": 0.057494,
+   "sell": 0.056723,
+   "n": 137,
+   "tried": 207,
+   "p90buy": 0.10905,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x03bc731ffb162cdd7b98d3c6542bfc291126075d": {
+   "buy": 0.022254,
+   "sell": 0.022177,
+   "n": 172,
+   "tried": 334,
+   "p90buy": 0.086703,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x5f604fba1162193a4388a5dfa56f556f3e133cc2": {
+   "buy": 0.069753,
+   "sell": 0.067305,
+   "n": 120,
+   "tried": 201,
+   "p90buy": 0.112431,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x77e655e37f4d913fb9540e0d541d824171a60e81": {
+   "buy": 0.032196,
+   "sell": 0.032088,
+   "n": 145,
+   "tried": 201,
+   "p90buy": 0.07905,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x7c148f74ac7445d1f28366b7fcdc6792a9fcd0cf": {
+   "buy": 0.0556,
+   "sell": 0.055078,
+   "n": 153,
+   "tried": 221,
+   "p90buy": 0.066563,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x4d21483a44bf67a86b77e3da301411880797d452": {
+   "buy": 0.002972,
+   "sell": 0.002969,
+   "n": 162,
+   "tried": 210,
+   "p90buy": 0.038683,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbef75684c43c4ea7bd18dd532a2244674ee8b926": {
+   "buy": 0.011847,
+   "sell": 0.011816,
+   "n": 157,
+   "tried": 209,
+   "p90buy": 0.055278,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x756bc80af765c82da966a788858d65adf14f3793": {
+   "buy": 0.007198,
+   "sell": 0.007187,
+   "n": 160,
+   "tried": 209,
+   "p90buy": 0.050047,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbf449977089c718c004a66c554b26b94ef3ad4de": {
+   "buy": 0.057952,
+   "sell": 0.056992,
+   "n": 116,
+   "tried": 197,
+   "p90buy": 0.131147,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x329fcaceb9ad6f9580dd5f643fed0646900d043c": {
+   "buy": 0.005936,
+   "sell": 0.00593,
+   "n": 177,
+   "tried": 307,
+   "p90buy": 0.087169,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x7fd06a4d81ccfa3f351394e144d5191874c31313": {
+   "buy": 0.058442,
+   "sell": 0.057521,
+   "n": 120,
+   "tried": 208,
+   "p90buy": 0.093213,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x48d60243c66437c6ac3c2495be94747aed5dfe25": {
+   "buy": 0.024293,
+   "sell": 0.024123,
+   "n": 145,
+   "tried": 200,
+   "p90buy": 0.086908,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb334c5ce741b80b5b671f47f5c269cb193fe8e24": {
+   "buy": 0.028445,
+   "sell": 0.028285,
+   "n": 152,
+   "tried": 289,
+   "p90buy": 1.064822,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x96b933c74ecb4a0926b9210cef7b743ef46be2e9": {
+   "buy": 0.041365,
+   "sell": 0.040609,
+   "n": 124,
+   "tried": 206,
+   "p90buy": 0.160966,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfb2664f07b6aadd29ea7a59d8859b1aeb8645cda": {
+   "buy": 0.052416,
+   "sell": 0.052219,
+   "n": 146,
+   "tried": 208,
+   "p90buy": 0.06193,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x5b97476b922f3305131b8f0b9d333172e87f4aae": {
+   "buy": 0.030918,
+   "sell": 0.030768,
+   "n": 134,
+   "tried": 201,
+   "p90buy": 0.070723,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xaa4d64474c172010ab57719cb9951e6142a100d3": {
+   "buy": 0.04063,
+   "sell": 0.039932,
+   "n": 132,
+   "tried": 197,
+   "p90buy": 0.065197,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xa4f319104089fe321dc8093c6e707d4fe190a988": {
+   "buy": 0.022809,
+   "sell": 0.022708,
+   "n": 149,
+   "tried": 207,
+   "p90buy": 0.053205,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb1969f6604ca1ae7a2cd3f1827876e914594ca2d": {
+   "buy": 0.059629,
+   "sell": 0.058608,
+   "n": 158,
+   "tried": 211,
+   "p90buy": 0.088496,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x373c06c4f7bde527d7dae4ba169e42b55e393ced": {
+   "buy": 0.052329,
+   "sell": 0.05214,
+   "n": 127,
+   "tried": 191,
+   "p90buy": 0.087816,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x63b814ddbd6bf339f25fed8c36158a008d5b373e": {
+   "buy": 0.020956,
+   "sell": 0.020934,
+   "n": 159,
+   "tried": 209,
+   "p90buy": 0.052857,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xcf6b2d875361be807eafa57458c80f28521f9333": {
+   "buy": 0.035336,
+   "sell": 0.034753,
+   "n": 132,
+   "tried": 199,
+   "p90buy": 0.065386,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc": {
+   "buy": 0.011227,
+   "sell": 0.011201,
+   "n": 160,
+   "tried": 208,
+   "p90buy": 0.011416,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xa696ca9cfb37a6bb01a92b53eb8f221ba59b3afd": {
+   "buy": 0.140069,
+   "sell": 0.131701,
+   "n": 14,
+   "tried": 14,
+   "p90buy": 11.80381,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3": {
+   "buy": 0.011004,
+   "sell": 0.010992,
+   "n": 223,
+   "tried": 271,
+   "p90buy": 0.051331,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x15cd20759ce7f3285c29a319de2d1a2e098c6f43": {
+   "buy": 0.034894,
+   "sell": 0.03461,
+   "n": 138,
+   "tried": 199,
+   "p90buy": 0.063063,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbc269b6148bb3166286815bc70e994b85d9a6ba6": {
+   "buy": 0.059035,
+   "sell": 0.058143,
+   "n": 85,
+   "tried": 206,
+   "p90buy": 0.380205,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x75742c18bc1f1c5c5f448f4c9d9c6f66dafaaa38": {
+   "buy": 0.006413,
+   "sell": 0.006401,
+   "n": 158,
+   "tried": 207,
+   "p90buy": 0.062559,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf52597345a8edf418bc4071b4a35112472277d3e": {
+   "buy": 0.068632,
+   "sell": 0.066601,
+   "n": 121,
+   "tried": 350,
+   "p90buy": 1.196469,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xcf364ea52787e289de6f32077834056e3e70d6a8": {
+   "buy": 0.011303,
+   "sell": 0.011246,
+   "n": 159,
+   "tried": 208,
+   "p90buy": 0.052369,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfa78c12e6488814a0262e4e802749a4a737d5fb7": {
+   "buy": 0.03148,
+   "sell": 0.031415,
+   "n": 134,
+   "tried": 200,
+   "p90buy": 0.080017,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x2778c5024d5ca2cdb0f8ead671ffc69963adcd9c": {
+   "buy": 0.036748,
+   "sell": 0.036367,
+   "n": 150,
+   "tried": 207,
+   "p90buy": 0.063783,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x558378e000d634a36593e338ebacdd6207640efe": {
+   "buy": 0.054379,
+   "sell": 0.053984,
+   "n": 156,
+   "tried": 341,
+   "p90buy": 0.237091,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x072f979c2cac8e1391b0162a87fee094bf8744a0": {
+   "buy": 0.064506,
+   "sell": 0.062862,
+   "n": 149,
+   "tried": 206,
+   "p90buy": 0.074065,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x375f43299a6c22672776453674f5ee2311955ebd": {
+   "buy": 0.016288,
+   "sell": 0.016114,
+   "n": 85,
+   "tried": 143,
+   "p90buy": 1.007055,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x26dcbfb34fc83cabd6990f449674efdc6097ff85": {
+   "buy": 0.055471,
+   "sell": 0.054967,
+   "n": 122,
+   "tried": 209,
+   "p90buy": 0.074101,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xad622320e520de39e72d41ef07438c3fd3354875": {
+   "buy": 0.053662,
+   "sell": 0.05334,
+   "n": 141,
+   "tried": 204,
+   "p90buy": 0.08547,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x12d5ee7917ca430073c3a638ee1e6f0648a98a01": {
+   "buy": 0.03156,
+   "sell": 0.031497,
+   "n": 155,
+   "tried": 203,
+   "p90buy": 0.041515,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x40f55bc783674bba29db641844b030e08c2fe5a1": {
+   "buy": 0.015435,
+   "sell": 0.015307,
+   "n": 39,
+   "tried": 183,
+   "p90buy": 0.496941,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x36c092a1ae464f46f77d5e55cffd9e39d4497d54": {
+   "buy": 0.051738,
+   "sell": 0.050707,
+   "n": 102,
+   "tried": 201,
+   "p90buy": 0.052387,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbe98b75361935b18d688409424a869a4c3dc7401": {
+   "buy": 0.010572,
+   "sell": 0.010549,
+   "n": 153,
+   "tried": 201,
+   "p90buy": 0.067227,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x7f0abef0c07280f82c6a08ead09ded6bae2c13fc": {
+   "buy": 0.00351,
+   "sell": 0.003505,
+   "n": 154,
+   "tried": 203,
+   "p90buy": 0.060267,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x0594134df3f171a354d9c85ebd65b7a6148f6d09": {
+   "buy": 0.057207,
+   "sell": 0.056401,
+   "n": 120,
+   "tried": 193,
+   "p90buy": 0.081938,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x1c690498150252222c275a5ced69d3a6b1f52d5e": {
+   "buy": 0.053751,
+   "sell": 0.05342,
+   "n": 95,
+   "tried": 187,
+   "p90buy": 0.159027,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x5d2e81cb3a6fece856b824dfd7e1d6d3dbad8cd9": {
+   "buy": 0.597368,
+   "sell": 0.375048,
+   "n": 146,
+   "tried": 196,
+   "p90buy": 1.406354,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfa9647c6b4996dbbc25f2e3a999f86448d640384": {
+   "buy": 0.018332,
+   "sell": 0.018299,
+   "n": 23,
+   "tried": 179,
+   "p90buy": 0.021617,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x07ebb29a38fbcb41563817e5e19f2cec619c90d2": {
+   "buy": 0.010214,
+   "sell": 0.010209,
+   "n": 146,
+   "tried": 194,
+   "p90buy": 0.010282,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb7eaecc89d3e2f9fd597d61726ae824900db8360": {
+   "buy": 0.016862,
+   "sell": 0.01667,
+   "n": 146,
+   "tried": 194,
+   "p90buy": 0.043261,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x08e91b659a545bfb52f1a5e588bf6dc2fa85de7a": {
+   "buy": 0.050194,
+   "sell": 0.050119,
+   "n": 130,
+   "tried": 192,
+   "p90buy": 0.05175,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbe274710bf3d9567e1b290ef6a5f9f90ca016fd8": {
+   "buy": 0.053089,
+   "sell": 0.052673,
+   "n": 90,
+   "tried": 195,
+   "p90buy": 0.134513,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xab093def657f15df31b33922a95e047add645b29": {
+   "buy": 0.009981,
+   "sell": 0.00997,
+   "n": 211,
+   "tried": 259,
+   "p90buy": 0.010048,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x47cb7f9f0b6f4b7bbda69cb95f871a73c1687901": {
+   "buy": 0.202534,
+   "sell": 0.18171,
+   "n": 122,
+   "tried": 190,
+   "p90buy": 1.653807,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x4eb576e9c8a24b5fb11dd8eee5e5e2554ade1cf4": {
+   "buy": 0.009093,
+   "sell": 0.009081,
+   "n": 141,
+   "tried": 189,
+   "p90buy": 0.009448,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x85a479651526fbedb482cde88fd3fdd3c1b10970": {
+   "buy": 0.00904,
+   "sell": 0.009029,
+   "n": 141,
+   "tried": 189,
+   "p90buy": 0.009622,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x89deccf64e2fbba7ae6ce54c8a5161bfcb055164": {
+   "buy": 0.02256,
+   "sell": 0.022168,
+   "n": 127,
+   "tried": 181,
+   "p90buy": 0.023929,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b": {
+   "buy": 0.030585,
+   "sell": 0.030549,
+   "n": 138,
+   "tried": 186,
+   "p90buy": 0.030769,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
+   "buy": 0.003918,
+   "sell": 0.003914,
+   "n": 137,
+   "tried": 185,
+   "p90buy": 0.008726,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x8fcf98e1348d3ddee46cdd15a5c7d9a8d423077d": {
+   "buy": 0.026108,
+   "sell": 0.025834,
+   "n": 136,
+   "tried": 184,
+   "p90buy": 0.028018,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x69756f3f3d69100b35eafeb669d594ef22000522": {
+   "buy": 10.588233,
+   "sell": 1.000036,
+   "n": 8,
+   "tried": 146,
+   "p90buy": 10.588233,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf6b983a2cae178575edb0c585f6496246875a38e": {
+   "buy": 3.573698,
+   "sell": 0.824222,
+   "n": 81,
+   "tried": 171,
+   "p90buy": 15.906169,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xa1b64a8288f00c980df8b4208008f5862be0195c": {
+   "buy": 0.01555,
+   "sell": 0.015418,
+   "n": 108,
+   "tried": 173,
+   "p90buy": 0.021013,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xec127e99da1a2ed3d6c0433227154a99b7b29221": {
+   "buy": 0.012255,
+   "sell": 0.012214,
+   "n": 122,
+   "tried": 170,
+   "p90buy": 0.013034,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x504ea4a2e56af7bb9540e4301075e6479a531e18": {
+   "buy": 5117.854325,
+   "sell": 1.0,
+   "n": 3,
+   "tried": 3,
+   "p90buy": 6361.301994,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xeeca2e7dc194a320d349122d88259bb9595a4cb0": {
+   "buy": 0.009955,
+   "sell": 0.009944,
+   "n": 121,
+   "tried": 169,
+   "p90buy": 0.009979,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x0822560cbdb92a0af70397379ddb4dcc4c95c8a7": {
+   "buy": 0.016007,
+   "sell": 0.015988,
+   "n": 89,
+   "tried": 356,
+   "p90buy": 4.938708,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf177d86a28b520e3e396e4f3b96cd8e72d7dabd8": {
+   "buy": 0.004657,
+   "sell": 0.004651,
+   "n": 119,
+   "tried": 167,
+   "p90buy": 0.01602,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xf3081494b87e8d5fb7960f066e931d1d0e6e3d67": {
+   "buy": 0.337487,
+   "sell": 0.252329,
+   "n": 177,
+   "tried": 234,
+   "p90buy": 0.900083,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x9a64c06795b254c8aa70086e9fdc0fbe136f0110": {
+   "buy": 15.879657,
+   "sell": 0.665847,
+   "n": 18,
+   "tried": 40,
+   "p90buy": 1256.238409,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x38f728351fd9565087a4ff0ad5049739e0ce235c": {
+   "buy": 0.019756,
+   "sell": 0.01948,
+   "n": 111,
+   "tried": 159,
+   "p90buy": 0.021283,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xce24439f2d9c6a2289f741120fe202248b666666": {
+   "buy": 0.000488,
+   "sell": 0.000488,
+   "n": 99,
+   "tried": 147,
+   "p90buy": 0.010399,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xfe09fb328be1c286b4f597ed34764b7472ae72c5": {
+   "buy": 0.002048,
+   "sell": 0.002046,
+   "n": 81,
+   "tried": 130,
+   "p90buy": 0.335997,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x1937cad42b17d43bb2b347ce16d5288887c46c33": {
+   "buy": 0.002811,
+   "sell": 0.002808,
+   "n": 80,
+   "tried": 129,
+   "p90buy": 0.086885,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0x91a2dae9699f0b82540b5886b0d8759c22820ba3": {
+   "buy": 0.00853,
+   "sell": 0.00852,
+   "n": 128,
+   "tried": 128,
+   "p90buy": 0.010797,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0x685dfd386968b58d895f934485820c479c79a8bb": {
+   "buy": 0.03198,
+   "sell": 0.031945,
+   "n": 128,
+   "tried": 128,
+   "p90buy": 0.050957,
+   "tables": [
+    "out/hop",
+    "J/hop"
+   ]
+  },
+  "0xb7fc2b7881cceeb73d8deccf69b6acb8ac2e0826": {
+   "buy": 0.063424,
+   "sell": 0.06203,
+   "n": 9,
+   "tried": 9,
+   "p90buy": 0.063424,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xd1b0d44e4f6ed940fcc7a9f59bf30daf62ccfe3d": {
+   "buy": 0.081119,
+   "sell": 0.079762,
+   "n": 55,
+   "tried": 482,
+   "p90buy": 0.154161,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xbe127eed812dc1f622227fadc8639d4138b47b2e": {
+   "buy": 0.051932,
+   "sell": 0.051783,
+   "n": 27,
+   "tried": 27,
+   "p90buy": 0.062649,
+   "tables": [
+    "out/hop"
+   ]
+  },
+  "0xb80bd4d599eebbf2851d4e7f5594918b82ff1823": {
+   "buy": 0.052313,
+   "sell": 0.052126,
+   "n": 31,
+   "tried": 33,
+   "p90buy": 0.053569,
+   "tables": [
+    "out/hop"
+   ]
+  }
+ },
+ "no_route": [
+  "0x05524c2431173a60620ae9eb57d1cf7ef49cde0e",
+  "0x069c90f9456caa4a79485973b76ea56996e94fb3",
+  "0x0c66b7fb64d4b857c18a02cb987205ec1aa5a433",
+  "0x1cb30b4810c273f1a75c92818e8ffc5ee315c7cc",
+  "0x1e4482b85e3f66ecc0da6795be85c99c41af11cd",
+  "0x5f7fe340aaba033431b273ec8b6b152f3962b82f",
+  "0x6666e290e0532a0ae2ec2fa173301e05ca0ce7f0",
+  "0x68710213e1ba734c64090aae7fe7219b145ced2b",
+  "0x7dbab44f52c2cb0d2152add95b8f3d7faef9c4f9",
+  "0x9b3bd3d7335f2f69d9ae54dc31872121579979cd",
+  "0xa53f956cb7bfed56a3862a41976289e9a678037f",
+  "0xad5ca0de161b2f5818668e8b5d7c2f14594e92d0",
+  "0xc6f17cb01045d5762884a726d30857ea876a31d4",
+  "0xd993c855e900e09bf309ee9ee92c07561f566c30",
+  "0xe2604991b1a625d70a5e8cba26aacf7569c90b3a",
+  "0xec9a28b21032f2376a4ce339f2d2d1b68e28fcd2"
+ ],
+ "fallback_other": {
+  "buy": 0.028369,
+  "sell": 0.027587,
+  "n_tokens": 229
+ },
+ "usdg": {
+  "buy": 0.000582,
+  "sell": 0.000582,
+  "n": 762,
+  "tried": 810,
+  "p90buy": 0.000621,
+  "tables": [
+   "OW/hop",
+   "out/hop",
+   "J/hop"
+  ]
+ }
+}
