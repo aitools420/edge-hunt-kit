@@ -70,12 +70,22 @@
    [
     "J = os.environ['KIT_ROOT'] + '/patches/v4-join-2026-09-27/out'",
     "J = '/home/green/projects/patches/v4-join-2026-09-27/out'"
+   ],
+   [
+    "        p1 = subprocess.Popen(['zcat', f], stdout=subprocess.PIPE); p2 = subprocess.Popen(['grep', '-F', '-f', pat], stdin=p1.stdout, stdout=subprocess.PIPE); p1.stdout.close()",
+    "        p1 = subprocess.Popen(['zcat', f], stdout=subprocess.PIPE); p2 = subprocess.Popen(['grep', '-F', '-f', pat], stdin=p1.stdout, stdout=subprocess.PIPE)"
+   ],
+   [
+    "        p3 = subprocess.Popen(['gzip', '-1'], stdin=p2.stdout, stdout=fo); p2.stdout.close(); p3.wait(); p2.wait(); p1.wait()   # parent's pipe copies closed: a dying grep/gzip breaks the pipe upstream instead of hanging it (pond #298)\n        if p1.returncode != 0 or p2.returncode not in (0, 1) or p3.returncode != 0:   # grep exits 1 on no match; anything else is a broken pipe (pond #284)\n            raise SystemExit(f'hop rows: child failed on {f} (zcat {p1.returncode}, grep {p2.returncode}, gzip {p3.returncode})')",
+    "        p3 = subprocess.Popen(['gzip', '-1'], stdin=p2.stdout, stdout=fo); p3.wait(); p2.wait(); p1.wait()"
    ]
   ],
   "why": [
-   "path"
+   "path",
+   "fail-loud only (pond #298): the parent closes its copy of zcat's stdout once grep holds it, so a grep that dies breaks zcat's pipe instead of hanging the batch; the success path's bytes are unchanged",
+   "fail-loud only: the parent closes its copy of grep's stdout once gzip holds it (pond #298), and the three exit codes are checked (pond #284, 8c4b2e4), so a failing zcat / grep / gzip stops the batch instead of hanging it or writing short hop tables; the success path's bytes are unchanged"
   ],
-  "kit_sha256": "49495ad64fad236901af9a8b9b3fc3d391805c00062cb776515eb643b57c4f10"
+  "kit_sha256": "9d26b8fdecacd1f3386217c5eb5833d8162d428ff70fc861fe7a814cc429976b"
  },
  "patches/realism-2026-09-27/realism.py": {
   "original_sha256": "eeda98824b5b806818b1cb75e896ca74636a69f9d44f118a3e7add91d40bbb84",
@@ -140,12 +150,17 @@
    [
     "set -u; : \"${KIT_ROOT:?set KIT_ROOT to the kit folder (README)}\"; export KIT_ROOT NODE_OPTIONS=\"--require $KIT_ROOT/kit/kitpath.js${NODE_OPTIONS:+ $NODE_OPTIONS}\"   # KIT",
     "set -u"
+   ],
+   [
+    "  N=$(basename $pf .txt); log \"engine pass $N ($(wc -l < $pf) cells) engine_v1.js sha256 $(sha256sum $E/engine_v1.js | cut -c1-64)\"   # KIT: the engine file this pass runs; kit/validate_return.py checks it (pond #298)",
+    "  N=$(basename $pf .txt); log \"engine pass $N ($(wc -l < $pf) cells)\""
    ]
   ],
   "why": [
-   "KIT wiring: require KIT_ROOT, preload the path rewrite for every node process of the batch"
+   "KIT wiring: require KIT_ROOT, preload the path rewrite for every node process of the batch",
+   "a log line only (pond #298): each engine pass's line in runlogs/batch.log also records the sha256 of the engine_v1.js file it runs, which kit/validate_return.py and kit/parity_check.py check"
   ],
-  "kit_sha256": "012eeff0bc9cecbb4215588de50224d72b87c2dc932f1e7e124e45411db4fe92"
+  "kit_sha256": "ff6718cb5d8c9bfd9f3e2bfac00b37dcbbba8493f22e81655c496d08ebddb60e"
  },
  "patches/edge-machine-2026-09-30/search.py": {
   "original_sha256": "92abbb6acb8638669845b20d01e19d0f11e18ff05b3b086f9436c27c8ce7345d",

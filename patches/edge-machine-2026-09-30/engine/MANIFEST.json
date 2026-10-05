@@ -29,14 +29,14 @@
     "guard_test.js": "087d0ccbe7e246a6deaf72feff4dddfd652a3c1e6ee767454780649e41069c0c",
     "hop.py": "e11a9d17ee6ec44c49c9325e7cbba9e2588c2040eca5906fec41fd078dad905c",
     "qpools.js": "26294f04b9c5b7158c1469bc0e9eb824bc5ba5ce15dce1b4f98402608f7205d1",
-    "build_hop_v1.py": "7ad9bc516cc7e4082e9d205dac55c6809a7538dbf25664eb30d64babebbb4110",
+    "build_hop_v1.py": "9d26b8fdecacd1f3386217c5eb5833d8162d428ff70fc861fe7a814cc429976b",
     "pool_costs_v1.py": "1f43be50f35b26912828bdd7e91ff6e70feb718d5231480b2fa681ee85fdb56e",
     "reduce_v1.py": "b3e979ac6cbba6d8ba8e800a83124029a9f87a42f9a00d25c8eb09b798327200",
     "analyze_v1.py": "567d9cc1cba26a49bd470bbb0c0798dd66d940b9e124ab4d39e03708ce42f5d7",
     "prepare_v1.py": "c41b6eca6925d3f346149d69a6d55aa98a90e699e064d0f527996d0db676577a",
     "a4.sh": "1b8222913c0c47fde1d2fd3dc70204223ce0f4794323540ecbb3206dc8899f14",
     "run_pass_v1.sh": "47a940c199eaa563eb32d8a299b93f68fdeca6b77a96f76e8d7cf58cdaca7e4a",
-    "run_batch.sh": "012eeff0bc9cecbb4215588de50224d72b87c2dc932f1e7e124e45411db4fe92",
+    "run_batch.sh": "ff6718cb5d8c9bfd9f3e2bfac00b37dcbbba8493f22e81655c496d08ebddb60e",
     "manifest_lib.py": "94efd4e2208c0f5745a44c5d72c6513de66841009bfa5571a9dc961e08a4bc40",
     "verify_manifest.py": "895b08eb336fbd8f912ce97f218174148385658892c89a9af4c236e671932cfd",
     "test_seal.sh": "a6cf77143c469b22a3e65166c3d344d8da3fc80fd3575aaa0d9366016b395f74"
@@ -459,6 +459,7 @@
       }
     }
   },
-  "manifest_sha256": "513db8c588e6508b3f18162458096899808edac540f650d8cc4b51c418db8c03",
-  "repinned_hopfix": "2026-10-04 build_hop_v1.py fails on a broken zcat/grep/gzip child instead of writing empty hop tables (pond #284). Results logic unchanged."
+  "manifest_sha256": "6ba8e95bc1f026f9ac09c5c595fc3c33ec849613f4dc471878bfa306c4a4a70d",
+  "repinned_hopfix": "2026-10-04 build_hop_v1.py fails on a broken zcat/grep/gzip child instead of writing empty hop tables (pond #284). Results logic unchanged.",
+  "repinned_pond298": "2026-10-05 build_hop_v1.py closes the parent's copies of its pipes, so a failing grep / gzip stops the batch instead of hanging it; run_batch.sh logs the sha256 of the engine_v1.js file each pass runs (pond #298). No computation changed."
 }

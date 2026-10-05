@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """parity_check.py <run_batch outdir> [<reference results.json> <reference trades.ndjson.gz>]
 Compares a run of parity/cells_parity.json with the PUBLISHED engine-v1 parity outputs (default: the files in engine/parity/):
-every cell's results.json record must be JSON-identical, and the trade rows (sorted, byte for byte) identical. Exit 0 = PARITY, 1 = differs."""
-import sys, os, json, gzip
+every cell's results.json record must be JSON-identical, and the trade rows (sorted, byte for byte) identical. The run's runlogs/batch.log
+must also record, for every engine pass, the sha256 of the pinned engine_v1.js: results.json's engine_sha256 is only a label that analyze_v1.py
+copies from MANIFEST.json, whatever engine ran (pond #298). Exit 0 = PARITY, 1 = differs."""
+import sys, os, json, gzip, re
 O = sys.argv[1]; KR = os.environ.get('KIT_ROOT') or os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 PD = os.path.join(KR, 'patches/edge-machine-2026-09-30/engine/parity')
 RR = sys.argv[2] if len(sys.argv) > 2 else os.path.join(PD, 'results_v1_parity.json')
@@ -19,5 +21,9 @@ for c in sorted(set(a['cells']) | set(b['cells'])):
 rows_same = ra == rb
 print(f"trade rows: run {len(ra)} vs reference {len(rb)} -> {'IDENTICAL (sorted, byte for byte)' if rows_same else 'DIFFER'}")
 for k in ('engine_sha256', 'cost_version'): print(f'{k}: run {a[k][:24]} reference {b[k][:24]} ->', 'same' if a[k] == b[k] else 'DIFFERENT')
-ok = not bad and rows_same and all(a[k] == b[k] for k in ('engine_sha256', 'cost_version'))
+PIN = json.load(open(os.path.join(KR, 'patches/edge-machine-2026-09-30/engine/MANIFEST.json')))['code']['engine_v1.js']; LG = os.path.join(O, 'runlogs/batch.log')
+hs = re.findall(r' engine pass p\d+ \(\s*\d+ cells\)(?: engine_v1\.js sha256 ([0-9a-f]{64}))?', open(LG, errors='replace').read()) if os.path.exists(LG) else []
+eng_ok = bool(hs) and all(h == PIN for h in hs)
+print(f"engine file that ran (runlogs/batch.log): {len(hs)} pass line(s) ->", f'the pinned engine_v1.js {PIN[:16]}' if eng_ok else 'NOT the pinned engine_v1.js, or not recorded')
+ok = not bad and rows_same and eng_ok and all(a[k] == b[k] for k in ('engine_sha256', 'cost_version'))
 print('PARITY' if ok else 'NO PARITY'); sys.exit(0 if ok else 1)

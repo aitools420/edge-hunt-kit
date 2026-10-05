@@ -40,7 +40,8 @@ The kit needs no keys, wallets, RPC or network access, except one download of th
 git clone <this repo> edge-hunt-kit && cd edge-hunt-kit
 export KIT_ROOT=$PWD
 bash kit/setup.sh --scan        # download + sha256-check the tape, unpack the pool table, scan every row for the seal,
-                                # prove the code differs from ours only in path lines, verify the manifest, run the seal self-tests
+                                # prove the code differs from ours only in the lines kit/PATCHES.json lists, verify the manifest,
+                                # run the seal self-tests
 bash patches/edge-machine-2026-09-30/engine/run_batch.sh patches/edge-machine-2026-09-30/engine/parity/cells_parity.json runs/parity
 python3 kit/parity_check.py runs/parity          # must print PARITY: 12 cells, 546 trade rows identical to ours
 python3 kit/log_look.py runs/parity --note "parity"
@@ -99,6 +100,7 @@ TP is sold 60 s after the trigger, at the price then, and everything is booked i
 - A token filter is a *split* of a base cell: `{"id":"X_F1","base":"X","filter":{"min_dip_sec":1200}}`.
 - `STOP_DAY=2026-09-12` runs a smoke test on fewer days. Its numbers are not comparable.
 - A changed engine is a new version: `engine_v2.js` with a new manifest. `run_batch.sh` refuses to run if any pinned file changes (`verify_manifest.py`).
+- Comparing two runs: the order of trade rows depends on which cells share a pass, and repeats differ in `passes[].sec` / `peakRssMB` and in the gzip header time of `trades.ndjson.gz`. Compare cell records and sorted, decompressed rows, as `kit/parity_check.py` does.
 
 ## Protections (what keeps a backtest honest)
 | file | what it does |
@@ -136,7 +138,8 @@ So a trial can be judged **hunter vs. random at equal passes**.
 ## Returning results
 See `kit/RETURN_SPEC.md`. In short:
 - Send each batch's `results.json`, `trades.ndjson.gz`, `cells.input.json`, `cellmap.json`, `MANIFEST.used.json` and `runlogs/batch.log`, plus your `LOOKS.ndjson`.
-- We run `kit/validate_return.py`: integrity on every cell, then a seeded sample re-run here that must give **identical** records and trade rows.
+- We run `kit/validate_return.py`. Stage 1 checks every cell: integrity, which engine file ran (from `runlogs/batch.log`), and that each cell's n, coins and means, twin deltas included, follow from your trade rows.
+- Stage 2 re-runs a seeded sample here, which must reproduce each sampled cell's **own** result exactly. The twins can be drawn differently when other cells share the pass, so they are compared only by the optional `--full-pass` mode, which re-runs the sampled cells' whole original passes.
 - Nothing is published before that.
 
 ## What differs from the copy we run
@@ -144,5 +147,6 @@ See `kit/RETURN_SPEC.md`. In short:
 - Our scripts used absolute paths of our machine. Those are rewritten to `$KIT_ROOT`:
   - for Node, by a preload (`kit/kitpath.js`) that rewrites the two path prefixes before any file is opened;
   - for Python and shell, by single-line edits.
+- Two pipeline files also carry lines that only make a failure loud or record what ran, and cannot move a number. `build_hop_v1.py` stops on a failed `zcat` / `grep` / `gzip` child instead of hanging or writing short tables. `run_batch.sh` logs the sha256 of the engine file each pass runs.
 - `kit/unpatch_check.py` reverses every edit and shows the result is byte-identical to our file.
 - Full list and reasoning: `kit/CHANGES.md`.

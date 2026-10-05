@@ -19,7 +19,7 @@ for f in meta scam poolfee_lf creators poolquote; do zcat $E/inputs/$f.tsv.gz > 
 python3 $E/verify_manifest.py --quiet --inputs $O/in >> $O/runlogs/batch.log 2>&1 || { log "REFUSED: decompressed inputs mismatch"; exit 2; }
 ( cd $E && node guard_test.js ) > $O/runlogs/guard_test.log 2>&1; grep -q "NEW GUARD: ALL REQUIRED TESTS PASS" $O/runlogs/guard_test.log || fail "guard test (G3)"
 for pf in $O/passes/p*.txt; do
-  N=$(basename $pf .txt); log "engine pass $N ($(wc -l < $pf) cells)"
+  N=$(basename $pf .txt); log "engine pass $N ($(wc -l < $pf) cells) engine_v1.js sha256 $(sha256sum $E/engine_v1.js | cut -c1-64)"   # KIT: the engine file this pass runs; kit/validate_return.py checks it (pond #298)
   bash $E/run_pass_v1.sh $O $N $NEED || fail "engine pass $N"
 done
 PASSES=$(ls $O/p[0-9][0-9].ndjson.gz)
