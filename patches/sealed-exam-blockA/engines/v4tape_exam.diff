@@ -1,0 +1,30 @@
+--- /home/green/projects/patches/v4-join-2026-09-27/v4tape.js	2026-09-27 14:38:35.172589033 +0800
++++ engines/v4tape_exam.js	2026-10-06 05:49:13.895424499 +0800
+@@ -1,3 +1,4 @@
++// v4tape_exam.js — sealed-exam-blockA copy of v4-join-2026-09-27/v4tape.js: PATHS + SEAL constants only (DIR, JOIN_DIR, BLOCK0_DAY, WE, SEAL, SEAL_DAY).
+ // v4tape.js — reader for the joined Uniswap V4 swap dataset, in the SAME row shape engine2.js reads from the V2/V3 tape
+ // ({ts, blk, li, tx, tok, sym, w, side, usd, px, kind, quote}; px is USD like the V2/V3 tape), plus the V4 extras.
+ // Also merges V2/V3 and V4 for one day in (ts, blk, li) order, so a backtest can read both rails together.
+@@ -12,17 +13,17 @@
+ // by a run registered in that README first.
+ 'use strict';
+ const fs = require('fs'), path = require('path'), zlib = require('zlib'), readline = require('readline');
+-const DIR = path.join(__dirname, 'out');
+-const WE = '/home/green/.openclaw/workspace/wick-engine/logs';
+-const SEAL = 1790467200;
+-const SEAL_DAY = '2026-09-27';
++const DIR = '/home/green/projects/patches/v4-join-2026-09-27/out', JOIN_DIR = '/home/green/projects/patches/sealed-exam-blockA/work/v4join/out', BLOCK0_DAY = '2026-09-27';
++const WE = '/home/green/projects/patches/sealed-exam-blockA/work/tape';
++const SEAL = 1791331200;
++const SEAL_DAY = '2026-10-08';
+ 
+ function sealedCheck(day, opts) {
+   if (day >= SEAL_DAY && (opts || {}).allowSealed !== 'FINAL-EXAM') throw new Error(`v4tape: ${day} is in the SEALED holdout (>= ${SEAL_DAY}) — refused`);
+ }
+ function v4Path(day, opts) {
+   sealedCheck(day, opts);
+-  const p = path.join(day >= SEAL_DAY ? path.join(DIR, 'sealed') : DIR, `v4-swaps-${day}.ndjson.gz`);
++  const p = path.join(day >= BLOCK0_DAY ? JOIN_DIR : DIR, `v4-swaps-${day}.ndjson.gz`);
+   return fs.existsSync(p) ? p : null;
+ }
+ // the V2/V3 day files exactly as engine2.js resolve('tape', day) finds them: archive part(s) + live part

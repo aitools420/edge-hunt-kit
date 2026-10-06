@@ -1,0 +1,483 @@
+{
+ "rule": 2,
+ "cell": "D25L48",
+ "src": "/home/green/projects/patches/twinfix-2026-10-05/out/grid_rk_batch.ndjson.gz",
+ "src_sha256": "00a71a1e4a860c83524e42ec796e14b80e93baf0859da6a34d00f898fc97c74f",
+ "analyzer": "/home/green/projects/patches/blood-grid-depth-history-2026-09-27/analyze_grid.py",
+ "analyzer_sha256": "08aaf46db86f7f6324b0def2f1f8a13d90ea9514539f9a040fe8c219155dd04d",
+ "prefilter": {
+  "rows_kept": 3810,
+  "skipDepth_dropped": {}
+ },
+ "bar": {
+  "n": 439,
+  "coins": 219,
+  "ci95": [
+   3.03,
+   10.39
+  ],
+  "se_cons": 2.02,
+  "p_one_sided": 2.14e-05,
+  "mde80": 5.02,
+  "upper95": 11.58,
+  "drop5": 7.24,
+  "days": 9,
+  "d_mean": 8.26,
+  "d_median": 12.95,
+  "raw_mean": 2.85,
+  "twin_mean": -5.41,
+  "n_rows": 448,
+  "coins_rows": 221
+ },
+ "money_test": {
+  "raw_heavy_mean": 2.89,
+  "raw_heavy_ci95": [
+   -0.34,
+   6.13
+  ],
+  "n": 448,
+  "coins": 221,
+  "note": "heavy-cost raw mean over ALL booked strategy trades (analyze_grid.py cell_block raw_heavy)"
+ },
+ "reported": {
+  "raw_base": {
+   "n": 448,
+   "coins": 221,
+   "mean": 6.37,
+   "median": 24.27,
+   "ci95": [
+    2.54,
+    8.36
+   ],
+   "se_cons": 1.73,
+   "p_one_sided": 0.000116,
+   "mde80": 4.3,
+   "upper95": 9.21,
+   "drop5": 5.46,
+   "days": 9
+  },
+  "d_base_vs_A": {
+   "n": 439,
+   "coins": 219,
+   "ci95": [
+    3.04,
+    10.97
+   ],
+   "se_cons": 2.1,
+   "p_one_sided": 1.29e-05,
+   "mde80": 5.21,
+   "upper95": 12.27,
+   "drop5": 7.77,
+   "days": 9,
+   "d_mean": 8.82,
+   "d_median": 13.65,
+   "raw_mean": 6.33,
+   "twin_mean": -2.49
+  },
+  "d_heavy_vs_R": {
+   "n": 448,
+   "coins": 221,
+   "ci95": [
+    3.46,
+    9.88
+   ],
+   "se_cons": 1.9,
+   "p_one_sided": 9.85e-06,
+   "mde80": 4.72,
+   "upper95": 11.22,
+   "drop5": 7.15,
+   "days": 9,
+   "d_mean": 8.1,
+   "d_median": 16.02,
+   "raw_mean": 2.89,
+   "twin_mean": -5.21
+  },
+  "venue": {
+   "v4": {
+    "n": 368,
+    "raw_heavy": 4.28,
+    "d_heavy_vs_A": {
+     "n": 361,
+     "coins": 181,
+     "ci95": [
+      5.83,
+      14.56
+     ],
+     "se_cons": 2.23,
+     "p_one_sided": 2.39e-06,
+     "mde80": 5.54,
+     "upper95": 13.86,
+     "drop5": 8.97,
+     "days": 8,
+     "d_mean": 10.19,
+     "d_median": 12.95,
+     "raw_mean": 4.09,
+     "twin_mean": -6.11
+    }
+   },
+   "v23": {
+    "n": 80,
+    "raw_heavy": -3.49,
+    "d_heavy_vs_A": {
+     "n": 78,
+     "coins": 41,
+     "ci95": [
+      -10.5,
+      9.17
+     ],
+     "se_cons": 5.02,
+     "p_one_sided": 0.553,
+     "mde80": 12.48,
+     "upper95": 7.59,
+     "drop5": -4.93,
+     "days": 9,
+     "d_mean": -0.67,
+     "d_median": 11.38,
+     "raw_mean": -2.85,
+     "twin_mean": -2.19
+    }
+   }
+  },
+  "non_pons": {
+   "n": 57,
+   "coins": 26,
+   "ci95": [
+    -3.71,
+    15.73
+   ],
+   "se_cons": 5.04,
+   "p_one_sided": 0.0988,
+   "mde80": 12.54,
+   "upper95": 14.79,
+   "drop5": 0.93,
+   "days": 9,
+   "d_mean": 6.49,
+   "d_median": 15.54,
+   "raw_mean": 0.97,
+   "twin_mean": -5.53
+  },
+  "view_depth_floor": {
+   "n": 439,
+   "coins": 219,
+   "ci95": [
+    2.84,
+    10.39
+   ],
+   "se_cons": 2.02,
+   "p_one_sided": 2.14e-05,
+   "mde80": 5.02,
+   "upper95": 11.58,
+   "drop5": 7.24,
+   "days": 9,
+   "d_mean": 8.26,
+   "d_median": 12.95,
+   "raw_mean": 2.85,
+   "twin_mean": -5.41
+  },
+  "FIT_d_heavy_vs_A": {
+   "n": 98,
+   "coins": 53,
+   "ci95": [
+    8.64,
+    22.04
+   ],
+   "se_cons": 3.42,
+   "p_one_sided": 3.57e-06,
+   "mde80": 8.5,
+   "upper95": 20.96,
+   "drop5": 12.3,
+   "days": 6,
+   "d_mean": 15.34,
+   "d_median": 19.34,
+   "raw_mean": 9.07,
+   "twin_mean": -6.27
+  }
+ },
+ "gate": {
+  "components": {
+   "S": {
+    "draws": 448,
+    "booked": 448,
+    "nofill": 0,
+    "trunc": 0,
+    "fallback": 0,
+    "priced_share": 1.0,
+    "g4_small_share": 0.0,
+    "drains": 1,
+    "exit_gt20x": 0,
+    "g5": {},
+    "g5_fail": 0,
+    "max_on": 99.12,
+    "s3a_unsellable": 0.0,
+    "s3c_unsellable": 0.0,
+    "thin_entry": 0
+   },
+   "WR": {
+    "draws": 1344,
+    "booked": 1321,
+    "nofill": 23,
+    "trunc": 0,
+    "fallback": 1,
+    "priced_share": 0.98,
+    "g4_small_share": 0.0,
+    "drains": 1,
+    "exit_gt20x": 0,
+    "g5": {},
+    "g5_fail": 0,
+    "max_on": 567.05,
+    "s3a_unsellable": 0.19,
+    "s3c_unsellable": 0.0,
+    "thin_entry": 0
+   },
+   "WA": {
+    "draws": 1317,
+    "booked": 1315,
+    "nofill": 2,
+    "trunc": 0,
+    "fallback": 0,
+    "priced_share": 1.0,
+    "g4_small_share": 0.0,
+    "drains": 0,
+    "exit_gt20x": 0,
+    "g5": {},
+    "g5_fail": 0,
+    "max_on": 118.38,
+    "s3a_unsellable": 0.03,
+    "s3c_unsellable": 0.0,
+    "thin_entry": 0
+   }
+  },
+  "status": {
+   "G1": "PASS",
+   "G4": "PASS",
+   "G5": "PASS",
+   "G10": "PASS"
+  },
+  "status_source": "analyze_grid.py gate() (frozen)"
+ },
+ "meta": {
+  "rows": 36039173,
+  "rowsV4": 20007194,
+  "v4skipLiq0": 40413,
+  "univRows": 13260950,
+  "bad": 4221331,
+  "badV4": 2172520,
+  "exits": 161817,
+  "trunc": 0,
+  "end": 67,
+  "holes": 0,
+  "holeAt": [],
+  "nofill": 18770,
+  "mergedOutOfOrder": 0,
+  "v4OutOfOrder": 0,
+  "reorder": {
+   "maxHeap": 141490,
+   "lateRows": 0
+  },
+  "wide0": 1789771200,
+  "endTs": 1790467199,
+  "sec": 920.9,
+  "peakRssMB": 2299.84256,
+  "skipDepth": null,
+  "twinDistinct": null,
+  "feeSrc": {
+   "static": 88992,
+   "measured": 4530,
+   "default1pct": 35
+  },
+  "v23Files": {
+   "2026-09-08": {
+    "n": 1084825,
+    "first": 1788822077,
+    "last": 1788908443
+   },
+   "2026-09-09": {
+    "n": 1088573,
+    "first": 1788908443,
+    "last": 1788994849
+   },
+   "2026-09-10": {
+    "n": 1144259,
+    "first": 1788994849,
+    "last": 1789081248
+   },
+   "2026-09-11": {
+    "n": 1297602,
+    "first": 1789081249,
+    "last": 1789167653
+   },
+   "2026-09-12": {
+    "n": 1048626,
+    "first": 1789167653,
+    "last": 1789254047
+   },
+   "2026-09-13": {
+    "n": 1028639,
+    "first": 1789254048,
+    "last": 1789340447
+   },
+   "2026-09-14": {
+    "n": 1135950,
+    "first": 1789340447,
+    "last": 1789426851
+   },
+   "2026-09-15": {
+    "n": 932980,
+    "first": 1789426851,
+    "last": 1789513251
+   },
+   "2026-09-16": {
+    "n": 646771,
+    "first": 1789513251,
+    "last": 1789599648
+   },
+   "2026-09-17": {
+    "n": 767868,
+    "first": 1789599649,
+    "last": 1789686105
+   },
+   "2026-09-18": {
+    "n": 733175,
+    "first": 1789686105,
+    "last": 1789772468
+   },
+   "2026-09-19": {
+    "n": 690217,
+    "first": 1789772470,
+    "last": 1789858839
+   },
+   "2026-09-20": {
+    "n": 527533,
+    "first": 1789858839,
+    "last": 1789945240
+   },
+   "2026-09-21": {
+    "n": 729404,
+    "first": 1789945241,
+    "last": 1790031643
+   },
+   "2026-09-22": {
+    "n": 668248,
+    "first": 1790031643,
+    "last": 1790118069
+   },
+   "2026-09-23": {
+    "n": 663319,
+    "first": 1790118070,
+    "last": 1790204451
+   },
+   "2026-09-24": {
+    "n": 596397,
+    "first": 1790204453,
+    "last": 1790290850
+   },
+   "2026-09-25": {
+    "n": 686856,
+    "first": 1790290850,
+    "last": 1790377255
+   },
+   "2026-09-26": {
+    "n": 601150,
+    "first": 1790377256,
+    "last": 1790463649
+   }
+  },
+  "v4Files": {
+   "2026-09-08": {
+    "n": 63783,
+    "first": 1788825601,
+    "last": 1788911981
+   },
+   "2026-09-09": {
+    "n": 52650,
+    "first": 1788912001,
+    "last": 1788998398
+   },
+   "2026-09-10": {
+    "n": 117895,
+    "first": 1788998416,
+    "last": 1789084798
+   },
+   "2026-09-11": {
+    "n": 72871,
+    "first": 1789084800,
+    "last": 1789171194
+   },
+   "2026-09-12": {
+    "n": 42807,
+    "first": 1789171200,
+    "last": 1789257598
+   },
+   "2026-09-13": {
+    "n": 80479,
+    "first": 1789257608,
+    "last": 1789343999
+   },
+   "2026-09-14": {
+    "n": 127751,
+    "first": 1789344000,
+    "last": 1789430395
+   },
+   "2026-09-15": {
+    "n": 221096,
+    "first": 1789430412,
+    "last": 1789516799
+   },
+   "2026-09-16": {
+    "n": 306324,
+    "first": 1789516802,
+    "last": 1789603199
+   },
+   "2026-09-17": {
+    "n": 300427,
+    "first": 1789603200,
+    "last": 1789689599
+   },
+   "2026-09-18": {
+    "n": 330094,
+    "first": 1789689600,
+    "last": 1789775999
+   },
+   "2026-09-19": {
+    "n": 2522281,
+    "first": 1789776000,
+    "last": 1789862399
+   },
+   "2026-09-20": {
+    "n": 2010998,
+    "first": 1789862400,
+    "last": 1789948799
+   },
+   "2026-09-21": {
+    "n": 3119960,
+    "first": 1789948800,
+    "last": 1790035199
+   },
+   "2026-09-22": {
+    "n": 2749135,
+    "first": 1790035200,
+    "last": 1790121599
+   },
+   "2026-09-23": {
+    "n": 2387127,
+    "first": 1790121600,
+    "last": 1790207999
+   },
+   "2026-09-24": {
+    "n": 1983215,
+    "first": 1790208000,
+    "last": 1790294399
+   },
+   "2026-09-25": {
+    "n": 1853640,
+    "first": 1790294400,
+    "last": 1790380799
+   },
+   "2026-09-26": {
+    "n": 1664661,
+    "first": 1790380800,
+    "last": 1790467199
+   }
+  }
+ }
+}

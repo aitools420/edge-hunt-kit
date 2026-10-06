@@ -1,0 +1,17 @@
+--- v4-join-2026-09-27/anchors.py
++++ sealed-exam-blockA/join/anchors.py
+@@ -1,4 +1,5 @@
+ #!/usr/bin/env python3
++# sealed-exam-blockA exam copy: see join/make_join.py and the .diff beside this file
+ """Block -> timestamp anchors for Robinhood Chain (L2 height = log blockNumber, the series the v4 tape's `blk` is in).
+ Fetches eth_getBlockByNumber on a fixed grid (every STEP blocks) plus a HELD-OUT random set (never used for
+ interpolation), from the public RPC (research lane, paced, JSON-RPC batches of 50). Read-only.
+@@ -6,7 +7,7 @@
+ import json, subprocess, random, time, sys, os
+ import os
+ RPC = os.environ.get('RPC', 'https://robinhood-rpc.publicnode.com')   # keyless plain reads; the official RPC 429s batches
+-HERE = os.path.dirname(os.path.abspath(__file__))
++HERE = '/home/green/projects/patches/sealed-exam-blockA/work/v4join'
+ STEP = int(os.environ.get('STEP', 25000))
+ LO = 14_775_000
+ 

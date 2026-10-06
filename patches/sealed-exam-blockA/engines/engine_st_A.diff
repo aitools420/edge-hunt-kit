@@ -1,0 +1,71 @@
+--- engine_st_rk.js	2026-10-06 05:41:35.743279636 +0800
++++ engine_st_A.js	2026-10-06 05:42:03.753875238 +0800
+@@ -1,4 +1,6 @@
+ #!/usr/bin/env node
++// sealed-exam-blockA Option A (coordinator 2026-10-05): + FIX 1 twins WITHOUT replacement, + FIX 2 V4 depth floor 0.001 ETH skipped at fill — both
++//   ported from blood-grid-window-history-2026-09-27/engine_wh.js, the two changes the register added "before the run" on 09-27.
+ // engine_st.js — BLOOD DIP LEAD: STRESS TEST (PREREG.md). Research only, READ-ONLY on the estate.
+ // Built on ../blood-established-2026-09-27/engine_bes.js (merged V2/V3 + V4, depth-aware V4 pricing, fixed guard, G5 >20x rule,
+ // FIX a/b/c). CHANGED here (PREREG.md):
+@@ -24,6 +26,7 @@
+   { id: 'C2', age: 48 * H, vol: 10000, sd: 0.03, meas: true, trend: true, dip: 0.15, tp: 1.15, hold: 48 * H, cool: 6 * H, last: Date.parse('2026-09-24T22:00:00Z') / 1000 }];
+ const W = H;                                                                                // both configs: the 1 h window
+ const CELLS = []; for (const c of CONFIGS) for (const m of ['M', 'P']) CELLS.push({ id: c.id + m, cfg: c, mode: m });
++const DEPTH_FLOOR = 0.001;                                                                 // sealed-exam-blockA Option A: FIX 2
+ const TREND = 1.10, REPS = 3, SEED = 20260927, SLIP = 0.004, DRAIN = 0.05, MINUSD = 10, EWAIT = H, XWAIT = DAY;
+ const CLIP = 50, SHADOW = [200, 500], S1 = Math.sqrt(1.01) - 1, X20 = 20, CORR_WIN = 30 * 60, DEPTH_OK_W = 0.10, V4_DEFAULT_FEE = 0.01;
+ const POOL_HL = 6 * H, POOL_X = 2, POOL_REF_AGE = H, REORDER = 2 * H;
+@@ -62,7 +65,7 @@
+   fixA: { checked: 0, unchecked: 0, dropped: 0, droppedV4: 0, droppedV23: 0 },
+   fixB: { otherPoolPrintsSeen: 0, positionsWithOtherPool: 0 },
+   fixC: { fired_depthok: 0, fired_corroborated: 0, blocked: 0, blockedPos: 0 },
+-  shadow: { spawned: 0, noscale: 0 }, crossPoolDip: {}, matchLvl: {} };
++  shadow: { spawned: 0, noscale: 0 }, crossPoolDip: {}, matchLvl: {}, skipDepth: {}, twinDistinct: {} };
+ const inc = (o, k, v = 1) => { o[k] = (o[k] || 0) + v; };
+ const halfOf = T => T < JUDGE0 ? 'FIT' : 'JUDGE';
+ // ---- pools ----
+@@ -239,6 +242,9 @@
+     sbr: sp.length && bp.length ? med(sp) / med(bp) : null, anyPoolS10h: anySell10 };
+ }
+ function fill(p, r, delay) {
++  if (r.kind === 'v4' && r.depth1_eth < DEPTH_FLOOR) {                           // FIX 2 depth floor: skip, no cooldown (engine_wh.js)
++    W_({ ...base(p), skipDepth: 1, eDepth1: r.depth1_eth, entryTs: r.ts }); inc(stats.skipDepth, `${p.cell}|${p.kind}${p.tw || ''}`); release(p, null); p.st = 'done'; return;
++  }
+   p.st = 'O'; p.entryTs = r.ts > p.sigTs + LAT ? r.ts : p.sigTs + LAT; p.eDelay = delay; p.eP = r.px; p.eS = r.side; p.eU = r.usd; p.eK = r.kind; p.ePk = r.pk;
+   const b = buyCost(p.tok, r, p.clip); p.entryPx = b.px; p.eu = b.u; p.ef = b.f; p.eHook0 = r.kind === 'v4' && poolHook0.has(r.pool) ? 1 : 0; p.ePons = r.kind === 'v4' && poolPons.has(r.pool) ? 1 : 0;
+   p.eDepth1 = r.kind === 'v4' ? r.depth1_eth : null; p.eEthUsd = r.kind === 'v4' ? ethOf(r) : null;
+@@ -258,7 +264,7 @@
+ }
+ function clockTo(p, now) {
+   if (p.st === 'E' && now > p.sigTs + LAT) {
+-    if (p.last && priceable(p.last)) fill(p, p.last, 0); else { p.st = 'EW'; p.eWait = p.sigTs + LAT + EWAIT; }
++    if (p.last && priceable(p.last)) { fill(p, p.last, 0); if (p.st === 'done') return true; } else { p.st = 'EW'; p.eWait = p.sigTs + LAT + EWAIT; }
+   }
+   if (p.st === 'EW' && now > p.eWait) { W_({ ...base(p), nofill: 1 }); stats.nofill++; release(p, null); p.st = 'done'; return true; }
+   if (p.st === 'O' && now >= p.deadline) { if (planExit(p, p.deadline, 'time')) return true; }
+@@ -277,7 +283,7 @@
+   if (p.st === 'E' || p.st === 'EW') {
+     if (p.tgt != null && r.pk !== p.tgt) return false;                                 // P mode: the entry is on the target pool only
+     if (p.st === 'E') { p.last = r; return false; }
+-    if (priceable(r)) fill(p, r, r.ts - (p.sigTs + LAT)); else p.last = r; return false;
++    if (priceable(r)) { fill(p, r, r.ts - (p.sigTs + LAT)); if (p.st === 'done') return true; } else p.last = r; return false;
+   }
+   if (r.pk !== p.ePk) { p.otherPool++; if (p.clip === CLIP) stats.fixB.otherPoolPrintsSeen++; return false; }        // FIX b
+   p.nPost++; if (r.side === 'sell') p.nPostSell++; if (r.px < p.minPost) p.minPost = r.px; if (r.px > p.maxPost) p.maxPost = r.px;
+@@ -379,9 +385,13 @@
+       const tgt = c.mode === 'P' ? q.mp : null, last = c.mode === 'P' ? (q.mp >= 0 ? Tt.pools.get(q.mp).lastR : null) : Tt.lastR;
+       addPos({ ...com, kind: 'W', tw, rep: k, tok: t, last, tgt, srcCls: Tt.sc, cvol: Tt.cs ? Tt.cs.vol : null, csd: Tt.cs ? Tt.cs.sd : null,
+         n10: q.n10, dband: q.dband, r6: q.r6, dd1h: q.dd1h, hot: tH.hot, padHot: tpv ? hotOf(tpv.id, tpv.v, r.ts).hot : null }); };
+-    if (!cand.length) inc(stats.twinEmpty, `${c.id}|R`); else for (let k = 0; k < REPS; k++) mk(cand[Math.floor(rng() * cand.length)], 'R', k);
+-    if (!poolA.length) inc(stats.twinEmpty, `${c.id}|A`); else for (let k = 0; k < REPS; k++) mk(poolA[Math.floor(rng() * poolA.length)], 'A', k);
+-    if (!poolD.length) inc(stats.twinEmpty, `${c.id}|D`); else for (let k = 0; k < REPS; k++) mk(poolD[Math.floor(rng() * poolD.length)], 'D', k);
++    const draw = (pool, tw) => {                                                   // FIX 1 WITHOUT replacement: min(3, |pool|) distinct coins (engine_wh.js)
++      if (!pool.length) { inc(stats.twinEmpty, `${c.id}|${tw}`); return; }
++      const a = pool.slice(), m = Math.min(REPS, a.length);
++      for (let k = 0; k < m; k++) { const j = k + Math.floor(rng() * (a.length - k)); const t = a[j]; a[j] = a[k]; a[k] = t; mk(t, tw, k); }
++      inc(stats.twinDistinct, `${halfOf(w.T)}|${c.id}|${tw}${m}`);
++    };
++    draw(cand, 'R'); draw(poolA, 'A'); draw(poolD, 'D');
+   }
+ }
+ function onRow(r) {

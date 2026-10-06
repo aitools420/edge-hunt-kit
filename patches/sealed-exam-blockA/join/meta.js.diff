@@ -1,0 +1,21 @@
+--- v4-join-2026-09-27/meta.js
++++ sealed-exam-blockA/join/meta.js
+@@ -1,4 +1,5 @@
+ #!/usr/bin/env node
++// sealed-exam-blockA exam copy: see join/make_join.py and the .diff beside this file
+ // meta.js — pool/token metadata for the v4 join. READ-ONLY on the estate; writes only into this folder.
+ // Sources: noxabot state/v4-poolkeys.json (tok -> the pool key the locked tape follows), wick-engine
+ // robinhood-v4-births.ndjson (every v4 Initialize since ~2026-08-03: poolId, currencies, venue, hook, birth),
+@@ -7,9 +8,9 @@
+ 'use strict';
+ const fs = require('fs'), path = require('path'), readline = require('readline');
+ const { ethers } = require('/home/green/noxabot/node_modules/ethers');
+-const HERE = __dirname;
+-const NOX = '/home/green/noxabot/state';
+-const BIRTHS = '/home/green/.openclaw/workspace/wick-engine/logs/robinhood-v4-births.ndjson';
++const HERE = '/home/green/projects/patches/sealed-exam-blockA/work/v4join';
++const NOX = '/home/green/projects/patches/sealed-exam-blockA/work/ledgers/state';   // the runner's hashed snapshot
++const BIRTHS = '/home/green/projects/patches/sealed-exam-blockA/work/ledgers/robinhood-v4-births.ndjson';   // the runner's hashed snapshot
+ const abi = ethers.utils.defaultAbiCoder;
+ const poolIdOf = k => ethers.utils.keccak256(abi.encode(['address', 'address', 'uint24', 'int24', 'address'], [k.currency0, k.currency1, k.fee, k.tickSpacing, k.hooks])).toLowerCase();
+ const lc = s => (s || '').toLowerCase();

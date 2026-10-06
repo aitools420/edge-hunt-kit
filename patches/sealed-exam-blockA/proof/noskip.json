@@ -1,0 +1,2 @@
+{"note": "PROOF ONLY: the Option A engine with FIX 2 switched off (DEPTH_FLOOR 0: V4 rows with depth1 <= 0 are already dropped, so no fill can be skipped). Isolates FIX 1.",
+ "pairs": [["const DEPTH_FLOOR = 0.001;", "const DEPTH_FLOOR = 0;"]]}

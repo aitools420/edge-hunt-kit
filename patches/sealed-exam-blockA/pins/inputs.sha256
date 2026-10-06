@@ -1,0 +1,12 @@
+45af2cf8f9113f1709e439f939c39eda1b92ebc8ff49a9c8a8354018ad38c25a  /home/green/projects/patches/twinfix-2026-10-05/inputs/meta.tsv
+9988ebfa78efc678409d99f15e77465718506ed64a5d1e21c1a29c1e9cb8d1cb  /home/green/projects/patches/twinfix-2026-10-05/inputs/scam.tsv
+5328cf75c8f09326bad6153bedf0d1c2d297734cab5471790eeaaf2f41dd309f  /home/green/projects/patches/twinfix-2026-10-05/inputs/poolfee.tsv
+034d51d5d6f9916b6afc0b04a03fc9978d3ec5ba8395bf4655fbe9e897d247e8  /home/green/projects/patches/v4-join-2026-09-27/decimals.json
+4ec8b6f18c693d24c903c0225b6a8403836ee5aa5fe89aa97ee14714f9d27c2f  /home/green/projects/patches/v4-join-2026-09-27/unknown_keys.json
+bd90ce36643ff7c12f6a91ace82d57f7ff6f5b192d97c36f7079c79f49f96f83  /home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-24.ndjson.gz
+484a0ee836b025c5a255f54fb1b91ab6d7669b5b42a4d46dc0f254241b206755  /home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-25.ndjson.gz
+f78d0eec951d5a7d8556acc27239110986d684392545392cbfc854b90bf5054f  /home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-26.ndjson.gz
+b06c7e39cd56be004ae3df13ab488bd9ad1d0664b7389f3ee2de85273e04e7c3  /home/green/noxabot/logs/uniswap-v4-tape-hole.ndjson
+7ff9c73d612747e91f372242e417ce3c05b0110d82519db4ebecb83bd024e9a8  /home/green/noxabot/logs/uniswap-v4-tape-backfill.ndjson
+4222b8f0564f92ae755628a329e23336330c8c3bc973b7b2210b2b972e9a5a5b  /home/green/projects/patches/sealed-exam-blockA/pins/open_days.tsv
+6444b7f232e9063fb10a99cfe957ba1e8b9ef281b1dd7a7730289f9f891b09c9  /home/green/projects/patches/sealed-exam-blockA/join/orient_0927.json

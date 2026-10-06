@@ -1,0 +1,19 @@
+--- v4-join-2026-09-27/finalize.js
++++ sealed-exam-blockA/join/finalize.js
+@@ -1,4 +1,5 @@
+ #!/usr/bin/env node
++// sealed-exam-blockA exam copy: see join/make_join.py and the .diff beside this file
+ // finalize.js — pass 2. For each UTC day IN ORDER: GNU sort the day shard by (blk, li), dropping duplicate logs (the locked
+ // tape, the hole/backfill tapes and the wide files overlap), then normalise every swap and write out/v4-swaps-DAY.ndjson.gz.
+ // Days >= 2026-09-27T00:00Z (the SEALED final-exam holdout) go to out/sealed/ with sealed:true and never touch the
+@@ -7,8 +8,8 @@
+ // Usage: node finalize.js <shardDir>
+ 'use strict';
+ const fs = require('fs'), path = require('path'), zlib = require('zlib'), { spawn } = require('child_process');
+-const HERE = __dirname, SH = process.argv[2], OUT = path.join(HERE, 'out'), SEALED_DIR = path.join(OUT, 'sealed');
+-const SEAL = 1790467200;                                 // 2026-09-27T00:00:00Z — SEALED-HOLDOUT/README.md
++const HERE = '/home/green/projects/patches/sealed-exam-blockA/work/v4join', SH = process.argv[2], OUT = path.join(HERE, 'out'), SEALED_DIR = path.join(OUT, 'sealed');
++const SEAL = 1791331200;                                 // sealed-exam-blockA: the Block A exam's CUT 2026-10-07T00:00:00Z — nothing at or after it exists here
+ const DEAD_SILENT_H = 24, DRAIN_FRAC = 0.01, Q_STALE = 24 * 3600;
+ fs.mkdirSync(SEALED_DIR, { recursive: true });
+ const { load, E0 } = require('./pools.js');

@@ -1,0 +1,9 @@
+{"note": "v4tape_exam.js = v4-join-2026-09-27/v4tape.js with PATHS and SEAL CONSTANTS only (sealed-exam-blockA). Warm-up V4 days (< 2026-09-27) are read from the original join folder; block V4 days (>= 2026-09-27) from the join the exam builds; V2/V3 tape files from the exam's verified link folder (work/tape: links to hash-checked day files + the 10-07 file CUT at 1791331200). The reader refuses days >= 2026-10-08 and any row ts >= 1791331200.",
+ "pairs": [
+  ["// v4tape.js — reader for the joined Uniswap V4 swap dataset", "// v4tape_exam.js — sealed-exam-blockA copy of v4-join-2026-09-27/v4tape.js: PATHS + SEAL constants only (DIR, JOIN_DIR, BLOCK0_DAY, WE, SEAL, SEAL_DAY).\n// v4tape.js — reader for the joined Uniswap V4 swap dataset"],
+  ["const DIR = path.join(__dirname, 'out');", "const DIR = '/home/green/projects/patches/v4-join-2026-09-27/out', JOIN_DIR = '/home/green/projects/patches/sealed-exam-blockA/work/v4join/out', BLOCK0_DAY = '2026-09-27';"],
+  ["const WE = '/home/green/.openclaw/workspace/wick-engine/logs';", "const WE = '/home/green/projects/patches/sealed-exam-blockA/work/tape';"],
+  ["const SEAL = 1790467200;", "const SEAL = 1791331200;"],
+  ["const SEAL_DAY = '2026-09-27';", "const SEAL_DAY = '2026-10-08';"],
+  ["  const p = path.join(day >= SEAL_DAY ? path.join(DIR, 'sealed') : DIR, `v4-swaps-${day}.ndjson.gz`);", "  const p = path.join(day >= BLOCK0_DAY ? JOIN_DIR : DIR, `v4-swaps-${day}.ndjson.gz`);"]
+ ]}

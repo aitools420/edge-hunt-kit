@@ -1,0 +1,151 @@
+{
+ "seeds_done": 1,
+ "missing": [
+  "st_A_alone_s20260928.json",
+  "grid_A_alone_s20260928.json",
+  "st_A_alone_s20260929.json",
+  "grid_A_alone_s20260929.json",
+  "st_A_alone_s20260930.json",
+  "grid_A_alone_s20260930.json",
+  "st_A_alone_s20260931.json",
+  "grid_A_alone_s20260931.json",
+  "st_A_alone_s20260932.json",
+  "grid_A_alone_s20260932.json",
+  "st_A_alone_s20260933.json",
+  "grid_A_alone_s20260933.json",
+  "st_A_alone_s20260934.json",
+  "grid_A_alone_s20260934.json",
+  "st_A_alone_s20260935.json",
+  "grid_A_alone_s20260935.json",
+  "st_A_alone_s20260936.json",
+  "grid_A_alone_s20260936.json",
+  "st_A_alone_s20260937.json",
+  "grid_A_alone_s20260937.json",
+  "st_A_alone_s20260938.json",
+  "grid_A_alone_s20260938.json",
+  "st_A_alone_s20260939.json",
+  "grid_A_alone_s20260939.json",
+  "st_A_alone_s20260940.json",
+  "grid_A_alone_s20260940.json",
+  "st_A_alone_s20260941.json",
+  "grid_A_alone_s20260941.json",
+  "st_A_alone_s20260942.json",
+  "grid_A_alone_s20260942.json",
+  "st_A_alone_s20260943.json",
+  "grid_A_alone_s20260943.json",
+  "st_A_alone_s20260944.json",
+  "grid_A_alone_s20260944.json",
+  "st_A_alone_s20260945.json",
+  "grid_A_alone_s20260945.json",
+  "st_A_alone_s20260946.json",
+  "grid_A_alone_s20260946.json"
+ ],
+ "rules": {
+  "1": {
+   "cell": "C2P",
+   "dist": {
+    "d": {
+     "min": 6.22,
+     "p5": 6.22,
+     "p50": 6.22,
+     "p95": 6.22,
+     "max": 6.22
+    },
+    "lb": {
+     "min": 1.75,
+     "p5": 1.75,
+     "p50": 1.75,
+     "p95": 1.75,
+     "max": 1.75
+    },
+    "p": {
+     "min": 0.000184,
+     "p5": 0.000184,
+     "p50": 0.000184,
+     "p95": 0.000184,
+     "max": 0.000184
+    }
+   },
+   "share": {
+    "holm": 1.0,
+    "d_pos": 1.0,
+    "lb_pos": 1.0,
+    "n_ok": 1.0,
+    "drop5_pos": 1.0,
+    "gates": 1.0,
+    "passed": 1.0
+   },
+   "per_seed": [
+    {
+     "seed": 20260927,
+     "d": 6.22,
+     "lb": 1.75,
+     "p": 0.000184,
+     "n": 612,
+     "coins": 287,
+     "drop5": 4.78,
+     "holm": true,
+     "d_pos": true,
+     "lb_pos": true,
+     "n_ok": true,
+     "drop5_pos": true,
+     "gates": true,
+     "passed": true
+    }
+   ]
+  },
+  "2": {
+   "cell": "D25L48",
+   "dist": {
+    "d": {
+     "min": 9.08,
+     "p5": 9.08,
+     "p50": 9.08,
+     "p95": 9.08,
+     "max": 9.08
+    },
+    "lb": {
+     "min": 5.22,
+     "p5": 5.22,
+     "p50": 5.22,
+     "p95": 5.22,
+     "max": 5.22
+    },
+    "p": {
+     "min": 2e-06,
+     "p5": 2e-06,
+     "p50": 2e-06,
+     "p95": 2e-06,
+     "max": 2e-06
+    }
+   },
+   "share": {
+    "holm": 1.0,
+    "d_pos": 1.0,
+    "lb_pos": 1.0,
+    "n_ok": 1.0,
+    "drop5_pos": 1.0,
+    "gates": 1.0,
+    "passed": 1.0
+   },
+   "per_seed": [
+    {
+     "seed": 20260927,
+     "d": 9.08,
+     "lb": 5.22,
+     "p": 1.97e-06,
+     "n": 439,
+     "coins": 219,
+     "drop5": 8.06,
+     "holm": true,
+     "d_pos": true,
+     "lb_pos": true,
+     "n_ok": true,
+     "drop5_pos": true,
+     "gates": true,
+     "passed": true
+    }
+   ]
+  }
+ }
+}

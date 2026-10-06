@@ -1,0 +1,14 @@
+--- blood-selection2-2026-09-27/mkpoolfee.py
++++ sealed-exam-blockA/builders/mkpoolfee.py
+@@ -1,9 +1,10 @@
+ #!/usr/bin/env python3
++# sealed-exam-blockA exam copy (paths only): see builders/make_builders.py and the .diff beside this file
+ """pool -> fee, hook, venue, tok from ../v4-join-2026-09-27/meta.json (streamed regex; READ-ONLY). Out: argv[1] TSV."""
+ import re, sys
+ pat = re.compile(rb'"(0x[0-9a-f]{64})":\["(0x[0-9a-f]{40})","0x[0-9a-f]{40}","0x[0-9a-f]{40}",(\d+),(-?\d+),(null|"0x[0-9a-f]{40}"),(null|"[^"]*"),(null|\d+),(null|\d+)')
+ n = 0
+-with open('/home/green/projects/patches/v4-join-2026-09-27/meta.json', 'rb') as fh, open(sys.argv[1], 'w') as o:
++with open('/home/green/projects/patches/sealed-exam-blockA/work/v4join/meta.json', 'rb') as fh, open(sys.argv[1], 'w') as o:
+     tail = b''
+     while True:
+         ch = fh.read(8 << 20)

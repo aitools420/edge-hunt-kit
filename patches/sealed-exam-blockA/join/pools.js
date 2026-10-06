@@ -1,0 +1,45 @@
+// sealed-exam-blockA exam copy: see join/make_join.py and the .diff beside this file
+// pools.js — the pool table for the v4 join: poolId -> which currency is the TOKEN and which the QUOTE.
+// births rows with a `tok` keep it. Pools with no named tok (births quote=null, pre-ledger pools) pick the quote by
+// base rank ETH(0x0) > WETH > USDG, else the currency that appears in MORE pools (the pairing asset), tie -> currency0.
+'use strict';
+const fs = require('fs'), path = require('path');
+const E0 = '0x0000000000000000000000000000000000000000', WETH = '0x0bd7d308f8e1639fab988df18a8011f41eacad73', USDG = '0x5fc5360d0400a0fd4f2af552add042d716f1d168';
+const BASE = { [E0]: 0, [WETH]: 1, [USDG]: 2 };
+const qcls = a => a === E0 ? 'ETH' : a === WETH ? 'WETH' : a === USDG ? 'USDG' : 'other';
+function load(dir = '/home/green/projects/patches/sealed-exam-blockA/work/v4join') {
+  const M = JSON.parse(fs.readFileSync(path.join(dir, 'meta.json'), 'utf8'));
+  const K = JSON.parse(fs.readFileSync(path.join(dir, 'unknown_keys.json'), 'utf8'));
+  const freq = new Map(); const bump = a => freq.set(a, (freq.get(a) || 0) + 1);
+  for (const p of Object.values(M.pools)) { bump(p[1]); bump(p[2]); }
+  for (const k of Object.values(K)) { bump(k[0]); bump(k[1]); }
+  const pick = (c0, c1) => {                       // returns [tok, quote]
+    const r0 = BASE[c0], r1 = BASE[c1];
+    if (r0 !== undefined || r1 !== undefined) {
+      if (r1 === undefined || (r0 !== undefined && r0 <= r1)) return [c1, c0];
+      return [c0, c1];
+    }
+    return (freq.get(c1) || 0) > (freq.get(c0) || 0) ? [c0, c1] : [c1, c0];
+  };
+  const P = new Map();
+  const PIN = JSON.parse(fs.readFileSync('/home/green/projects/patches/sealed-exam-blockA/join/orient_0927.json', 'utf8'));   // sealed-exam-blockA: 09-27 orientation pin
+  const pinned = (id, c0, c1) => (PIN[id] === c0 || PIN[id] === c1) ? [PIN[id], PIN[id] === c0 ? c1 : c0] : null;
+  for (const [id, p] of Object.entries(M.pools)) {
+    const [tok0, c0, c1, fee, tsp, hook, venue, birthBlk, birthTs] = p;
+    let tok, quote, how = 'births';
+    const pn = pinned(id, c0, c1);
+    if (pn) { [tok, quote] = pn; how = 'pin0927'; }
+    else if (tok0 && (tok0 === c0 || tok0 === c1)) { tok = tok0; quote = tok0 === c0 ? c1 : c0; }
+    else { [tok, quote] = pick(c0, c1); how = 'rule'; }
+    P.set(id, { tok, quote, q: qcls(quote), tokIs0: tok === c0, fee, hook, venue, birthBlk, birthTs, how,
+      launcher: M.launcher[tok] || null, padKey: hook ? (M.padKey[hook] || null) : null });
+  }
+  for (const [id, k] of Object.entries(K)) {
+    if (P.has(id)) continue;
+    const [c0, c1, fee, tsp, hook, blk] = k; const [tok, quote] = pinned(id, c0, c1) || pick(c0, c1);
+    P.set(id, { tok, quote, q: qcls(quote), tokIs0: tok === c0, fee, hook: hook === E0 ? null : hook, venue: 'pre-ledger', birthBlk: blk, birthTs: null, how: 'initlog',
+      launcher: M.launcher[tok] || null, padKey: null });
+  }
+  return P;
+}
+module.exports = { load, E0, WETH, USDG, qcls };
