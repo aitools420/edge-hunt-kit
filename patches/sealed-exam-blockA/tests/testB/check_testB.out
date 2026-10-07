@@ -1,0 +1,273 @@
+{
+ "fails": [],
+ "runs": {
+  "alone_rule1_s20260927": {
+   "S": 1022,
+   "outside": 0,
+   "end": 0,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 0,
+   "sig_min": "2026-09-22T00:00:03Z",
+   "sig_max": {
+    "C2": "2026-09-23T23:57:56Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  },
+  "alone_rule1_s20260928": {
+   "S": 1022,
+   "outside": 0,
+   "end": 0,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 0,
+   "sig_min": "2026-09-22T00:00:03Z",
+   "sig_max": {
+    "C2": "2026-09-23T23:57:56Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  },
+  "alone_rule2_s20260927": {
+   "S": 304,
+   "outside": 0,
+   "end": 0,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 0,
+   "sig_min": "2026-09-22T00:00:02Z",
+   "sig_max": {
+    "grid": "2026-09-24T23:57:04Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  },
+  "alone_rule2_s20260928": {
+   "S": 304,
+   "outside": 0,
+   "end": 0,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 0,
+   "sig_min": "2026-09-22T00:00:02Z",
+   "sig_max": {
+    "grid": "2026-09-24T23:57:04Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  },
+  "primary_rule1": {
+   "S": 4969,
+   "outside": 0,
+   "end": 8,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 42,
+   "sig_min": "2026-09-22T00:00:02Z",
+   "sig_max": {
+    "C1": "2026-09-24T23:56:26Z",
+    "C2": "2026-09-23T23:57:56Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  },
+  "primary_rule2": {
+   "S": 10116,
+   "outside": 0,
+   "end": 31,
+   "end_not_at_data_end": 0,
+   "exit_after_cut": 0,
+   "trunc_end": 0,
+   "trunc_hole": 0,
+   "skip": 44,
+   "sig_min": "2026-09-22T00:00:01Z",
+   "sig_max": {
+    "grid": "2026-09-24T23:57:41Z"
+   },
+   "data_end": "2026-09-25T23:59:59Z",
+   "v23_last": "2026-09-25T23:59:59Z",
+   "v4_last": "2026-09-25T23:59:59Z",
+   "v23_days": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "v4_days_with_rows": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25"
+   ]
+  }
+ },
+ "steps": {
+  "table_meta": {
+   "kind": "meta",
+   "full_rows": 506651,
+   "full_dup_keys": 0,
+   "old_rows": 471683,
+   "old_rows_kept_verbatim": 466219,
+   "old_rows_dropped_by_cutoff": 5464,
+   "rebuild_identical_for_every_old_row": false,
+   "rebuild_differences": 4,
+   "rebuild_difference_kinds": {
+    "birth unknown->known + source unknown->known": 3,
+    "label changed": 1
+   },
+   "cutoff": 1790294400,
+   "new_rows_kept": 114,
+   "new_unknown_birth_kept": 114,
+   "new_rows_born_before_seal_kept": 0,
+   "new_rows_dropped_by_cutoff": 34854,
+   "out_rows": 466333,
+   "out_sha256": "830a564877c67a580abf054b4d709eef7a09cb88bff11caf72ac6c2d7a0d6bcd",
+   "old_sha256": "45af2cf8f9113f1709e439f939c39eda1b92ebc8ff49a9c8a8354018ad38c25a",
+   "old_table_is_byte_prefix": false
+  },
+  "table_poolfee": {
+   "kind": "poolfee",
+   "full_rows": 598768,
+   "full_dup_keys": 0,
+   "old_rows": 550395,
+   "old_rows_kept_verbatim": 536454,
+   "old_rows_dropped_by_cutoff": 13941,
+   "rebuild_identical_for_every_old_row": true,
+   "rebuild_differences": 0,
+   "rebuild_difference_kinds": {},
+   "cutoff": 1790294400,
+   "new_rows_kept": 0,
+   "new_unknown_birth_kept": 0,
+   "new_rows_born_before_seal_kept": 0,
+   "new_rows_dropped_by_cutoff": 48373,
+   "out_rows": 536454,
+   "out_sha256": "c05ff6423f32c0c7060d02252bf61dcae2d41bdd0cbb59d0779eaf4a96ad57cc",
+   "old_sha256": "5328cf75c8f09326bad6153bedf0d1c2d297734cab5471790eeaaf2f41dd309f",
+   "old_table_is_byte_prefix": false
+  },
+  "cut_tape": {
+   "inputs": [
+    "/home/green/.openclaw/workspace/wick-engine/logs/robinhood-tape/tape-2026-09-26.ndjson"
+   ],
+   "read": 48038,
+   "kept": 21672,
+  
+TEST B PASS []

@@ -3,35 +3,41 @@
 Rules #1 (C2P, `engine_st`) and #2 (D25L48, `engine_grid`) of `patches/SEALED-HOLDOUT/README.md`, read once on the sealed
 Block A. Built 2026-10-05/06 on OPEN data only: no row with ts >= 2026-09-27T00:00Z was read, analysed or computed from.
 
-**The command (once, after 2026-10-07T00:00:00Z):**
+**The command: TWO starts after 2026-10-07T00:00:00Z (commit-reveal, pond #330 H3):**
 
-    bash /home/green/projects/patches/sealed-exam-blockA/run_exam.sh
+    bash /home/green/projects/patches/sealed-exam-blockA/run_exam.sh     # PHASE 1 (steps 0-7): ends by printing the manifest sha256, then STOPS
+    # post that sha256 publicly, then:  echo <sha256> > /home/green/projects/patches/sealed-exam-blockA/work/state/MANIFEST_POSTED
+    bash /home/green/projects/patches/sealed-exam-blockA/run_exam.sh     # PHASE 2 (steps 8-9): re-checks the manifest, runs the engines, writes report.md
 
-It writes `report.md` here (first line: both verdicts and whether the primary and the sensitivity agree) and keeps everything else
-under `work/`. Expect about 10–14 h: it waits until 03:00Z (cut + 3 h), joins the V4 block (~1–2 h), then runs 42 engines one at a
-time behind the box gate. If it is interrupted, run the same command again: finished steps are skipped (their outputs re-verified)
-and an engine run with a good output is not repeated. **No setting can change between runs.**
+It writes `report.md` here (first line: both verdicts, AGREE / DISAGREE, the PASS-seed count, the READING and `qualifies`; next lines:
+the sha256 of the runner, the three pin files and the posted manifest), publishes `runs.tsv`, `exam.log`, `REFUSED` and the manifest in
+`report_files/`, and keeps everything else under `work/`. Expect about 10–14 h in all: phase 1 waits until 03:00Z (cut + 3 h) and joins
+the V4 block (~1–2 h); phase 2 runs 42 engines one at a time behind the box gate. Every refusal has a CLASS in `work/state/REFUSED`
+(pond #330 H2): RESUMABLE (network / not ready / an engine that dies without completing — a kernel OOM kill, or SIGTERM / SIGHUP /
+SIGINT e.g. from a reboot — all before any statistic exists: start again unchanged; a dead engine is re-run unchanged, its death and
+re-run disclosed in report_files/, its partial output never read; if the runner itself is killed, e.g. by a reboot, the next start
+redoes the unfinished step and re-verifies the finished ones, and an interrupted step 9 is resumed and disclosed), CAP (an engine's memory cap: resume only after a recorded, posted cap raise, L22), END (everything else: never again
+on this work folder; going on is a labelled deviation). Finished steps are re-verified by the hashes taken when they finished. **No setting can change between starts.**
 
-Before running it, the coordinator: (1) pastes `REGISTER_DRAFT.md` into the register; (2) registers the 10-05 and 10-06 rows of
-`tape-hashes.tsv` (`hash_tape_days.py 2026-10-05 2026-10-06`, after the 10-06 V4-wide file closes at ~23:45Z). The runner refuses
-at step 2 if any block day 09-27..10-06 has no registered row; registering them before 03:00Z on 10-07 is enough, because the
-runner waits until then.
+Before running it, the coordinator pastes `REGISTER_DRAFT.md` into the register. The 20 block-day rows (09-27..10-06, both feeds) are
+already PINNED in `pins/block_days.tsv` (copied from `tape-hashes.tsv` by `tools/make_pins.sh`, sha256 hard-coded in the runner); the
+runner no longer reads or writes `SEALED-HOLDOUT/tape-hashes.tsv` (it writes its two cut rows to `work/state/cut_rows.tsv`).
 
 ## What the runner does, step by step (`run_exam.sh`)
 
 | step | what | refuses / waits when |
 |---|---|---|
 | 0 | clock | REFUSES before 2026-10-07T00:00:00Z, before creating or reading anything |
-| 1 | `sha256sum -c pins/code.sha256` (every code file incl. the two frozen analyzers) and `pins/inputs.sha256` (09-27 tables, 09-27 join decimals / unknown keys / warm-up V4 days, hole + backfill tapes, open-day pins); guard_test.js (G3); scam sources' mtime | any hash differs; G3 fails; a scam source changed after 09-27 |
+| 1 | the three pin files against the sha256 hard-coded in the runner (H1); then `tools/exam_checks.py codecheck` on `pins/code.sha256` (every code file incl. the two frozen analyzers; a file may differ only through a recorded L22 cap change) and `sha256sum -c pins/inputs.sha256` (09-27 tables, 09-27 join decimals / unknown keys / warm-up V4 days, hole + backfill tapes, open-day pins); guard_test.js (G3); scam sources' mtime | any hash differs; G3 fails; a scam source changed after 09-27 |
 | 1b | waits until 2026-10-07T03:00Z (cut + 3 h) | — (logged every 10 min) |
-| 2 | every block day 09-27..10-06, V2/V3 tape and V4-wide: the ONE file the reader finds, uncompressed content sha256 against EVERY tape-hashes.tsv row for it; warm-up days against pins/open_days.tsv | a missing row, a missing or ambiguous file, any mismatch |
+| 2 | every block day 09-27..10-06, V2/V3 tape and V4-wide: the ONE file the reader finds, uncompressed content sha256 against its ONE row in pins/block_days.tsv (hash-checked); warm-up days against pins/open_days.tsv | a missing row, a missing or ambiguous file, any mismatch |
 | 3 | block→time anchors (public RPC, `join/anchors.py`); ETH/USD hourly (CoinGecko range API, points < CUT only) | fetch fails; anchors end < cut + 2 h; ETH/USD not hourly or not covering the window |
-| 4 | the cuts: 10-07 V2/V3 tape (rows ts < CUT, read to cut + 1 h), 10-07 V4-wide and the locked V4 tape (rows with anchor time < CUT, read to 100,000 blocks past the cut block; only the `blk` / `ts` field of later rows is looked at); hashes; two rows appended to tape-hashes.tsv (`v2v3-tape-cutA`, `v4-wide-cutA`) | waits (10 min, up to 12 h) while a file has not yet passed the margin; refuses on a tool error |
+| 4 | the cuts: 10-07 V2/V3 tape (rows ts < CUT, read to cut + 1 h), 10-07 V4-wide and the locked V4 tape (rows with anchor time < CUT, read to 100,000 blocks past the cut block; only the `blk` / `ts` field of later rows is looked at); hashes (full 64-hex in exam.log); the two cut rows written to work/state/cut_rows.tsv (`v2v3-tape-cutA`, `v4-wide-cutA`) | waits (10 min, up to 12 h) while a file has not yet passed the margin; refuses on a tool error |
 | 5 | snapshot + sha256 of the six ledger / state files the builders read (work/ledgers); tables (below) | label commit or file hash differs; the 09-27 table is not a byte prefix of the exam table |
-| 6 | the V4 join (below), then a row-by-row comparison of the joined 09-25 and 09-26 with the 09-27 join's own files | any step fails; pass1 sees a row at/after the cut; a block day has no joined file |
-| 7 | V2/V3 links for the engines: work/tape → the verified day files + the 10-07 CUT copy | — |
-| 8 | 42 engine runs, one at a time, nice 19 + ionice idle, behind the box gate, `tools/exam_guard.js` preloaded | a run fails |
-| 9 | statistics (`tools/stats_rule.py`) and `report.md` (`tools/report.py`) | — |
+| 6 | the V4 join (below), then a row-by-row comparison of the joined 09-25 and 09-26 with the 09-27 join's own files and the B1 SEAM GATE (`tools/exam_checks.py seam`, before the join is marked done and on every later start) | any step fails; pass1 sees a row at/after the cut; a block day has no joined file; 09-26 differs at all, or 09-25 differs outside the five other-quote price fields or on more than 5,878 rows (END) |
+| 7 | V2/V3 links for the engines: work/tape → the verified day files + the 10-07 CUT copy; END OF PHASE 1: `work/state/manifest.sha256` written, its sha256 printed, STOP | — |
+| 8 | PHASE 2: MANIFEST_POSTED = the manifest's sha256, every manifest line and every finished step re-hashed; then 42 engine runs, one at a time, nice 19 + ionice idle, behind the box gate, `tools/exam_guard.js` preloaded; a finished run is reused only if its runs.tsv engine hash is its pin and its output content matches runs.tsv | not posted yet (RESUMABLE); any mismatch (END); a run stopped by its RSS guard / heap cap (CAP); an engine killed or stopped from outside without completing — exit 137/143/129/130 with GNU time's matching "Command terminated by signal N", or no runs.tsv row (RESUMABLE: re-run unchanged, disclosed in ENGINE_DEATHS, partial output moved aside unread); any other failed run (END) |
+| 9 | everything re-checked again; statistics (`tools/stats_rule.py`; a stats file is reused only if computed from exactly that output) and `report.md` (`tools/report.py`: any failure writes nothing); work/state/FINAL; report_files/ | any check or step fails (END); a later start after FINAL (END) |
 
 ## The policy, point by point, and how it is implemented
 
@@ -110,12 +116,13 @@ runner waits until then.
 ## Risks for the exam
 
 - **Network at exam time:** public RPC (anchors, decimals), the official RPC (Initialize logs of new pre-ledger pools), CoinGecko
-  (ETH/USD). A failure refuses the run (it can be re-run; finished steps are kept).
-- **tape-hashes.tsv must hold the 10-05 and 10-06 rows** before step 2 (the runner refuses otherwise; it waits until 03:00Z first).
+  (ETH/USD). A network failure in phase 1 is a RESUMABLE refusal (start again; finished steps are kept, re-verified by their hashes).
+- **The block-day rows are pinned** in pins/block_days.tsv (all 20 registered by 2026-10-07T06:12Z); the runner refuses any block day whose content differs.
 - **The locked V4 tape writes rows up to ~40,000 blocks late** (measured on the open days); the cut reads to 100,000 blocks past the
   cut block. A larger lateness on 10-07 would drop a few duplicate lock rows (the wide feed carries the same swaps).
 - **Ledger and state files are read as they are at run time** (births, minters, v4 births, poolkeys, launches, hook-pad map): their
-  sha256 are recorded in report.md, but they are not pre-registered (they grow every minute).
+  sha256 are recorded in report.md, but they are not pre-registered (they grow every minute); since pond #330 H3 they are in the phase-1
+  manifest whose sha256 is posted before any engine runs.
 - **The 42 engine runs take ~6–10 h** behind the gate (load often 7–9 on this box); the report is ready ~10–14 h after the start.
 - **RAM:** finalize holds the pool table (~2–4 GB); it runs behind the gate (MemAvailable > 4 GB, no other engine, not beside the
   hunter's run_batch).

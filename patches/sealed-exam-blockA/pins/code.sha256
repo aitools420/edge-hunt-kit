@@ -6,13 +6,14 @@ d360eb713f860e244e962d3948395329642b137b594eb2a7a1618a8ffa444b5a  /home/green/pr
 6cdd676bd2c9166725c0c77a1b0b0bd3105656424bb8af696b23e5b11779e3ea  /home/green/projects/patches/sealed-exam-blockA/engines/guard.js
 087d0ccbe7e246a6deaf72feff4dddfd652a3c1e6ee767454780649e41069c0c  /home/green/projects/patches/sealed-exam-blockA/engines/guard_test.js
 ffcab55d4ad91a8c4af069c5078671fab2c781a2a77bd3c680e694d13a8bbb4b  /home/green/projects/patches/sealed-exam-blockA/tools/exam_guard.js
-a9e0f50e8e7f4172e631f75e5cee20735991634dfe7e8565be2d5dc803d8d9ef  /home/green/projects/patches/sealed-exam-blockA/tools/run_engine.sh
+54b176adbe78ff545eac2b6ac7d6e662e32e637c7e4148849148bc1991b8398f  /home/green/projects/patches/sealed-exam-blockA/tools/run_engine.sh
 cb4ec42beb4805cf0c5254694bd5739efe862f89e4dc8596852c7a2042c45a16  /home/green/projects/patches/sealed-exam-blockA/tools/gate.sh
 684c0afcc4a1351e34ef439786bd74148ae1edced23c0ddd7f1ab0d7690492ae  /home/green/projects/patches/sealed-exam-blockA/tools/stats_rule.py
 3cc87614c813a0866fa10e7b048b7371a8f5630dc8a45e7afc2fa71730e21a89  /home/green/projects/patches/sealed-exam-blockA/tools/tables.py
 5e6664e58986d5a4934820789192ce3e615665c40c95747b487cef866831d2d2  /home/green/projects/patches/sealed-exam-blockA/tools/cut_tape.py
-28d3fdd75723f249db609dc125c626b92e49610159700e51bce79207e59cdca4  /home/green/projects/patches/sealed-exam-blockA/tools/days.py
-e8feec23bcaf71033ed1fd1657419799bad189ad88ce2d5a9077b08659d61458  /home/green/projects/patches/sealed-exam-blockA/tools/report.py
+4690c86b3cd1c29164b2e9c6b083a21aeeaae7b32e4c68a6f6cad44da76f75f7  /home/green/projects/patches/sealed-exam-blockA/tools/days.py
+c1635979fafb5b63896bd8e8b241e1dd121243b1e91012a321bd48b016b23750  /home/green/projects/patches/sealed-exam-blockA/tools/report.py
+3fc644ae76ba7ec873f6eb8235402be480ebbd933d379f6dc6caa49d55ba6403  /home/green/projects/patches/sealed-exam-blockA/tools/exam_checks.py
 7ef067e1d24e7f111d3577c4a4f645a2475bbab07551d47ccd1fcf21884c5d2e  /home/green/projects/patches/sealed-exam-blockA/builders/tokmeta.py
 8c1c7e34fad36bcdd61dfca17a7510cf52e024fe9c76bfd4064a2196cfab28ac  /home/green/projects/patches/sealed-exam-blockA/builders/mkmeta.py
 53e0b775af8cd84f470d4c6b830443777d8afef0c45da7d24dbe43b4de0bb879  /home/green/projects/patches/sealed-exam-blockA/builders/mkpoolfee.py

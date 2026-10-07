@@ -9,6 +9,7 @@
 #  2 nice -n 19 ionice -c3, node --max-old-space-size=3000, the guard PRELOADED with `node -r`, STOP_DAY unset unless passed.
 #  3 monitor only: logs MemAvailable < 1200 MB and a STOPPED engine; it never kills anything.
 #  4 output -> <outdir>/<label>.ndjson.gz ; tape files opened -> <logdir>/<label>.opened ; one summary line -> <logdir>/runs.tsv
+#    (every hash in that line is the full 64-hex sha256: engine file, output content, preloaded guard — pond #330 H3)
 set -u
 L=$1; E=$2; META=$3; SCAM=$4; POOLF=$5; OD=$6; LD=$7; G=$8; shift 8
 ENVV=("$@"); mkdir -p "$OD" "$LD"
@@ -47,6 +48,6 @@ sort -u $LD/$L.opened.raw > $LD/$L.opened 2>/dev/null; rm -f $LD/$L.opened.raw
 el=$(grep -m1 'Elapsed (wall' $LD/$L.log | awk '{print $NF}'); us=$(grep -m1 'User time' $LD/$L.log | awk '{print $NF}'); mx=$(grep -m1 'Maximum resident' $LD/$L.log | awk '{print $NF}')
 sha=$( [ $rc = 0 ] && zcat $OUTA | sha256sum | cut -c1-64 || echo - )
 printf '%s\t%s\t%s\t%s\t%s\texit=%s\telapsed=%s\tuser_s=%s\tmaxrss_kb=%s\topened=%s\tcontent_sha256=%s\tguard=%s\tenv=%s\n' "$L" "$(sha256sum $E | cut -c1-64)" "$E" "$T0" "$T1" "$rc" "$el" "$us" "$mx" \
-  "$(wc -l < $LD/$L.opened 2>/dev/null || echo 0)" "$sha" "$(sha256sum $G | cut -c1-16)" "${ENVV[*]:-}" >> $LD/runs.tsv
+  "$(wc -l < $LD/$L.opened 2>/dev/null || echo 0)" "$sha" "$(sha256sum $G | cut -c1-64)" "${ENVV[*]:-}" >> $LD/runs.tsv
 echo "$(date -u +%FT%TZ) END $L exit $rc elapsed $el" >> $GL
 exit $rc

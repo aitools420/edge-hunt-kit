@@ -1,0 +1,5 @@
+mutation [the exam's 09-26 rule: one row differs] 2026-09-21 differ=1,price_eth=1 -> exit 1; TEST B FAIL ['B1 seam gate (the exam\'s rule) refuses: ["2026-09-21: 1 rows differ from the 09-27 join (must be 0): fields {\'price_eth\': 1}"]']
+mutation [first day over the bound] 2026-09-20 differ=5879,price_eth=5879 -> exit 1; TEST B FAIL ["B1 seam gate (the exam's rule) refuses: ['2026-09-20 (first joined day): 5879 rows differ, above the registered bound 5878']"]
+mutation [first day: a field outside the five] 2026-09-20 side=10 -> exit 1; TEST B FAIL ['B1 seam gate (the exam\'s rule) refuses: ["2026-09-20 (first joined day): differences outside the other-quote price fields: {\'side\': 10}"]']
+mutation [first day: eth_usd differs] 2026-09-20 eth_usd=5 -> exit 1; TEST B FAIL ['B1 seam gate (the exam\'s rule) refuses: ["2026-09-20 (first joined day): differences outside the other-quote price fields: {\'eth_usd\': 5}"]']
+mutation [a later day: a row only in the 09-27 join] 2026-09-22 only_orig=1 -> exit 1; TEST B FAIL ["B1 seam gate (the exam's rule) refuses: ['2026-09-22: rows in one join only (exam 0, 09-27 1); must be 0']"]

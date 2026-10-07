@@ -1,11 +1,16 @@
-## ✅ PRE-READ CLARIFICATIONS — registered 2026-10-06, before any sealed read (answers to pond #322; nothing here changes code)
+## ✅ PRE-READ CLARIFICATIONS — registered 2026-10-06, before any sealed read (answers to pond #322); amended 2026-10-07 on pond #330 (items 1, 7, 11-14; items 1, 7, 12, 13 and 14 are now CODED in the runner and report)
 Each item fixes a reading that the register and the runner left open. Where pond asked for something not done before the read, it says so.
 
-1. **What decides (pond #322 §3 a/b).** The registered primary draw (SEED 20260927, the 09-27 pass composition) decides the verdict exactly
-   as `tools/report.py` computes it. The 20-seed sensitivity never changes that verdict. For any USE of the result (the real-money gate,
-   any public claim), a PASS counts only if report.md says the sensitivity AGREES; a PASS with DISAGREE is read as **"PASS, draw-dependent"**
-   and does not qualify. A NOT SHOWN is never upgraded by the seeds; if ≥ 10 of 20 alone seeds pass, it is labelled "NOT SHOWN,
-   draw-dependent". (This is pond's asymmetric rule, adopted as a reading rule; the computation is unchanged.)
+1. **What decides (pond #322 §3 a/b; amended 2026-10-07 on pond #330 M5, Chef TG 17135).** The registered primary draw (SEED 20260927,
+   the 09-27 pass composition) decides the verdict exactly as `tools/report.py` computes it. The 20-seed sensitivity never changes that
+   verdict. For any USE of the result (the real-money gate, any public claim), **a PASS QUALIFIES iff the primary PASSES and at least 10 of
+   the 20 alone seeds PASS** (the 50 % share). The sensitivity AGREES iff at least 10 of the 20 alone seeds reach the primary's verdict.
+   The exam cell alone at SEED 20260927 (one of the 20) is still computed and printed, **as information only**: it is no longer a condition
+   of AGREE or of qualifying (the 4884d01 code required it as well; pond's simulations showed that extra veto bought 0.0–0.6 points of
+   false-qualify for 1.3–6.4 points of power). report.md prints one READING line per rule with the registered label and the PASS-seed
+   count: **PASS** (qualifies) · **PASS, draw-dependent** (primary PASS, fewer than 10 of 20 seeds PASS; does not qualify) · **NOT SHOWN** ·
+   **NOT SHOWN, draw-dependent** (≥ 10 of 20 alone seeds PASS; never upgraded) · **CAN'T TELL (data)**; report.json carries
+   `qualifies: true/false`. This is pond's asymmetric rule as pond stated it, now as coded (tests/testR R1, R2, R10).
 2. **The other cells of the two passes (§3 f).** The primary passes run all 4 cells of the rule #1 engine and all 24 of the rule #2 engine,
    only to keep the 09-27 pass composition (one shared random stream). Only C2P and D25L48 are analysed (`tools/stats_rule.py` keeps the exam
    cell only). The other cells' rows stay inside the engine output files, whose sha256 are recorded in report.md. They are never analysed,
@@ -25,7 +30,10 @@ Each item fixes a reading that the register and the runner left open. Where pond
 7. **What PASS means (§7).** As registered: Holm k = 2 on the one-sided p (normal approximation on SE_cons) AND d > 0 AND the lower bound >
    0, where the lower bound is the frozen analyzer's 2.5th percentile of its day-block bootstrap (unchanged code). n = PAIRED trades (a
    strategy trade with a booked activity twin): ≥ 300, on ≥ 60 coins. Plus drop-5 d > 0 and the data gate. A rule short of n or coins
-   reads NOT SHOWN, and its p stays in the Holm family as computed (a missing p counts as 1).
+   reads NOT SHOWN, and its p stays in the Holm family as computed (a missing p counts as 1). **A CAN'T TELL (data) rule enters Holm with
+   p = 1** (pond #330 M6, Chef TG 17137, 2026-10-07), so the other rule must clear 0.0125 (alpha / 2 of the 2.5 % family) on its own
+   (tests/testR R3: rule #1 gate FAIL at p 0.001 and rule #2 at p 0.02 → rule #2 NOT SHOWN; R4: the same with rule #1's gate PASS →
+   rule #2 PASS at Holm step 2).
 8. **Error budget (§8).** Nominal: 2.5 % one-sided family-wise per block (Holm k = 2), about 7.3 % over Blocks A–C if each is read once at
    that level. pond's simulation suggests the real rate may be 1.5–2× nominal on lumpy days. Recorded as a caveat; no change.
 9. **The two 09-27 additions, verbatim (§2 a/b).** Rule #1's section (registered ~08:35Z): "skip V4 entries with depth1 < 0.001 ETH
@@ -45,7 +53,37 @@ Each item fixes a reading that the register and the runner left open. Where pond
     FIRST day (09-20, 5,878 rows: causal other-quote prices with a short warm-up) and the last hour before the CUT (09-25, 69,729 rows:
     ETH/USD is linear between hourly points and the exam keeps only points before the CUT, so the last hour holds the last price where
     the 09-27 join interpolated toward a point after it — the exam is the stricter, it never looks past the CUT).
-11. **Not done before the read, said plainly:**
-    - the 20-seed JUDGE distribution (§3 e): ~38 engine runs, about 10 h on this box;
+11. **Not done before the read, said plainly (updated 2026-10-07):**
+    - the 20-seed JUDGE distribution on the open days (§3 e): IN PROGRESS, not finished (seeds20/driver.log; at 2026-10-07 ~07:00Z
+      rule #1 had seeds 20260927-20260929 and rule #2 seeds 20260927-20260930, and one run, rule #1 seed 20260930, failed for a plumbing
+      reason and must be re-run); it will not be complete before the read if the read starts first;
     - a draw-averaged primary (§3 c): new code, not built;
-    - publishing the exam code to the public kit before the read (§1, §5 a): the owner's decision.
+    - the pond #330 MEDIUM and LOW items not listed in clarifications 1, 7, 12 and 13 (M1-M4, M7-M9; L1, L3, L5-L15, L17, L18, L20,
+      L21): not done; each is a limit of this exam as registered. Done with #330: L16 (64-hex hashes in report.md and runs.tsv) and
+      L19 (the cut rows are written whole to work/state/cut_rows.tsv; the runner no longer appends to tape-hashes.tsv).
+    - DONE since 2026-10-06: the exam code was published before the read (commit 4884d01, reviewed in pond #330); Test B was re-run after
+      the orientation pin and its consist files are now gated (clarification 10, B1).
+12. **CAN'T TELL (data) is final for Block A (pond #330 L4, Chef TG 17139, 2026-10-07): no re-run, no re-draw; that rule waits for
+    Block B.** The runner honours it: a written report creates work/state/FINAL and every later start refuses (Test C H2f); a data-gate
+    failure never prints that rule's d / CI / p / n (primary or alone seeds); they go only to work/withheld_stats.json, whose sha256
+    report.md prints (pond #330 H2; tests/testR R5, R9).
+13. **The memory guard (pond #330 L22, Chef TG 17141, 2026-10-07).** If an exam engine's RSS guard (engine_st_exam.js ~:475 /
+    engine_grid_exam.js ~:424 and the _h copies, 3.2e9 bytes) or the heap cap (tools/run_engine.sh ~:34, 3,000 MB) fires, **the only
+    allowed change is raising that cap; the new file hash is posted publicly before that engine re-runs; nothing else may change.** The
+    runner refuses that failure with class CAP and resumes only through a recorded cap change it can verify (one line changed, the cap
+    line, to a larger number, after that cap fired); anything else is exam-ending (Test C L22a-g). Peak memory recorded on open data
+    before the read: REGISTER_DRAFT.md, "Refusals, resume and deviations".
+14. **What the runner now enforces rather than reports (pond #330 B1, H1, H2, H3):** the 09-25/09-26 seam (a refusal before any engine;
+    bound and field list fixed on open data, tests/testB/seam_bound_evidence.json); pin files anchored in the runner and the block days
+    against a pinned file; every step's outputs hashed and re-checked; engine hashes in runs.tsv against the pins; refusal classes
+    (RESUMABLE / END / CAP) read at every start; commit-reveal between phase 1 and phase 2. Text: REGISTER_DRAFT.md.
+15. **An engine that dies without completing, and the runner killed (coordinator 2026-10-07, after pond #330 H2).** Registered: "an
+    engine that dies without completing (kernel kill, no complete output) is re-run unchanged; the death and the re-run are disclosed in
+    report_files; nothing else may change; a partial output is never read." Killed or stopped from outside counts: SIGKILL (137, e.g. the
+    OOM killer), SIGTERM (143, e.g. a reboot or shutdown), SIGHUP (129), SIGINT (130). It happens before any statistic for that run exists,
+    so it is RESUMABLE, like a network failure. The runner recognises it from what the unchanged run_engine.sh records (the exit code in
+    runs.tsv with GNU time's matching "Command terminated by signal N", or no runs.tsv row for the attempt). The RSS guard and the heap cap
+    stay CAP (item 13); SIGABRT that is not the heap cap and an engine that exits non-zero by itself stay END; a refusal once step 9 has
+    started is END. If the RUNNER itself is killed (a reboot stops the whole tree), the next start redoes the unfinished step from scratch,
+    re-verifies the finished ones, re-runs an interrupted engine as above and resumes an interrupted step 9, disclosed (Test C K1-K7,
+    KR1-KR3).

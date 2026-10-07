@@ -1,0 +1,150 @@
+{
+ "purpose": "pond #330 B1: the registered bound and field list for the exam join's FIRST day (2026-09-25) vs the 09-27 join, fixed on OPEN data before the read",
+ "rule": {
+  "first_day": "2026-09-25",
+  "allowed_fields": [
+   "price_eth",
+   "price_usd",
+   "usd",
+   "depth1_eth",
+   "depth5_eth"
+  ],
+  "bound_rows": 5878,
+  "only_mine": 0,
+  "only_orig": 0,
+  "next_day": "2026-09-26 identical: differ 0, only_mine 0, only_orig 0"
+ },
+ "evidence": [
+  {
+   "what": "Test B observed (its first joined day 2026-09-20, the same position in its shifted calendar; tests/testB/tree/work/state/consist_2026-09-20.json)",
+   "identical": 2005120,
+   "differ": 5878,
+   "only_mine": 0,
+   "only_orig": 0,
+   "fields": {
+    "price_eth": 5878,
+    "price_usd": 5878,
+    "usd": 5060,
+    "depth5_eth": 5878,
+    "depth1_eth": 5878
+   }
+  },
+  {
+   "what": "seam_sim.py on the 09-27 join's OPEN files 09-19 (warm) / 09-20 (first day): replays finalize.js's causal other-quote rule cold vs warm",
+   "result": {
+    "first_day_file": "/home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-20.ndjson.gz",
+    "warm_file": "/home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-19.ndjson.gz",
+    "otherq_currencies": 369,
+    "counts": {
+     "first_day_rows_touched": 832968,
+     "first_day_other_quote_rows": 386618,
+     "warm_reproduces_file": 382870,
+     "warm_checked": 382914,
+     "differ": 5878,
+     "differ_cold_null": 537,
+     "first_day_rows_total": 2010998
+    },
+    "differ_by_utc_hour": {
+     "0": 2398,
+     "1": 206,
+     "2": 195,
+     "3": 93,
+     "4": 114,
+     "5": 98,
+     "6": 100,
+     "7": 159,
+     "8": 85,
+     "9": 111,
+     "10": 81,
+     "11": 36,
+     "12": 39,
+     "13": 44,
+     "14": 18,
+     "15": 43,
+     "16": 23,
+     "17": 29,
+     "18": 20,
+     "19": 23,
+     "20": 7,
+     "21": 1956
+    },
+    "differ_by_quote_top10": {
+     "TAO": 2191,
+     "SPCX": 1152,
+     "NET": 320,
+     "NVDA": 231,
+     "BE": 230,
+     "INTC": 129,
+     "GLXY": 119,
+     "CRCL": 113,
+     "USAR": 106,
+     "SPY": 93
+    }
+   },
+   "reading": "reproduces Test B's 5,878 differing rows EXACTLY (and 5,878 + 2,005,120 = the day's 2,010,998 rows)"
+  },
+  {
+   "what": "seam_sim.py on the 09-27 join's OPEN files 09-24 (warm) / 09-25 (first day) = the exam's first joined day",
+   "result": {
+    "first_day_file": "/home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-25.ndjson.gz",
+    "warm_file": "/home/green/projects/patches/v4-join-2026-09-27/out/v4-swaps-2026-09-24.ndjson.gz",
+    "otherq_currencies": 407,
+    "counts": {
+     "first_day_other_quote_rows": 399148,
+     "warm_reproduces_file": 398174,
+     "warm_checked": 398458,
+     "differ": 4824,
+     "differ_cold_null": 642,
+     "first_day_rows_touched": 854322,
+     "first_day_rows_total": 1853640
+    },
+    "differ_by_utc_hour": {
+     "0": 1316,
+     "1": 704,
+     "2": 940,
+     "3": 232,
+     "4": 154,
+     "5": 181,
+     "6": 99,
+     "7": 90,
+     "8": 195,
+     "9": 82,
+     "10": 92,
+     "11": 107,
+     "12": 74,
+     "13": 144,
+     "14": 126,
+     "15": 131,
+     "16": 68,
+     "17": 22,
+     "18": 45,
+     "19": 19,
+     "20": 2,
+     "21": 1
+    },
+    "differ_by_quote_top10": {
+     "PONS": 1142,
+     "BUN": 911,
+     "SPCX": 432,
+     "NET": 222,
+     "QVR": 187,
+     "MSTR": 186,
+     "ZZZ": 181,
+     "SLV": 149,
+     "TAO": 108,
+     "AAPL": 87
+    }
+   },
+   "reading": "predicts 4,824 differing rows of 1,853,640 for the exam's 09-25; the bound 5,878 leaves 1,054 rows (22 %) of margin over the prediction"
+  },
+  {
+   "what": "eth_usd",
+   "reading": "NOT allowed. finalize.js computes eth_usd from the CoinGecko series alone (ethUsd(ts)), never from the warm-up state; Test B's first day shows eth_usd on 0 rows; the replay touches no eth_usd. eth_usd differed only on Test B's 2026-09-25 (69,616 rows), its last hour before ITS cut (clarification 10), an edge the exam never compares. A CoinGecko check on 2026-10-07 (open window only, to = 2026-09-27T00:00Z): hourly points are exactly on the hour and identical (48 of 48 timestamps and values) for query starts 09-19 and 09-24, so the exam's own fetch from 09-24 cannot make eth_usd differ on 09-25/09-26; any eth_usd difference there would mean a different ETH/USD series and must refuse."
+  },
+  {
+   "what": "decimals",
+   "reading": "Test B's decimals step had 0 jobs (every token on 09-20..09-25 already in the 09-27 decimals.json), so a 10-07 retry cannot change a 09-25/09-26 row."
+  }
+ ],
+ "seam_sim_sha256": "06353603b2d390cb11cdec810634274dffb293d4f14f55d89125db4b4bcfb860"
+}

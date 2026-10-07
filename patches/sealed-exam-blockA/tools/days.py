@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """days.py — NEW CODE (sealed-exam-blockA): find, verify and link the raw day files the exam reads.
 
-  days.py verify <tape|wide> <out_manifest.json> <registered.tsv> <day> [<day> ...]
+  days.py verify <tape|wide> <out_manifest.json> <registered.tsv> [--sha256 <hex>] <day> [<day> ...]
       For each day: locate its ONE file the way the consumer finds it (tape: the patterns of v4tape.js v23Paths and of
       SEALED-HOLDOUT/hash_tape_days.py; wide: ~/noxabot/logs/v4-wide/uniswap-v4-wide-DAY.ndjson[.gz]). Refuse (exit 2) if a day has
       no file or more than one part. sha256 of the UNCOMPRESSED content (as hash_tape_days.py) must equal EVERY registered row for
       (day, feed) in registered.tsv (the tape-hashes.tsv format; feed v2v3-tape or v4-wide); a day with no registered row, or a
       mismatch, is refused. Writes {day: {path, gz, sha256, bytes}}.
+      pond #330 H1: the exam's block days are verified against the PINNED file pins/block_days.tsv (the 20 registered rows,
+      copied once by tools/make_pins.sh), never against the appendable SEALED-HOLDOUT/tape-hashes.tsv. With --sha256 the
+      registered file itself must hash to <hex> (run_exam.sh passes its hard-coded PIN_BLOCK_SHA) and must hold exactly ONE row
+      per (day, feed).
   days.py link <tape|wide> <manifest.json> <dest_root>
       tape: dest_root/archive/0000/tape-DAY.ndjson.gz -> a gz file, dest_root/robinhood-tape/tape-DAY.ndjson -> a plain file
             (the two patterns v23Paths reads; a symlink to the verified file). wide: dest_root/uniswap-v4-wide-DAY.ndjson -> the plain
@@ -41,17 +45,23 @@ if cmd == 'hash':
 kind = sys.argv[2]
 if cmd == 'verify':
     out, tsv, days = sys.argv[3], sys.argv[4], sys.argv[5:]
+    want = None
+    if days[:1] == ['--sha256']: want, days = days[1], days[2:]
+    if want is not None:
+        got = hashlib.sha256(open(tsv, 'rb').read()).hexdigest()
+        if got != want: refuse(f'registry file {tsv} hashes to {got}, not the pinned {want}')
     R = registered(tsv); M = {}
     for d in days:
         hits = sorted(set(p for pat in PAT[kind] for p in glob.glob(pat.format(d=d))))
         if len(hits) != 1: refuse(f'{kind} {d}: {len(hits)} files found {hits}')
         rows = R.get((d, FEED[kind]))
         if not rows: refuse(f'{kind} {d}: no registered row in {tsv}')
+        if want is not None and len(rows) != 1: refuse(f'{kind} {d}: {len(rows)} rows in the pinned file {tsv}, want exactly 1')
         h, n = digest(hits[0])
         bad = [r for r in rows if r[0] != h or (r[1] and int(r[1]) != n)]
         if bad: refuse(f'{kind} {d}: content sha256 {h} ({n} B) of {hits[0]} differs from the registered {bad}')
         M[d] = dict(path=hits[0], gz=hits[0].endswith('.gz'), sha256=h, bytes=n)
-        print(f'OK {kind} {d} {h[:16]} {n} {hits[0]}', flush=True)
+        print(f'OK {kind} {d} {h} {n} {hits[0]}', flush=True)
     json.dump(M, open(out, 'w'), indent=1)
 elif cmd == 'link':
     M, dest = json.load(open(sys.argv[3])), sys.argv[4]
